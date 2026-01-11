@@ -1,33 +1,224 @@
-trojan://dbc9f5cb-4b00-4448-8f56-7e06cca20d70@ivory.qzz.io:443?security=tls&type=ws&host=ivory.qzz.io&path=%2F45.154.26.81%3A8443&sni=ivory.qzz.io#%5BTH%5D%20ReadyIDC%20Co%20Ltd%20Trojan
-vless://dbc9f5cb-4b00-4448-8f56-7e06cca20d70@ivory.qzz.io:443?encryption=none&security=tls&type=ws&host=ivory.qzz.io&path=%2F45.154.26.81%3A8443&sni=ivory.qzz.io#%5BTH%5D%20ReadyIDC%20Co%20Ltd%20VLESS
-ss://bm9uZTpkYmM5ZjVjYi00YjAwLTQ0NDgtOGY1Ni03ZTA2Y2NhMjBkNzA=@ivory.qzz.io:443/?plugin=v2ray-plugin%3Bmode%3Dwebsocket%3Btls%3Bmux%3D0%3Bhost%3Divory.qzz.io%3Bpath%3D45.154.26.81%3A8443#%5BTH%5D%20ReadyIDC%20Co%20Ltd%20SS
-trojan://dbc9f5cb-4b00-4448-8f56-7e06cca20d70@ivory.qzz.io:443?security=tls&type=ws&host=ivory.qzz.io&path=%2F199.21.175.187%3A8443&sni=ivory.qzz.io#%5BTH%5D%20ReadyIDC%20COLTD%20Trojan
-vless://dbc9f5cb-4b00-4448-8f56-7e06cca20d70@ivory.qzz.io:443?encryption=none&security=tls&type=ws&host=ivory.qzz.io&path=%2F199.21.175.187%3A8443&sni=ivory.qzz.io#%5BTH%5D%20ReadyIDC%20COLTD%20VLESS
-ss://bm9uZTpkYmM5ZjVjYi00YjAwLTQ0NDgtOGY1Ni03ZTA2Y2NhMjBkNzA=@ivory.qzz.io:443/?plugin=v2ray-plugin%3Bmode%3Dwebsocket%3Btls%3Bmux%3D0%3Bhost%3Divory.qzz.io%3Bpath%3D199.21.175.187%3A8443#%5BTH%5D%20ReadyIDC%20COLTD%20SS
-trojan://dbc9f5cb-4b00-4448-8f56-7e06cca20d70@ivory.qzz.io:443?security=tls&type=ws&host=ivory.qzz.io&path=%2F171.103.232.58%3A20475&sni=ivory.qzz.io#%5BTH%5D%20True%20Internet%20Co%20Ltd%20Trojan
-vless://dbc9f5cb-4b00-4448-8f56-7e06cca20d70@ivory.qzz.io:443?encryption=none&security=tls&type=ws&host=ivory.qzz.io&path=%2F171.103.232.58%3A20475&sni=ivory.qzz.io#%5BTH%5D%20True%20Internet%20Co%20Ltd%20VLESS
-ss://bm9uZTpkYmM5ZjVjYi00YjAwLTQ0NDgtOGY1Ni03ZTA2Y2NhMjBkNzA=@ivory.qzz.io:443/?plugin=v2ray-plugin%3Bmode%3Dwebsocket%3Btls%3Bmux%3D0%3Bhost%3Divory.qzz.io%3Bpath%3D171.103.232.58%3A20475#%5BTH%5D%20True%20Internet%20Co%20Ltd%20SS
-trojan://dbc9f5cb-4b00-4448-8f56-7e06cca20d70@ivory.qzz.io:443?security=tls&type=ws&host=ivory.qzz.io&path=%2F43.133.110.81%3A443&sni=ivory.qzz.io#%5BTH%5D%206%20COLLYER%20QUAY%20Trojan
-vless://dbc9f5cb-4b00-4448-8f56-7e06cca20d70@ivory.qzz.io:443?encryption=none&security=tls&type=ws&host=ivory.qzz.io&path=%2F43.133.110.81%3A443&sni=ivory.qzz.io#%5BTH%5D%206%20COLLYER%20QUAY%20VLESS
-ss://bm9uZTpkYmM5ZjVjYi00YjAwLTQ0NDgtOGY1Ni03ZTA2Y2NhMjBkNzA=@ivory.qzz.io:443/?plugin=v2ray-plugin%3Bmode%3Dwebsocket%3Btls%3Bmux%3D0%3Bhost%3Divory.qzz.io%3Bpath%3D43.133.110.81%3A443#%5BTH%5D%206%20COLLYER%20QUAY%20SS
-trojan://dbc9f5cb-4b00-4448-8f56-7e06cca20d70@ivory.qzz.io:443?security=tls&type=ws&host=ivory.qzz.io&path=%2F47.81.9.160%3A443&sni=ivory.qzz.io#%5BTH%5D%20Alibaba%20Cloud%20LLC%20Trojan
-vless://dbc9f5cb-4b00-4448-8f56-7e06cca20d70@ivory.qzz.io:443?encryption=none&security=tls&type=ws&host=ivory.qzz.io&path=%2F47.81.9.160%3A443&sni=ivory.qzz.io#%5BTH%5D%20Alibaba%20Cloud%20LLC%20VLESS
-ss://bm9uZTpkYmM5ZjVjYi00YjAwLTQ0NDgtOGY1Ni03ZTA2Y2NhMjBkNzA=@ivory.qzz.io:443/?plugin=v2ray-plugin%3Bmode%3Dwebsocket%3Btls%3Bmux%3D0%3Bhost%3Divory.qzz.io%3Bpath%3D47.81.9.160%3A443#%5BTH%5D%20Alibaba%20Cloud%20LLC%20SS
-trojan://dbc9f5cb-4b00-4448-8f56-7e06cca20d70@ivory.qzz.io:443?security=tls&type=ws&host=ivory.qzz.io&path=%2F103.99.11.193%3A8443&sni=ivory.qzz.io#%5BTH%5D%20ReadyIDC%20COLTD%20Trojan
-vless://dbc9f5cb-4b00-4448-8f56-7e06cca20d70@ivory.qzz.io:443?encryption=none&security=tls&type=ws&host=ivory.qzz.io&path=%2F103.99.11.193%3A8443&sni=ivory.qzz.io#%5BTH%5D%20ReadyIDC%20COLTD%20VLESS
-ss://bm9uZTpkYmM5ZjVjYi00YjAwLTQ0NDgtOGY1Ni03ZTA2Y2NhMjBkNzA=@ivory.qzz.io:443/?plugin=v2ray-plugin%3Bmode%3Dwebsocket%3Btls%3Bmux%3D0%3Bhost%3Divory.qzz.io%3Bpath%3D103.99.11.193%3A8443#%5BTH%5D%20ReadyIDC%20COLTD%20SS
-trojan://dbc9f5cb-4b00-4448-8f56-7e06cca20d70@ivory.qzz.io:443?security=tls&type=ws&host=ivory.qzz.io&path=%2F45.144.167.46%3A19816&sni=ivory.qzz.io#%5BTH%5D%20ReadyIDC%20Co%20Ltd%20Trojan
-vless://dbc9f5cb-4b00-4448-8f56-7e06cca20d70@ivory.qzz.io:443?encryption=none&security=tls&type=ws&host=ivory.qzz.io&path=%2F45.144.167.46%3A19816&sni=ivory.qzz.io#%5BTH%5D%20ReadyIDC%20Co%20Ltd%20VLESS
-ss://bm9uZTpkYmM5ZjVjYi00YjAwLTQ0NDgtOGY1Ni03ZTA2Y2NhMjBkNzA=@ivory.qzz.io:443/?plugin=v2ray-plugin%3Bmode%3Dwebsocket%3Btls%3Bmux%3D0%3Bhost%3Divory.qzz.io%3Bpath%3D45.144.167.46%3A19816#%5BTH%5D%20ReadyIDC%20Co%20Ltd%20SS
-trojan://dbc9f5cb-4b00-4448-8f56-7e06cca20d70@ivory.qzz.io:443?security=tls&type=ws&host=ivory.qzz.io&path=%2F45.154.26.81%3A2053&sni=ivory.qzz.io#%5BTH%5D%20ReadyIDC%20Co%20Ltd%20Trojan
-vless://dbc9f5cb-4b00-4448-8f56-7e06cca20d70@ivory.qzz.io:443?encryption=none&security=tls&type=ws&host=ivory.qzz.io&path=%2F45.154.26.81%3A2053&sni=ivory.qzz.io#%5BTH%5D%20ReadyIDC%20Co%20Ltd%20VLESS
-ss://bm9uZTpkYmM5ZjVjYi00YjAwLTQ0NDgtOGY1Ni03ZTA2Y2NhMjBkNzA=@ivory.qzz.io:443/?plugin=v2ray-plugin%3Bmode%3Dwebsocket%3Btls%3Bmux%3D0%3Bhost%3Divory.qzz.io%3Bpath%3D45.154.26.81%3A2053#%5BTH%5D%20ReadyIDC%20Co%20Ltd%20SS
-trojan://dbc9f5cb-4b00-4448-8f56-7e06cca20d70@ivory.qzz.io:443?security=tls&type=ws&host=ivory.qzz.io&path=%2F103.117.151.111%3A2053&sni=ivory.qzz.io#%5BTH%5D%20ReadyIDC%20COLTD%20Trojan
-vless://dbc9f5cb-4b00-4448-8f56-7e06cca20d70@ivory.qzz.io:443?encryption=none&security=tls&type=ws&host=ivory.qzz.io&path=%2F103.117.151.111%3A2053&sni=ivory.qzz.io#%5BTH%5D%20ReadyIDC%20COLTD%20VLESS
-ss://bm9uZTpkYmM5ZjVjYi00YjAwLTQ0NDgtOGY1Ni03ZTA2Y2NhMjBkNzA=@ivory.qzz.io:443/?plugin=v2ray-plugin%3Bmode%3Dwebsocket%3Btls%3Bmux%3D0%3Bhost%3Divory.qzz.io%3Bpath%3D103.117.151.111%3A2053#%5BTH%5D%20ReadyIDC%20COLTD%20SS
-trojan://dbc9f5cb-4b00-4448-8f56-7e06cca20d70@ivory.qzz.io:443?security=tls&type=ws&host=ivory.qzz.io&path=%2F171.103.164.62%3A30921&sni=ivory.qzz.io#%5BTH%5D%20True%20Internet%20Co%20Ltd%20Trojan
-vless://dbc9f5cb-4b00-4448-8f56-7e06cca20d70@ivory.qzz.io:443?encryption=none&security=tls&type=ws&host=ivory.qzz.io&path=%2F171.103.164.62%3A30921&sni=ivory.qzz.io#%5BTH%5D%20True%20Internet%20Co%20Ltd%20VLESS
-ss://bm9uZTpkYmM5ZjVjYi00YjAwLTQ0NDgtOGY1Ni03ZTA2Y2NhMjBkNzA=@ivory.qzz.io:443/?plugin=v2ray-plugin%3Bmode%3Dwebsocket%3Btls%3Bmux%3D0%3Bhost%3Divory.qzz.io%3Bpath%3D171.103.164.62%3A30921#%5BTH%5D%20True%20Internet%20Co%20Ltd%20SS
-trojan://dbc9f5cb-4b00-4448-8f56-7e06cca20d70@ivory.qzz.io:443?security=tls&type=ws&host=ivory.qzz.io&path=%2F103.99.11.193%3A2053&sni=ivory.qzz.io#%5BTH%5D%20ReadyIDC%20COLTD%20Trojan
-vless://dbc9f5cb-4b00-4448-8f56-7e06cca20d70@ivory.qzz.io:443?encryption=none&security=tls&type=ws&host=ivory.qzz.io&path=%2F103.99.11.193%3A2053&sni=ivory.qzz.io#%5BTH%5D%20ReadyIDC%20COLTD%20VLESS
-ss://bm9uZTpkYmM5ZjVjYi00YjAwLTQ0NDgtOGY1Ni03ZTA2Y2NhMjBkNzA=@ivory.qzz.io:443/?plugin=v2ray-plugin%3Bmode%3Dwebsocket%3Btls%3Bmux%3D0%3Bhost%3Divory.qzz.io%3Bpath%3D103.99.11.193%3A2053#%5BTH%5D%20ReadyIDC%20COLTD%20SS
+# Full Clash/OpenClash Config
+# Generated by AFRCloud Converter
+
+mixed-port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  enhanced-mode: redir-host
+  nameserver:
+    - 8.8.8.8
+    - 1.1.1.1
+
+proxies:
+  - name: "[TH] ReadyIDC Co Ltd VLESS"
+    type: vless
+    server: networkh.qzz.io
+    port: 443
+    uuid: 38f00322-6ea6-4cbe-83db-2a20defacd0f
+    tls: true
+    servername: networkh.qzz.io
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/45.154.26.81:8443"
+      headers:
+        Host: networkh.qzz.io
+
+  - name: "[TH] ReadyIDC COLTD VLESS"
+    type: vless
+    server: networkh.qzz.io
+    port: 443
+    uuid: 38f00322-6ea6-4cbe-83db-2a20defacd0f
+    tls: true
+    servername: networkh.qzz.io
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/199.21.175.187:8443"
+      headers:
+        Host: networkh.qzz.io
+
+  - name: "[TH] 6 COLLYER QUAY VLESS"
+    type: vless
+    server: networkh.qzz.io
+    port: 443
+    uuid: 38f00322-6ea6-4cbe-83db-2a20defacd0f
+    tls: true
+    servername: networkh.qzz.io
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/43.133.110.81:443"
+      headers:
+        Host: networkh.qzz.io
+
+  - name: "[TH] True Internet Co Ltd VLESS"
+    type: vless
+    server: networkh.qzz.io
+    port: 443
+    uuid: 38f00322-6ea6-4cbe-83db-2a20defacd0f
+    tls: true
+    servername: networkh.qzz.io
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/171.103.232.58:20475"
+      headers:
+        Host: networkh.qzz.io
+
+  - name: "[TH] Alibaba Cloud LLC VLESS"
+    type: vless
+    server: networkh.qzz.io
+    port: 443
+    uuid: 38f00322-6ea6-4cbe-83db-2a20defacd0f
+    tls: true
+    servername: networkh.qzz.io
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/47.81.9.160:443"
+      headers:
+        Host: networkh.qzz.io
+
+  - name: "[TH] ReadyIDC COLTD VLESS"
+    type: vless
+    server: networkh.qzz.io
+    port: 443
+    uuid: 38f00322-6ea6-4cbe-83db-2a20defacd0f
+    tls: true
+    servername: networkh.qzz.io
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/103.99.11.193:8443"
+      headers:
+        Host: networkh.qzz.io
+
+  - name: "[TH] True Internet Co Ltd VLESS"
+    type: vless
+    server: networkh.qzz.io
+    port: 443
+    uuid: 38f00322-6ea6-4cbe-83db-2a20defacd0f
+    tls: true
+    servername: networkh.qzz.io
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/171.103.164.62:30921"
+      headers:
+        Host: networkh.qzz.io
+
+  - name: "[TH] ReadyIDC Co Ltd VLESS"
+    type: vless
+    server: networkh.qzz.io
+    port: 443
+    uuid: 38f00322-6ea6-4cbe-83db-2a20defacd0f
+    tls: true
+    servername: networkh.qzz.io
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/45.144.167.46:19816"
+      headers:
+        Host: networkh.qzz.io
+
+  - name: "[TH] ReadyIDC COLTD VLESS"
+    type: vless
+    server: networkh.qzz.io
+    port: 443
+    uuid: 38f00322-6ea6-4cbe-83db-2a20defacd0f
+    tls: true
+    servername: networkh.qzz.io
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/103.99.11.193:2053"
+      headers:
+        Host: networkh.qzz.io
+
+  - name: "[TH] ReadyIDC COLTD VLESS"
+    type: vless
+    server: networkh.qzz.io
+    port: 443
+    uuid: 38f00322-6ea6-4cbe-83db-2a20defacd0f
+    tls: true
+    servername: networkh.qzz.io
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/103.117.151.111:2053"
+      headers:
+        Host: networkh.qzz.io
+
+  - name: "[TH] ReadyIDC Co Ltd VLESS"
+    type: vless
+    server: networkh.qzz.io
+    port: 443
+    uuid: 38f00322-6ea6-4cbe-83db-2a20defacd0f
+    tls: true
+    servername: networkh.qzz.io
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/45.154.26.81:2053"
+      headers:
+        Host: networkh.qzz.io
+
+
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - "[TH] ReadyIDC Co Ltd VLESS"
+      - "[TH] ReadyIDC COLTD VLESS"
+      - "[TH] 6 COLLYER QUAY VLESS"
+      - "[TH] True Internet Co Ltd VLESS"
+      - "[TH] Alibaba Cloud LLC VLESS"
+      - "[TH] ReadyIDC COLTD VLESS"
+      - "[TH] True Internet Co Ltd VLESS"
+      - "[TH] ReadyIDC Co Ltd VLESS"
+      - "[TH] ReadyIDC COLTD VLESS"
+      - "[TH] ReadyIDC COLTD VLESS"
+      - "[TH] ReadyIDC Co Ltd VLESS"
+
+  - name: "Best-Ping"
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - "[TH] ReadyIDC Co Ltd VLESS"
+      - "[TH] ReadyIDC COLTD VLESS"
+      - "[TH] 6 COLLYER QUAY VLESS"
+      - "[TH] True Internet Co Ltd VLESS"
+      - "[TH] Alibaba Cloud LLC VLESS"
+      - "[TH] ReadyIDC COLTD VLESS"
+      - "[TH] True Internet Co Ltd VLESS"
+      - "[TH] ReadyIDC Co Ltd VLESS"
+      - "[TH] ReadyIDC COLTD VLESS"
+      - "[TH] ReadyIDC COLTD VLESS"
+      - "[TH] ReadyIDC Co Ltd VLESS"
+
+  - name: "Fallback"
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - "[TH] ReadyIDC Co Ltd VLESS"
+      - "[TH] ReadyIDC COLTD VLESS"
+      - "[TH] 6 COLLYER QUAY VLESS"
+      - "[TH] True Internet Co Ltd VLESS"
+      - "[TH] Alibaba Cloud LLC VLESS"
+      - "[TH] ReadyIDC COLTD VLESS"
+      - "[TH] True Internet Co Ltd VLESS"
+      - "[TH] ReadyIDC Co Ltd VLESS"
+      - "[TH] ReadyIDC COLTD VLESS"
+      - "[TH] ReadyIDC COLTD VLESS"
+      - "[TH] ReadyIDC Co Ltd VLESS"
+
+rules:
+  - MATCH,PROXY
