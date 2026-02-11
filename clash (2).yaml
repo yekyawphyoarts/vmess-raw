@@ -1,0 +1,7376 @@
+mixed-port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+
+proxies:
+  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Falkenstein🅿️ping:29.64ms"
+    type: vless
+    server: 91.107.179.39
+    port: 22595
+    uuid: 0ac82530-7efa-4df0-9c95-1643aff9256f
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇳🇱®️The Netherlands©️Amsterdam (Amsterdam-Zuidoost)🅿️ping:22.03ms"
+    type: vless
+    server: 188.42.89.138
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: true
+    servername: sni.111000.indevs.in
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 188.42.89.138
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇼®️Curacao©️Willemstad🅿️ping:22.64ms"
+    type: vless
+    server: 62.72.166.138
+    port: 2096
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: true
+    servername: sni.111000.indevs.in
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 62.72.166.138
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.85ms"
+    type: vless
+    server: 104.16.91.38
+    port: 443
+    uuid: dd6af632-e4bb-400a-922f-43f75ec89d64
+    tls: true
+    servername: api-tr.nping.ir
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.75ms"
+    type: vless
+    server: 162.159.198.189
+    port: 443
+    uuid: dd6af632-e4bb-400a-922f-43f75ec89d64
+    tls: true
+    servername: api-pl.serx.ir
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.73ms"
+    type: vless
+    server: 104.25.255.94
+    port: 443
+    uuid: dd6af632-e4bb-400a-922f-43f75ec89d64
+    tls: true
+    servername: api-uk.nping.ir
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:44.8ms"
+    type: vless
+    server: pay.golnar-clod.ir
+    port: 44823
+    uuid: b7441e96-af94-4339-8538-57620c058a7a
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇯🇵®️Japan©️Osaka🅿️ping:270.03ms"
+    type: trojan
+    server: 202.181.103.246
+    port: 3076
+    password: 5fb072e0ddd631cf66cf752b09210480
+    sni: www.nintendogames.net
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇹🇷®️Turkey©️Bahçelievler🅿️ping:81.26ms"
+    type: vless
+    server: ash-peak.vm.twilightparadox.com
+    port: 2010
+    uuid: 3b725c8f-4555-4442-9295-fd733a9cd9d9
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehrān🅿️ping:128.19ms"
+    type: vless
+    server: u.takspeed.shop
+    port: 2086
+    uuid: 1332320d-7153-4bb1-9e87-6a57c661a576
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: u.takspeed.shop
+
+  - name: "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehrān (District 19)🅿️ping:1136.08ms"
+    type: vless
+    server: vip-mega-vpnmga.megachatio.ir
+    port: 24503
+    uuid: 2e594596-b59a-45ad-8b17-af0a245dacf2
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,"
+      headers:
+        Host: vip-mega-vpnmga.megachatio.ir
+
+  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:22.1ms"
+    type: trojan
+    server: 3.122.189.42
+    port: 22222
+    password: telegram-id-privatevpns
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:22.66ms"
+    type: vless
+    server: 3.122.189.42
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    servername: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+      headers:
+        Host: 3.122.189.42
+
+  - name: "👉🆔@v2ray_configs_pool📡🇰🇿®️Kazakhstan©️Ust-Kamenogorsk🅿️ping:101.76ms"
+    type: ss
+    server: 31.3.209.106
+    port: 46551?
+    cipher: chacha20-ietf-poly1305
+    password: Inv114dp2zk9ZbYFPpdQf4
+
+  - name: "👉🆔@v2ray_configs_pool📡🇹🇷®️Turkey©️Istanbul🅿️ping:78.56ms"
+    type: ss
+    server: 62.60.233.226
+    port: 62763
+    cipher: chacha20-ietf-poly1305
+    password: yRdxvK32gcKq8xxNguwU99
+
+  - name: "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehrān🅿️ping:220.61ms"
+    type: vless
+    server: software.aminv.ir
+    port: 
+    uuid: 90a37a2a-ddfb-4088-b6c6-b197feecae4e
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:44.95ms"
+    type: vless
+    server: v1.dabache.top
+    port: 2096
+    uuid: 686c62d9-17a7-43c9-a40a-f6747df60a9f
+    tls: true
+    servername: ca.adobe-connect.top
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ca.adobe-connect.top
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:44.95ms"
+    type: ss
+    server: v1.dabache.top
+    port: 2096?encryption=none&security=tls&sni=ca.adobe-connect.top&fp=chrome&allowInsecure=1&type=ws&host=ca.adobe-connect.top&path=%2F
+    cipher: 686c62d9-17a7-43c9-a40a-f6747df60a9f
+    password: undefined
+
+  - name: "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehran (District 7)🅿️ping:106.25ms"
+    type: vless
+    server: 78.157.42.130
+    port: 25085
+    uuid: ffba891f-1e57-4f5f-9325-340e8cc3204c
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 78.157.42.130
+
+  - name: "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehran (District 7)🅿️ping:106.25ms"
+    type: ss
+    server: 78.157.42.130
+    port: 25085?encryption=none&security=none&type=ws&path=%2F
+    cipher: ffba891f-1e57-4f5f-9325-340e8cc3204c
+    password: undefined
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.98ms"
+    type: vless
+    server: 172.64.152.23
+    port: 443
+    uuid: 38cd2307-6a10-49d4-a142-f7044742f2af
+    tls: true
+    servername: api-de2.nping.ir
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.98ms"
+    type: ss
+    server: 172.64.152.23
+    port: 443?mode=auto&path=%2Fv1%2Fapi%2Fsync%2Ff47ac10b58cc4372a5670e02b2c3d479&security=tls&alpn=h2&encryption=none&fp=chrome&type=xhttp&sni=api-de2.nping.ir
+    cipher: 38cd2307-6a10-49d4-a142-f7044742f2af
+    password: undefined
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:44.52ms"
+    type: vless
+    server: f1.springpaatogh8.store
+    port: 2087
+    uuid: 41c55d8d-44dd-4437-90ff-4c1eb869a67c
+    tls: true
+    servername: digikala.sorza.ir
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: gamepc.sorza.ir
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:44.52ms"
+    type: ss
+    server: f1.springpaatogh8.store
+    port: 2087?encryption=none&security=tls&sni=digikala.sorza.ir&fp=chrome&type=ws&host=gamepc.sorza.ir&path=%2F
+    cipher: 41c55d8d-44dd-4437-90ff-4c1eb869a67c
+    password: undefined
+
+  - name: "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️New York🅿️ping:47.34ms"
+    type: vless
+    server: belnn.appleseraj.ir
+    port: 2053
+    uuid: d1155be6-af0f-4f93-a20d-8dda3b32b722
+    tls: true
+    servername: chez-zzn.appleseraj.ir
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: chez-zzn.appleseraj.ir
+
+  - name: "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️New York🅿️ping:47.34ms"
+    type: ss
+    server: belnn.appleseraj.ir
+    port: 2053?path=%2F%3Fed%3D2048&security=tls&encryption=none&insecure=0&host=chez-zzn.appleseraj.ir&fp=chrome&type=ws&allowInsecure=0&sni=chez-zzn.appleseraj.ir
+    cipher: d1155be6-af0f-4f93-a20d-8dda3b32b722
+    password: undefined
+
+  - name: "👉🆔@v2ray_configs_pool📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:28.18ms"
+    type: vless
+    server: 172.239.240.91
+    port: 46240
+    uuid: 2762ce23-74a4-4673-a0f1-2387c1b6cf68
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:22.09ms"
+    type: vless
+    server: 172.66.128.70
+    port: 
+    uuid: 4c97ec3e-3527-48c5-80ff-b715463896ba
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed"
+      headers:
+        Host: kIndhEArTeD-PARkb5Rjo2juEr.sPorTLaNd.COMpAny.
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:22.1ms"
+    type: vless
+    server: 104.17.147.22
+    port: 443
+    uuid: c4b3fb2b-6ea0-4825-82d0-e315a0898f46
+    tls: true
+    servername: dec.ketabv.ir
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/sy5RZsmo3iYVIROnda#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night---#TELEGRAM-anotherme_night"
+      headers:
+        Host: dec.ketabv.ir
+
+  - name: "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Denver🅿️ping:21.27ms"
+    type: vless
+    server: 151.101.25.242
+    port: 
+    uuid: 505997ba-cbdb-466e-a3ad-69c6a4553b38
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/containers/fi"
+      headers:
+        Host: pizzabama.global.ssl.fastly.net
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:44.48ms"
+    type: vless
+    server: f1.springpaatogh8.store
+    port: 8443
+    uuid: b40567e1-99da-4892-aa29-64008cd107e8
+    tls: true
+    servername: digikala.sorza.ir
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: takken.sorza.ir
+
+  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Limburg an der Lahn🅿️ping:101.01ms"
+    type: vless
+    server: 135.125.174.103
+    port: 37928
+    uuid: 88181007-9bb3-4e6c-826d-4400b191b8d7
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehrān🅿️ping:446.69ms"
+    type: vless
+    server: ts1.zepshop.shop
+    port: 24823
+    uuid: c0653adf-1f56-4d2f-ba7d-f7ab27d04cf3
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehran🅿️ping:132.38ms"
+    type: vless
+    server: mm.helg.ir
+    port: 31466
+    uuid: ccc31dce-be31-4609-8e8f-6c06c77f49f6
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehran🅿️ping:132.38ms"
+    type: vless
+    server: mm.helg.ir
+    port: 31466
+    uuid: ccc31dce-be31-4609-8e8f-6c06c77f49f6
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇫🇷®️France©️Roubaix🅿️ping:34.45ms"
+    type: ss
+    server: 57.131.42.19
+    port: 8389
+    cipher: 2022-blake3-aes-256-gcm
+    password: et1sgh1iQaWzsw201JX2eexN1Ai6QmIGcZIlvlC5L54=
+
+  - name: "👉🆔@v2ray_configs_pool📡🇫🇷®️France©️Roubaix🅿️ping:32.4ms"
+    type: ss
+    server: 57.131.42.19
+    port: 8390
+    cipher: 2022-blake3-aes-256-gcm
+    password: et1sgh1iQaWzsw201JX2eexN1Ai6QmIGcZIlvlC5L54=
+
+  - name: "👉🆔@v2ray_configs_pool📡🇷🇺®️Russia©️Moscow🅿️ping:98.09ms"
+    type: vless
+    server: 37.139.33.57
+    port: 8443
+    uuid: eb4234b2-8083-4038-af1d-ae752b4ad6d4
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇷🇺®️Russia©️Moscow🅿️ping:118.12ms"
+    type: vless
+    server: 212.111.84.82
+    port: 8443
+    uuid: 3c5c4ccc-b502-42cb-8c42-cfa714db4767
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Denver🅿️ping:21.54ms"
+    type: vless
+    server: 140.248.128.0
+    port: 
+    uuid: d4c244cd-fb79-478a-be50-7ea889491270
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.85ms"
+    type: vless
+    server: 104.17.73.206
+    port: 443
+    uuid: 3321a819-889d-40b3-b8fa-f34208827ef1
+    tls: true
+    servername: o00o.snip.qzz.io
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/Tel-@V2rayAlpha"
+      headers:
+        Host: o00o.snip.qzz.io
+
+  - name: "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Secaucus🅿️ping:131.17ms"
+    type: vless
+    server: yesok42v2.ip4exordir.shop
+    port: 8880
+    uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.86ms"
+    type: trojan
+    server: 104.21.40.34
+    port: 443
+    password: humanity
+    sni: www.gossipglove.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.gossipglove.com
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.78ms"
+    type: vless
+    server: 188.114.98.0
+    port: 443
+    uuid: fef4a93d-eb4f-4657-b56b-32a0dc060045
+    tls: true
+    servername: dev.twistsparrow.xyz
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 188.114.98.0
+
+  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Limburg an der Lahn🅿️ping:48.07ms"
+    type: vless
+    server: wolfa21.timevip.ir
+    port: 8080
+    uuid: 639355ae-d9ef-4470-aa8a-8154f637cf52
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Secaucus🅿️ping:105.34ms"
+    type: vless
+    server: 199.119.137.95
+    port: 2053
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: true
+    servername: sni.111000.indevs.in
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed"
+      headers:
+        Host: sni.111000.indevs.in
+
+  - name: "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehran🅿️ping:224.39ms"
+    type: vless
+    server: tun1-norbert.norbertvip-conf.site
+    port: 9900
+    uuid: 2fa7f6dc-1367-4b1e-bf59-865b90959ce8
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.98ms"
+    type: trojan
+    server: 172.64.152.23
+    port: 443
+    password: humanity
+    sni: www.creationlong.org
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.creationlong.org
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.98ms"
+    type: trojan
+    server: 172.64.152.23
+    port: 443
+    password: humanity
+    sni: www.calmlunch.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.calmlunch.com
+
+  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:22.27ms"
+    type: vless
+    server: 77.239.125.99
+    port: 443
+    uuid: b42f7955-3741-406f-b95a-ed7b051ae5aa
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:46.96ms"
+    type: vless
+    server: b2n.ir
+    port: 443
+    uuid: 3b725c8f-4555-4442-9295-fd733a9cd9d9
+    tls: true
+    servername: b2ncdn213142156116.reservedns.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=443"
+      headers:
+        Host: b2ncdn213142156116.reservedns.com
+
+  - name: "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehrān🅿️ping:104.51ms"
+    type: vless
+    server: 95.38.242.222
+    port: 8443
+    uuid: 85a33a63-4cd8-41fe-8e36-7495946f1e61
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:22.42ms"
+    type: trojan
+    server: 3.122.189.42
+    port: 22223
+    password: telegram-id-directvpn
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.85ms"
+    type: vmess
+    server: 104.19.47.223
+    port: 8443
+    uuid: 39135a39-e6ca-43df-a360-d859eea58d86
+    alterId: 0
+    cipher: auto
+    tls: true
+    servername: hk01.linkitnow.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: hk01.linkitnow.net
+
+  - name: "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️North Bergen🅿️ping:103.07ms"
+    type: vless
+    server: 137.184.218.169
+    port: 36925
+    uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Limburg an der Lahn🅿️ping:22.69ms"
+    type: vless
+    server: 57.129.53.182
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇬🇧®️United Kingdom©️Erith🅿️ping:60.4ms"
+    type: vless
+    server: va04.serverh1ub.ir
+    port: 8080
+    uuid: e3682df7-e8ec-4705-b5ef-3bbaa7007c94
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:250.21ms"
+    type: vless
+    server: v3.dabache.top
+    port: 443
+    uuid: 25577310-a767-4b2c-90c6-9fcf4bb387f0
+    tls: true
+    servername: fffb57cc.tacgne.pages.dev
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: fffb57cc.tacgne.pages.dev
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Montreal🅿️ping:43.86ms"
+    type: vless
+    server: perl.org
+    port: 
+    uuid: e3cb508f-4cd7-4f1b-8fd1-6d71cdb11429
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/site"
+      headers:
+        Host: perl.org
+
+  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:124.15ms"
+    type: vless
+    server: riali22.carpet-carpet-carped.ir
+    port: 2018
+    uuid: 352f047c-3176-4271-9bc6-3f7d33ee03c7
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:44.8ms"
+    type: vless
+    server: pay.golnar-clod.ir
+    port: 44823
+    uuid: b7441e96-af94-4339-8538-57620c058a7a
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇱🇹®️Lithuania©️Šiauliai🅿️ping:78.64ms"
+    type: vless
+    server: lt-cherry-01.com
+    port: 8443
+    uuid: ff6fb512-147d-419a-9672-e131133f7189
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehrān🅿️ping:128.19ms"
+    type: vless
+    server: u.takspeed.shop
+    port: 2086
+    uuid: 1332320d-7153-4bb1-9e87-6a57c661a576
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: u.takspeed.shop
+
+  - name: "👉🆔@v2ray_configs_pool📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:30.74ms"
+    type: ss
+    server: 82.38.31.61
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:44.42ms"
+    type: vless
+    server: ipbaz.ping-box.com
+    port: 443
+    uuid: e765eb5b-8442-40e3-9532-857ba5ececa7
+    tls: true
+    servername: vbox.ping-box.com
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.98ms"
+    type: trojan
+    server: 172.64.152.23
+    port: 443
+    password: humanity
+    sni: www.creationlong.org
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: 172.64.152.23
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.72ms"
+    type: vless
+    server: 104.20.1.252
+    port: 
+    uuid: 546e91b5-c33e-4b04-b20c-c0fc8f6d9d7f
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed"
+      headers:
+        Host: bIZARRe-CEntEryZCvddNcfJ.spORtLand.COmPANY.
+
+  - name: "👉🆔@v2ray_configs_pool📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:67.36ms"
+    type: vless
+    server: 5.35.36.39
+    port: 443
+    uuid: d5c895c8-e64c-5bc3-b56a-be9f760f8250
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehrān (District 19)🅿️ping:1136.08ms"
+    type: vless
+    server: vip-mega-vpnmga.megachatio.ir
+    port: 24503
+    uuid: 2e594596-b59a-45ad-8b17-af0a245dacf2
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,VPNMEGA1,"
+      headers:
+        Host: vip-mega-vpnmga.megachatio.ir
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.75ms"
+    type: vless
+    server: 104.18.32.47
+    port: 2083
+    uuid: 96d9bcb0-9ad2-48be-85a2-a9ab3a005261
+    tls: true
+    servername: ds1-mx-fn154-protection.iranlease.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ds1-mx-fn154-protection.iranlease.com
+
+  - name: "👉🆔@v2ray_configs_pool📡🇫🇮®️Finland©️Helsinki🅿️ping:52.21ms"
+    type: vless
+    server: 104.164.54.211
+    port: 443
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: true
+    servername: sni.111000.indevs.in
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&Telegram🟢Ṭelegram"@Filtering2020""
+      headers:
+        Host: sni.111000.indevs.in
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.78ms"
+    type: vless
+    server: 188.114.98.0
+    port: 443
+    uuid: fef4a93d-eb4f-4657-b56b-32a0dc060045
+    tls: true
+    servername: dev.twistsparrow.xyz
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=512&/Join-V2rayTun0-Join-V2rayTun0-Join-V2rayTun0-Join-V2rayTun0-Join-V2rayTun0-Join-V2rayTun0-Join-V2rayTun0-Join-V2rayTun0-"
+      headers:
+        Host: dev.twistsparrow.xyz
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:53.85ms"
+    type: vless
+    server: cosmin.ns.cloudflare.com
+    port: 2096
+    uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+    tls: true
+    servername: hetz.x-smm.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/45.76.183.217=49292"
+      headers:
+        Host: hetz.x-smm.com
+
+  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:22.27ms"
+    type: vless
+    server: 77.239.125.99
+    port: 443
+    uuid: b42f7955-3741-406f-b95a-ed7b051ae5aa
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.75ms"
+    type: vless
+    server: 162.159.198.189
+    port: 443
+    uuid: dd6af632-e4bb-400a-922f-43f75ec89d64
+    tls: true
+    servername: api-pl.serx.ir
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️New York🅿️ping:47.34ms"
+    type: vless
+    server: belnn.appleseraj.ir
+    port: 2053
+    uuid: d1155be6-af0f-4f93-a20d-8dda3b32b722
+    tls: true
+    servername: chez-zzn.appleseraj.ir
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: chez-zzn.appleseraj.ir
+
+  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:22.66ms"
+    type: vless
+    server: 3.122.189.42
+    port: 22224
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    servername: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/telegram-channel-vlessconfig"
+      headers:
+        Host: 3.122.189.42
+
+  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:22.1ms"
+    type: trojan
+    server: 3.122.189.42
+    port: 22222
+    password: telegram-id-privatevpns
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Düsseldorf🅿️ping:112.4ms"
+    type: ss
+    server: 38.242.222.183
+    port: 11201
+    cipher: chacha20-ietf-poly1305
+    password: 52671647af0cffa0
+
+  - name: "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehran🅿️ping:217.97ms"
+    type: vless
+    server: pol2.creativelife.monster
+    port: 37962
+    uuid: 04aa339a-b1ad-4b5c-8894-165d859730eb
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:46.86ms"
+    type: vless
+    server: workers.dev
+    port: 443
+    uuid: 0c17306d-9a51-481b-91c9-79235cd21026
+    tls: true
+    servername: cf-xray-proxy.t-me-forensic.workers.dev
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: cf-xray-proxy.t-me-forensic.workers.dev
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:46.86ms"
+    type: vless
+    server: workers.dev
+    port: 443
+    uuid: 0c17306d-9a51-481b-91c9-79235cd21026
+    tls: true
+    servername: workers.dev
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:124.15ms"
+    type: vless
+    server: riali22.carpet-carpet-carped.ir
+    port: 2018
+    uuid: 352f047c-3176-4271-9bc6-3f7d33ee03c7
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:22.32ms"
+    type: vless
+    server: 20.79.160.49
+    port: 443
+    uuid: jina
+    tls: true
+    servername: jina-207916049-direct.yektanet.co
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Secaucus🅿️ping:131.17ms"
+    type: vless
+    server: yesok42v2.ip4exordir.shop
+    port: 8880
+    uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.86ms"
+    type: trojan
+    server: 104.21.40.34
+    port: 443
+    password: humanity
+    sni: www.gossipglove.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.gossipglove.com
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.78ms"
+    type: vless
+    server: 188.114.98.0
+    port: 443
+    uuid: fef4a93d-eb4f-4657-b56b-32a0dc060045
+    tls: true
+    servername: dev.twistsparrow.xyz
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 188.114.98.0
+
+  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Limburg an der Lahn🅿️ping:48.07ms"
+    type: vless
+    server: wolfa21.timevip.ir
+    port: 8080
+    uuid: 639355ae-d9ef-4470-aa8a-8154f637cf52
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Secaucus🅿️ping:105.34ms"
+    type: vless
+    server: 199.119.137.95
+    port: 2053
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: true
+    servername: sni.111000.indevs.in
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed"
+      headers:
+        Host: sni.111000.indevs.in
+
+  - name: "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehran🅿️ping:224.39ms"
+    type: vless
+    server: tun1-norbert.norbertvip-conf.site
+    port: 9900
+    uuid: 2fa7f6dc-1367-4b1e-bf59-865b90959ce8
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.98ms"
+    type: trojan
+    server: 172.64.152.23
+    port: 443
+    password: humanity
+    sni: www.creationlong.org
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.creationlong.org
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.98ms"
+    type: trojan
+    server: 172.64.152.23
+    port: 443
+    password: humanity
+    sni: www.calmlunch.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.calmlunch.com
+
+  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Limburg an der Lahn🅿️ping:45.43ms"
+    type: vless
+    server: wolfb04.serverp1anel.ir
+    port: 8080
+    uuid: 61076cc8-6d63-4dbf-80b9-6c6d70f934ab
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.86ms"
+    type: vless
+    server: 104.21.40.34
+    port: 443
+    uuid: fef4a93d-eb4f-4657-b56b-32a0dc060045
+    tls: true
+    servername: dev.twistsparrow.xyz
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: dev.twistsparrow.xyz
+
+  - name: "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehrān🅿️ping:128.19ms"
+    type: vless
+    server: u.takspeed.shop
+    port: 2086
+    uuid: 1332320d-7153-4bb1-9e87-6a57c661a576
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: u.takspeed.shop
+
+  - name: "👉🆔@v2ray_configs_pool📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:52.05ms"
+    type: vless
+    server: netherland.boot-lee.ru
+    port: 8443
+    uuid: 05dc09d5-5c56-454b-a34e-6ef743d91e1a
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles🅿️ping:53.85ms"
+    type: vless
+    server: cosmin.ns.cloudflare.com
+    port: 2096
+    uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+    tls: true
+    servername: hetz.x-smm.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/45.76.183.217=49292"
+      headers:
+        Host: hetz.x-smm.com
+
+  - name: "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehrān🅿️ping:141.56ms"
+    type: vless
+    server: cdnirs207.b2n.ir.nic.stp.debian.org.ubuntu.ir.reservedns.website
+    port: 1095
+    uuid: 3b725c8f-4555-4442-9295-fd733a9cd9d9
+    tls: false
+    skip-cert-verify: true
+
+  - name: "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:44.42ms"
+    type: vless
+    server: ipbaz.ping-box.com
+    port: 443
+    uuid: fef4a93d-eb4f-4657-b56b-32a0dc060045
+    tls: true
+    servername: dev.twistsparrow.xyz
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: dev.twistsparrow.xyz
+
+  - name: "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Limburg an der Lahn🅿️ping:101.01ms"
+    type: vless
+    server: 135.125.174.103
+    port: 37928
+    uuid: 88181007-9bb3-4e6c-826d-4400b191b8d7
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 5.35.34.117
+    port: 8443
+    uuid: 161f6660-1e6b-44a6-8a3b-e2cbd0eb4dfa
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 144.31.131.161
+    port: 8443
+    uuid: 2dd1a15d-1426-413a-a3b8-a645788bc844
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 80.211.141.133
+    port: 1002
+    uuid: 39802a7f-3d9f-496f-9baa-59c09a126ade
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 185.40.152.181
+    port: 443
+    uuid: 2dd1a15d-1426-413a-a3b8-a645788bc844
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 89.169.128.105
+    port: 8443
+    uuid: a0d5c9d6-a64b-42d5-aba4-144b51259aaf
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 51.250.71.78
+    port: 443
+    uuid: 96ae25e6-b8f8-49cd-bf17-7ce2f04e64c2
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 212.111.85.175
+    port: 8443
+    uuid: fc9ebd1d-dc9a-46af-917e-919ac7eacbd2
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 89.169.128.105
+    port: 443
+    uuid: a0d5c9d6-a64b-42d5-aba4-144b51259aaf
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 185.40.152.116
+    port: 443
+    uuid: 2dd1a15d-1426-413a-a3b8-a645788bc844
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 109.120.191.248
+    port: 8443
+    uuid: 2dd1a15d-1426-413a-a3b8-a645788bc844
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 51.250.91.154
+    port: 8443
+    uuid: 2dd1a15d-1426-413a-a3b8-a645788bc844
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 178.154.253.80
+    port: 443
+    uuid: a0d5c9d6-a64b-42d5-aba4-144b51259aaf
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 79.127.133.79
+    port: 8443
+    uuid: 5ac98ff9-c465-4dae-aa67-7b91de454029
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: u1.mizulina.top
+    port: 22231
+    uuid: 2ad04efa-d18a-442b-875f-48d12e11d822
+    tls: true
+    servername: u1.mizulina.top
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 185.21.12.53
+    port: 8443
+    uuid: 161f6660-1e6b-44a6-8a3b-e2cbd0eb4dfa
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 77.105.138.46
+    port: 8443
+    uuid: 161f6660-1e6b-44a6-8a3b-e2cbd0eb4dfa
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 45.136.56.23
+    port: 8104
+    uuid: 2a000c72-1fae-4449-a647-b3bf0e1dfbd0
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 31.56.240.77
+    port: 8104
+    uuid: 2a000c72-1fae-4449-a647-b3bf0e1dfbd0
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 91.246.41.101
+    port: 8443
+    uuid: 161f6660-1e6b-44a6-8a3b-e2cbd0eb4dfa
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 77.238.237.152
+    port: 8443
+    uuid: 161f6660-1e6b-44a6-8a3b-e2cbd0eb4dfa
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 45.136.56.40
+    port: 8104
+    uuid: 2a000c72-1fae-4449-a647-b3bf0e1dfbd0
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 77.246.101.116
+    port: 8443
+    uuid: 161f6660-1e6b-44a6-8a3b-e2cbd0eb4dfa
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 158.160.195.177
+    port: 443
+    uuid: 96ae25e6-b8f8-49cd-bf17-7ce2f04e64c2
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 176.123.1.72
+    port: 8443
+    uuid: b6b5fd0d-06de-4a4c-a437-20842c1570de
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 84.201.157.100
+    port: 443
+    uuid: 52bb06f4-74a2-4ac6-a0b5-06f54d68cf83
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 195.133.81.45
+    port: 443
+    uuid: 95abaefc-7861-417a-81b7-166cb788ce1a
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 51.250.77.124
+    port: 5443
+    uuid: 2f30e444-7c67-4eb3-9829-dbd762cb3e71
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 212.34.132.171
+    port: 8443
+    uuid: 161f6660-1e6b-44a6-8a3b-e2cbd0eb4dfa
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 107.181.147.22
+    port: 443
+    uuid: e1df69ad-2351-4725-adc0-601bd7d8b8e7
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 84.201.157.100
+    port: 443
+    uuid: 4e1b0b8d-23f4-4f44-a80b-e6ae4b4af71e
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 89.149.243.177
+    port: 587
+    uuid: 65a1e22c-d37e-4b92-b6ca-1d09dcd1d441
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VMess"
+    type: vmess
+    server: 43.100.32.23
+    port: 443
+    uuid: 49dcf4b4-81eb-4fe2-91d3-86dc2e27ced5
+    alterId: 0
+    cipher: auto
+    tls: true
+    servername: n1747624280.lie5d.cyou
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: n1747624280.lie5d.cyou
+
+  - name: "VLESS"
+    type: vless
+    server: sausi.izumii.ir
+    port: 8080
+    uuid: 73130c36-8b0a-4f5a-865c-bf92c182c1a7
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: fi.ftp.arvan.digikalamag.top
+    port: 2020
+    uuid: 6114c870-0bca-48fc-b002-a3f0357c7e8b
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: op.mobileggatte.ir
+    port: 4558
+    uuid: dbbe163b-b446-45dd-97ca-6a0a0667a7c6
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VMess"
+    type: vmess
+    server: 162.19.248.238
+    port: 550
+    uuid: ede27a79-b039-490b-932c-495de4b68880
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: sausi.izumii.ir
+    port: 8080
+    uuid: 73130c36-8b0a-4f5a-865c-bf92c182c1a7
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VMess"
+    type: vmess
+    server: 162.19.248.238
+    port: 550
+    uuid: ede27a79-b039-490b-932c-495de4b68880
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: ftp.nl.digikala.kheyrienoor.ir
+    port: 50325
+    uuid: 6114c870-0bca-48fc-b002-a3f0357c7e8b
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: vim3.svhamrah.shop
+    port: 20582
+    uuid: 47c89f9a-8525-4a0a-93a7-346e367aa7ce
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VMess"
+    type: vmess
+    server: 165.140.216.141
+    port: 443
+    uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: tw.miopara.rest
+    port: 35960
+    uuid: beddd73b-ed90-4e76-8a30-492384220878
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 98.142.254.3
+    port: 25117
+    uuid: 582c84b9-25e9-48ae-826b-e1bdafca3730
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VMess"
+    type: vmess
+    server: 165.140.216.141
+    port: 443
+    uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 185.186.77.57
+    port: 4558
+    uuid: dbbe163b-b446-45dd-97ca-6a0a0667a7c6
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 94.101.191.177
+    port: 2086
+    uuid: 938f31f7-0766-4ef7-8aff-d522a41eebe6
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VMess"
+    type: vmess
+    server: 2.144.20.163
+    port: 8000
+    uuid: 04606530-1c12-11ef-9702-af2b24629606
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 172.64.152.23
+    port: 443
+    uuid: ffcfecc9-6713-4b14-886c-d18003909e06
+    tls: true
+    servername: KyKgXiDz0.HaTmAnBiYaInJaHa.cOm
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 172.64.152.23
+    port: 443
+    uuid: ffcfecc9-6713-4b14-886c-d18003909e06
+    tls: true
+    servername: HtWxZvMk0.HaTmAnBiYaInJaHa.cOm
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 172.64.152.23
+    port: 443
+    uuid: ffcfecc9-6713-4b14-886c-d18003909e06
+    tls: true
+    servername: GrCxHxTj0.HaTmAnBiYaInJaHa.cOm
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 172.64.152.23
+    port: 443
+    uuid: ffcfecc9-6713-4b14-886c-d18003909e06
+    tls: true
+    servername: GdIcGbDx0.HaTmAnBiYaInJaHa.cOm
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: cdn.sjdpictures.ir
+    port: 443
+    uuid: 32c257a1-f18c-42c7-860d-9cb0ead8b07c
+    tls: true
+    servername: delta090.qzz.io
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/146.56.99.255=56789"
+      headers:
+        Host: delta090.qzz.io
+
+  - name: "VLESS"
+    type: vless
+    server: ipts.spancloud.sbs
+    port: 8880
+    uuid: 1eca56b2-f52d-4f9c-af97-f92daeb3d408
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: ipts.spancloud.sbs
+    port: 8880
+    uuid: 1eca56b2-f52d-4f9c-af97-f92daeb3d408
+    tls: false
+    skip-cert-verify: true
+
+  - name: "Trojan"
+    type: trojan
+    server: 172.64.152.23
+    port: 443
+    password: humanity
+    sni: www.calmlunch.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.calmlunch.com
+
+  - name: "Trojan"
+    type: trojan
+    server: 172.64.152.23
+    port: 443
+    password: humanity
+    sni: www.calmlunch.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.calmlunch.com
+
+  - name: "Trojan"
+    type: trojan
+    server: 172.64.152.23
+    port: 443
+    password: humanity
+    sni: www.calmlunch.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.calmlunch.com
+
+  - name: "Trojan"
+    type: trojan
+    server: 172.64.152.23
+    port: 443
+    password: humanity
+    sni: www.creationlong.org
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.creationlong.org
+
+  - name: "VLESS"
+    type: vless
+    server: 172.64.152.23
+    port: 443
+    uuid: 0fb80493-c5e6-4ce1-ad46-b715521bc8d3
+    tls: true
+    servername: afsbconfessout.qzz.io
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/213.35.100.31=47112"
+      headers:
+        Host: afsbconfessout.qzz.io
+
+  - name: "VLESS"
+    type: vless
+    server: 172.64.152.23
+    port: 443
+    uuid: 32c257a1-f18c-42c7-860d-9cb0ead8b07c
+    tls: true
+    servername: dragonhost9.qzz.io
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/47.250.139.59=443"
+      headers:
+        Host: dragonhost9.qzz.io
+
+  - name: "VLESS"
+    type: vless
+    server: 172.64.152.23
+    port: 443
+    uuid: 0fb80493-c5e6-4ce1-ad46-b715521bc8d3
+    tls: true
+    servername: afsbconfessout.qzz.io
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/213.35.100.31=47112"
+      headers:
+        Host: afsbconfessout.qzz.io
+
+  - name: "Trojan"
+    type: trojan
+    server: 172.64.152.23
+    port: 443
+    password: humanity
+    sni: www.creationlong.org
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.creationlong.org
+
+  - name: "VLESS"
+    type: vless
+    server: 172.64.152.23
+    port: 443
+    uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
+    tls: true
+    servername: Dn3UdW4qIh.SmArTtEcHzAaL.iNfO
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: Dn3UdW4qIh.SmArTtEcHzAaL.iNfO
+
+  - name: "VMess"
+    type: vmess
+    server: 94.232.247.165
+    port: 45653
+    uuid: 9e91d19a-c73f-4276-adbc-b337c374259c
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 91.99.218.107
+    port: 36454
+    uuid: 98fb333c-3d84-4fa4-b1f7-1683b509f65a
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: ipc2.gptban.com
+    port: 443
+    uuid: 8aeaaf22-b700-495c-8ca3-391764e0e9ad
+    tls: true
+    servername: Dl3.ranGsarDI13.iR.
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 185.172.88.4
+    port: 22231
+    uuid: 2ad04efa-d18a-442b-875f-48d12e11d822
+    tls: true
+    servername: u1.mizulina.top
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 140.248.171.91
+    port: 
+    uuid: 2400fc58-dd95-41ac-a7a8-2fcf45fe44da
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: fdsgszd.global.ssl.fastly.net
+
+  - name: "VLESS"
+    type: vless
+    server: dm.gomarts.space
+    port: 
+    uuid: 95a9d042-8efb-4d8d-9bf3-cbd787338a2e
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: ipbaz.mehrmusic.info
+    port: 8443
+    uuid: 8778645c-141e-4694-bb70-a6531c4d8579
+    tls: true
+    servername: vbox.mehrmusic.info
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/mexer"
+      headers:
+        Host: vbox.mehrmusic.info
+
+  - name: "VLESS"
+    type: vless
+    server: 151.101.67.8
+    port: 
+    uuid: ad60044f-1e05-4714-b805-e13f908b6589
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: realr5.mediafilm.media
+    port: 8080
+    uuid: 999a10d2-60c6-4169-8300-1a1f4f033b2e
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: realr5.mediafilm.media
+
+  - name: "VLESS"
+    type: vless
+    server: ipc2.gptban.com
+    port: 443
+    uuid: 8aeaaf22-b700-495c-8ca3-391764e0e9ad
+    tls: true
+    servername: Dl3.ranGsarDI13.iR.
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: www.leaksfa.com
+    port: 443
+    uuid: 01fe3389-d841-4d17-bede-a04d963836f2
+    tls: true
+    servername: marzban.webdesignernew.info
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: www.leaksfa.com
+
+  - name: "VLESS"
+    type: vless
+    server: 47.82.2.59
+    port: 21011
+    uuid: 4a29d60e-b457-4490-c747-de0783bf841b
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: ses.zdshop.ir
+    port: 
+    uuid: f123cc85-1d6e-4528-bbb6-5b257475155a
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 151.101.64.223
+    port: 
+    uuid: 096fd959-ccb1-47c1-ad88-dde5f6284c08
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/Upload"
+      headers:
+        Host: Vipsi.com
+
+  - name: "VLESS"
+    type: vless
+    server: ip.newmehdi3.blog
+    port: 8880
+    uuid: 95a2c0cf-ae8e-4250-bb28-114cf23f7387
+    tls: false
+    skip-cert-verify: true
+
+  - name: "Trojan"
+    type: trojan
+    server: 172.64.152.23
+    port: 443
+    password: humanity
+    sni: www.gossipglove.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.gossipglove.com
+
+  - name: "VLESS"
+    type: vless
+    server: mpc.mobayandeh.top
+    port: 443
+    uuid: 7718721f-2975-4d82-bdcd-ad92bd1dd779
+    tls: true
+    servername: holcdn.wordperessweb.ir
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2082"
+      headers:
+        Host: holcdn.wordperessweb.ir
+
+  - name: "VLESS"
+    type: vless
+    server: 66.163.117.204
+    port: 1422
+    uuid: 59104543-64b9-48dd-9ba9-d2a0825e8b3b
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: neth.pingxbaz.com
+    port: 443
+    uuid: b3176e0b-ffaf-4e1b-fd8a-c073bcc4272d
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: st8.pmme5.top
+    port: 28443
+    uuid: 578a70d9-760a-4dc7-b926-882dc3a413ff
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: st8.pmme5.top
+    port: 28443
+    uuid: 578a70d9-760a-4dc7-b926-882dc3a413ff
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 194.76.18.25
+    port: 2053
+    uuid: c659ce22-0a02-4d75-8c89-58d99916b846
+    tls: true
+    servername: ir6.hnbyme.online
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ir6.hnbyme.online
+
+  - name: "VLESS"
+    type: vless
+    server: 157.173.127.233
+    port: 443
+    uuid: 17a6e953-8fac-428c-b86c-8585722b0b52
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 37.120.172.61
+    port: 22955
+    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 5.129.230.33
+    port: 4443
+    uuid: 96605f21-f706-45ae-8eeb-ec71efbca6a2
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 93.152.207.254
+    port: 45884
+    uuid: 57a5f6b3-ea58-4d4e-ad9c-a9830f148184
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 157.173.127.228
+    port: 443
+    uuid: d50f50ef-20ff-47a1-a922-f476c2b83eb4
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 213.155.28.92
+    port: 16140
+    uuid: a489c356-a51f-4da9-ae2b-87460e01d4f4
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: carrot.bitiboot.com
+    port: 443
+    uuid: d50f50ef-20ff-47a1-a922-f476c2b83eb4
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 159.195.41.69
+    port: 22955
+    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 63.141.128.1
+    port: 2053
+    uuid: 33a57acf-163f-4cdd-8b23-cc52a58f2362
+    tls: true
+    servername: mrx.xher0.de
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/IfUknowThenUKnow"
+      headers:
+        Host: mrx.xher0.de
+
+  - name: "VLESS"
+    type: vless
+    server: 87.120.92.149
+    port: 48160
+    uuid: ed8770e9-6100-42a8-bda1-c8e79e4781cc
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 140.238.100.35
+    port: 40721
+    uuid: bf3e8944-8d26-47de-8748-b9aa74cce974
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: fi.ftp.arvan.digikalamag.top
+    port: 2020
+    uuid: 6114c870-0bca-48fc-b002-a3f0357c7e8b
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: it-ip.gameirani.com
+    port: 500
+    uuid: e6af2417-0a79-4521-aa2a-de1c2f105188
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 178.250.246.80
+    port: 1488
+    uuid: 00c49863-6d15-4289-9229-841ee5f7868c
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 146.185.208.160
+    port: 443
+    uuid: c38e6142-9223-47ef-84ce-2a84a308cafb
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 217.13.104.148
+    port: 443
+    uuid: c38e6142-9223-47ef-84ce-2a84a308cafb
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 185.135.86.134
+    port: 8080
+    uuid: 73130c36-8b0a-4f5a-865c-bf92c182c1a7
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 85.192.34.4
+    port: 4443
+    uuid: 178362e7-a635-4e79-9a87-5958ff9c529f
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 185.130.115.55
+    port: 443
+    uuid: c38e6142-9223-47ef-84ce-2a84a308cafb
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 95.163.208.119
+    port: 3443
+    uuid: 419ccc44-0a46-4461-a73f-2d6f44fecede
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 217.16.23.232
+    port: 3443
+    uuid: 178362e7-a635-4e79-9a87-5958ff9c529f
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 85.192.34.4
+    port: 3443
+    uuid: 178362e7-a635-4e79-9a87-5958ff9c529f
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 5.188.140.201
+    port: 4443
+    uuid: 419ccc44-0a46-4461-a73f-2d6f44fecede
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 109.120.188.214
+    port: 3443
+    uuid: 178362e7-a635-4e79-9a87-5958ff9c529f
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 95.163.208.119
+    port: 5443
+    uuid: 419ccc44-0a46-4461-a73f-2d6f44fecede
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 130.193.59.133
+    port: 51101
+    uuid: 24a75db7-e579-4ddc-b6e1-ebf30812728e
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 178.250.243.184
+    port: 443
+    uuid: 419ccc44-0a46-4461-a73f-2d6f44fecede
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 212.233.74.61
+    port: 443
+    uuid: 5cb19ea2-2840-413e-833a-601de074f354
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 212.233.73.212
+    port: 8443
+    uuid: 40680efc-7c06-4a5e-adca-c4ace315625a
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 178.154.253.80
+    port: 443
+    uuid: 40680efc-7c06-4a5e-adca-c4ace315625a
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 217.16.25.173
+    port: 443
+    uuid: 793d208f-19a3-4205-9a65-4e7ba67340e5
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 158.160.105.121
+    port: 51102
+    uuid: de2f3b23-95ff-44ea-944f-cce90f89c2d4
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 83.166.238.183
+    port: 8443
+    uuid: de2f3b23-95ff-44ea-944f-cce90f89c2d4
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 217.16.16.51
+    port: 5443
+    uuid: 10aa80cc-fb05-4855-aa8c-dce02f70cfc3
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 90.156.217.130
+    port: 8443
+    uuid: 6b5ba45c-3b88-466f-9ca5-3214ce1b1c16
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 109.120.188.214
+    port: 4443
+    uuid: 178362e7-a635-4e79-9a87-5958ff9c529f
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 84.23.52.70
+    port: 8443
+    uuid: 40680efc-7c06-4a5e-adca-c4ace315625a
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 178.154.253.80
+    port: 8443
+    uuid: 40680efc-7c06-4a5e-adca-c4ace315625a
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 87.239.106.153
+    port: 8443
+    uuid: 5bf5d40d-11ee-40c2-8b28-1c5ad387dd2f
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 89.208.222.191
+    port: 4443
+    uuid: 178362e7-a635-4e79-9a87-5958ff9c529f
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 89.169.128.105
+    port: 443
+    uuid: 40680efc-7c06-4a5e-adca-c4ace315625a
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 84.252.143.25
+    port: 8443
+    uuid: 5bf5d40d-11ee-40c2-8b28-1c5ad387dd2f
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 158.160.223.36
+    port: 443
+    uuid: 5bf5d40d-11ee-40c2-8b28-1c5ad387dd2f
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 37.139.33.57
+    port: 51101
+    uuid: 24a75db7-e579-4ddc-b6e1-ebf30812728e
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 158.160.105.121
+    port: 443
+    uuid: de2f3b23-95ff-44ea-944f-cce90f89c2d4
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 212.111.84.37
+    port: 8443
+    uuid: 0deffbc8-fb89-4e89-89f1-60e0b8ef79dd
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 87.239.110.251
+    port: 443
+    uuid: 0deffbc8-fb89-4e89-89f1-60e0b8ef79dd
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 130.193.59.133
+    port: 8443
+    uuid: 24a75db7-e579-4ddc-b6e1-ebf30812728e
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 107.181.147.22
+    port: 443
+    uuid: e1df69ad-2351-4725-adc0-601bd7d8b8e7
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 178.250.243.188
+    port: 443
+    uuid: 419ccc44-0a46-4461-a73f-2d6f44fecede
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 212.111.84.187
+    port: 8443
+    uuid: 09e71b35-edaf-483a-bbc8-de5829e7180c
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 107.181.151.39
+    port: 443
+    uuid: ff40696b-06d6-443b-9481-8d01eddd13e1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VMess"
+    type: vmess
+    server: 85.204.107.33
+    port: 110
+    uuid: 53e0eda6-2a9e-4a76-bd44-30e509f6350e
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: fox3.wizard2shop.org
+    port: 2083
+    uuid: 56e626c8-6396-4f81-a20f-3a84bc71164a
+    tls: true
+    servername: xiz30.wizard2shop.org
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: xiz30.wizard2shop.org
+
+  - name: "VLESS"
+    type: vless
+    server: mpc.mobayandeh.top
+    port: 443
+    uuid: 7718721f-2975-4d82-bdcd-ad92bd1dd779
+    tls: true
+    servername: holcdn.wordperessweb.ir
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2082"
+      headers:
+        Host: holcdn.wordperessweb.ir
+
+  - name: "VLESS"
+    type: vless
+    server: 151.101.206.133
+    port: 
+    uuid: 1cc40572-43d1-44a7-ad26-312fa7206997
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 151.101.192.223
+    port: 
+    uuid: 5eff824f-da00-4a9f-a6d0-1d8eaa0c37ae
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/containers/fi"
+      headers:
+        Host: goucci.io
+
+  - name: "VLESS"
+    type: vless
+    server: fastly.com
+    port: 
+    uuid: a1eba9ee-4f2d-4013-b16f-ef7f5198d2f1
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ClaWop.com
+
+  - name: "VLESS"
+    type: vless
+    server: please-am1.mimkiscx.ir
+    port: 2095
+    uuid: 27a3f4ec-94a5-4374-9549-e5bea94f77e2
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: ip.ali.lat
+    port: 2053
+    uuid: c4426a36-247f-4abf-bf4e-e9ea0ed01c32
+    tls: true
+    servername: temp.ali.lat
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: temp.ali.lat
+
+  - name: "VLESS"
+    type: vless
+    server: ip.ali.lat
+    port: 2053
+    uuid: c4426a36-247f-4abf-bf4e-e9ea0ed01c32
+    tls: true
+    servername: temp.ali.lat
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: temp.ali.lat
+
+  - name: "VLESS"
+    type: vless
+    server: cdn4.eswap.ir
+    port: 2087
+    uuid: 0a229011-1db0-4dd5-916e-e18c668b4e9e
+    tls: true
+    servername: ge.adamz.site
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/kos nane/khameneee/"
+      headers:
+        Host: ge.adamz.site
+
+  - name: "VLESS"
+    type: vless
+    server: fast.carpinosys.top
+    port: 
+    uuid: 56a86f79-93d6-4659-af7f-c27c686a9710
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: sps.blackhoster.com
+    port: 8080
+    uuid: 563c07c5-d7a7-4f67-abee-ca323b5ce0ba
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: pypi.org
+    port: 
+    uuid: 5eff824f-da00-4a9f-a6d0-1d8eaa0c37ae
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/containers/fi"
+      headers:
+        Host: goucci.io
+
+  - name: "VLESS"
+    type: vless
+    server: we.blackhoster.com
+    port: 678
+    uuid: 563c07c5-d7a7-4f67-abee-ca323b5ce0ba
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 151.101.3.19
+    port: 
+    uuid: 0b516cf6-cd76-470c-954d-9374d734f445
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/site"
+      headers:
+        Host: yalandonya.global.ssl.fastly.net
+
+  - name: "VLESS"
+    type: vless
+    server: mpc.mobayandeh.top
+    port: 443
+    uuid: 7718721f-2975-4d82-bdcd-ad92bd1dd779
+    tls: true
+    servername: holcdn.wordperessweb.ir
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2082"
+      headers:
+        Host: holcdn.wordperessweb.ir
+
+  - name: "VLESS"
+    type: vless
+    server: sps.blackhoster.com
+    port: 8080
+    uuid: 563c07c5-d7a7-4f67-abee-ca323b5ce0ba
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: python.org
+    port: 
+    uuid: a26bbed7-a286-4840-84bc-dc102c526777
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: fastly.com
+    port: 
+    uuid: a1eba9ee-4f2d-4013-b16f-ef7f5198d2f1
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ClaWop.com
+
+  - name: "VLESS"
+    type: vless
+    server: 151.101.206.133
+    port: 
+    uuid: 1cc40572-43d1-44a7-ad26-312fa7206997
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: python.org
+    port: 
+    uuid: 7449519c-e462-46e4-a143-519996d16d9b
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: please-am2.mimkiscx.ir
+    port: 2095
+    uuid: 27a3f4ec-94a5-4374-9549-e5bea94f77e2
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: fast.carpinosys.top
+    port: 
+    uuid: 56a86f79-93d6-4659-af7f-c27c686a9710
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: cdn.lamyr.site
+    port: 2095
+    uuid: a5b4ad19-bdad-4085-88d4-fc32cbdad5a5
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 151.101.64.203
+    port: 
+    uuid: 44af3fe4-9f23-4723-acc7-f0a0eac054c4
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: Xu8idkdndj.global.ssl.fastly.net
+
+  - name: "VLESS"
+    type: vless
+    server: fast.carpinosys.top
+    port: 
+    uuid: 56a86f79-93d6-4659-af7f-c27c686a9710
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: we.blackhoster.com
+    port: 678
+    uuid: 563c07c5-d7a7-4f67-abee-ca323b5ce0ba
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: sps.blackhoster.com
+    port: 8080
+    uuid: 563c07c5-d7a7-4f67-abee-ca323b5ce0ba
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: fastlymci.evayiran.ir
+    port: 
+    uuid: 0ffd8130-7a74-4bf3-b2f3-1f76cda19587
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: evay12.org
+
+  - name: "VLESS"
+    type: vless
+    server: st8.pmme5.top
+    port: 28443
+    uuid: 578a70d9-760a-4dc7-b926-882dc3a413ff
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: speedtest.net
+    port: 
+    uuid: a26bbed7-a286-4840-84bc-dc102c526777
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: ip.hostingfastly.reallyclody.ir
+    port: 
+    uuid: a09bff7c-c3c5-4915-9793-e236b3cfb098
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 151.101.66.219
+    port: 
+    uuid: 1d6a4595-2568-4262-a3fc-99270ef3f51f
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: cdn.sjdpictures.ir
+    port: 443
+    uuid: 32c257a1-f18c-42c7-860d-9cb0ead8b07c
+    tls: true
+    servername: delta090.qzz.io
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/146.56.99.255=56789"
+      headers:
+        Host: delta090.qzz.io
+
+  - name: "VLESS"
+    type: vless
+    server: iran.zone-server-irani.ir
+    port: 443
+    uuid: 0f1b6d8d-3f8c-4713-b32d-c94947083485
+    tls: true
+    servername: apexbhao1.qzz.io
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/43.218.77.16"
+      headers:
+        Host: apexbhao1.qzz.io
+
+  - name: "VLESS"
+    type: vless
+    server: 195.15.240.204
+    port: 8880
+    uuid: fc872856-d6fb-486e-8388-1082f7cdb469
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: 195.15.240.204
+
+  - name: "VLESS"
+    type: vless
+    server: dm.gomarts.space
+    port: 
+    uuid: 95a9d042-8efb-4d8d-9bf3-cbd787338a2e
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 91.201.65.220
+    port: 10004
+    uuid: 343cc844-f964-11f0-9840-00163e0951db
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/vpnjantit"
+      headers:
+        Host: 91.201.65.220
+
+  - name: "VMess"
+    type: vmess
+    server: 20.193.153.19
+    port: 15834
+    uuid: 39a8c374-76b1-4e90-ab85-85cd9a42ded2
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 23.81.33.155
+    port: 443
+    uuid: 429931ce-3632-414a-956d-383c6e580ac5
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: www.varzesh3.com
+
+  - name: "VLESS"
+    type: vless
+    server: beside.aftanone.com
+    port: 8443
+    uuid: MahsaNG-vpn-74777300
+    tls: true
+    servername: h9-9.digicala.online
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 66.81.247.155
+    port: 443
+    uuid: 4525c260-df3c-4f62-b8f1-f4f5f305694b
+    tls: true
+    servername: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+
+  - name: "VLESS"
+    type: vless
+    server: 188.114.96.3
+    port: 443
+    uuid: c249ca6f-1bde-479b-af96-da0e948a3800
+    tls: true
+    servername: zitel.digikala-aparat-zula.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/admin"
+      headers:
+        Host: zitel.digikala-aparat-zula.com
+
+  - name: "VLESS"
+    type: vless
+    server: 188.114.96.3
+    port: 443
+    uuid: 0fb80493-c5e6-4ce1-ad46-b715521bc8d3
+    tls: true
+    servername: afsbconfessout.qzz.io
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/213.35.100.31=47112"
+      headers:
+        Host: afsbconfessout.qzz.io
+
+  - name: "VLESS"
+    type: vless
+    server: 188.114.96.3
+    port: 443
+    uuid: fef4a93d-eb4f-4657-b56b-32a0dc060045
+    tls: true
+    servername: dev.twistsparrow.xyz
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: dev.twistsparrow.xyz
+
+  - name: "VLESS"
+    type: vless
+    server: 188.114.96.3
+    port: 443
+    uuid: c249ca6f-1bde-479b-af96-da0e948a3800
+    tls: true
+    servername: zitel.digikala-aparat-zula.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/admin"
+      headers:
+        Host: zitel.digikala-aparat-zula.com
+
+  - name: "Trojan"
+    type: trojan
+    server: mfyousheng.nl.eu.org
+    port: 443
+    password: Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q
+    sni: mfyousheng.nl.eu.org
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/tjwsLhx0SFASG4l9FERJ1g"
+      headers:
+        Host: mfyousheng.nl.eu.org
+
+  - name: "VLESS"
+    type: vless
+    server: 87.121.86.31
+    port: 57516
+    uuid: de2708c5-6e8e-4582-85ed-98f2554e5208
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: ru01.pugovkabooster.com
+    port: 443
+    uuid: 3cc4c358-1119-4851-9dbd-2356bf5d285c
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 188.253.26.39
+    port: 442
+    uuid: e929f51d-5a95-5432-b66f-cfe725ea1f61
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 172.67.249.36
+    port: 443
+    uuid: e4824193-4f54-453b-d037-88368e85ef0e
+    tls: true
+    servername: pqh30v5.carwashipdir.shop
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: t.ariyanln.com
+    port: 5154
+    uuid: efedb328-9a34-47aa-a55d-979504cf6a6b
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VMess"
+    type: vmess
+    server: 162.19.248.238
+    port: 550
+    uuid: ede27a79-b039-490b-932c-495de4b68880
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: neth.pingxbaz.com
+    port: 443
+    uuid: b3176e0b-ffaf-4e1b-fd8a-c073bcc4272d
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: mnext.pingstore.net
+    port: 8080
+    uuid: 9b79496c-89b9-4284-a2b2-345bf7d30ae7
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: namahdud4.gamepiu.com
+    port: 2421
+    uuid: 2128629e-8d7b-49be-906b-a79585ba1d63
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VMess"
+    type: vmess
+    server: 192.227.249.227
+    port: 27641
+    uuid: 3b134252-e7c2-43df-98b7-da204104aa79
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VMess"
+    type: vmess
+    server: RAWACOLA3.SALIVANTALIA.XYZ
+    port: 12457
+    uuid: b1f56d44-d866-471b-9979-fe4f828befd6
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 66.81.247.155
+    port: 443
+    uuid: 4525c260-df3c-4f62-b8f1-f4f5f305694b
+    tls: true
+    servername: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+
+  - name: "VLESS"
+    type: vless
+    server: 66.81.247.155
+    port: 443
+    uuid: 4525c260-df3c-4f62-b8f1-f4f5f305694b
+    tls: true
+    servername: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+
+  - name: "VLESS"
+    type: vless
+    server: 66.81.247.155
+    port: 443
+    uuid: 4525c260-df3c-4f62-b8f1-f4f5f305694b
+    tls: true
+    servername: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+
+  - name: "VLESS"
+    type: vless
+    server: mpc.mobayandeh.top
+    port: 443
+    uuid: 7718721f-2975-4d82-bdcd-ad92bd1dd779
+    tls: true
+    servername: holcdn.wordperessweb.ir
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2082"
+      headers:
+        Host: holcdn.wordperessweb.ir
+
+  - name: "VLESS"
+    type: vless
+    server: 172.238.111.21
+    port: 11332
+    uuid: ff4edd17-5a4b-41d4-e178-2dd60149b7f1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 172.238.111.21
+    port: 11332
+    uuid: ff4edd17-5a4b-41d4-e178-2dd60149b7f1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: carrot.bitiboot.com
+    port: 443
+    uuid: d50f50ef-20ff-47a1-a922-f476c2b83eb4
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 57.129.49.1
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: partners.dissertationhelpspecialist.com
+    port: 2025
+    uuid: 0df5fd44-45de-4ab3-8986-e734a207e062
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 159.195.40.128
+    port: 22955
+    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 62.210.91.2
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 137.184.218.169
+    port: 36925
+    uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 15.204.97.160
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 15.204.97.219
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 66.81.247.155
+    port: 443
+    uuid: 4525c260-df3c-4f62-b8f1-f4f5f305694b
+    tls: true
+    servername: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+
+  - name: "VLESS"
+    type: vless
+    server: 192.200.160.132
+    port: 8443
+    uuid: 4525c260-df3c-4f62-b8f1-f4f5f305694b
+    tls: true
+    servername: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+
+  - name: "VLESS"
+    type: vless
+    server: 66.81.247.155
+    port: 443
+    uuid: 4525c260-df3c-4f62-b8f1-f4f5f305694b
+    tls: true
+    servername: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+
+  - name: "VLESS"
+    type: vless
+    server: 66.81.247.155
+    port: 443
+    uuid: 4525c260-df3c-4f62-b8f1-f4f5f305694b
+    tls: true
+    servername: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+
+  - name: "VLESS"
+    type: vless
+    server: base.zdshop.ir
+    port: 2086
+    uuid: 79d0548a-0628-4e81-b4f9-b393b612659c
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2086"
+      headers:
+        Host: sjcahbjhdbfvksfhkvbhskkskhvbhfhkvbshksfbfvkhfbkhfbvkfskbvfr.certhost.ir
+
+  - name: "VLESS"
+    type: vless
+    server: 104.17.162.123
+    port: 8443
+    uuid: 83f03646-fb28-44cc-9d2c-8853f6c09285
+    tls: true
+    servername: r4fnviw9jl4i4rx.zjde5.de5.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=#TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512"
+      headers:
+        Host: r4fnviw9jl4i4rx.zjde5.de5.net
+
+  - name: "VLESS"
+    type: vless
+    server: 192.144.19.55
+    port: 8443
+    uuid: 83f03646-fb28-44cc-9d2c-8853f6c09285
+    tls: true
+    servername: r4fnviw9jl4i4rx.zjde5.de5.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=#TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512"
+      headers:
+        Host: r4fnviw9jl4i4rx.zjde5.de5.net
+
+  - name: "VLESS"
+    type: vless
+    server: dodo.pixoservers.com
+    port: 443
+    uuid: c16b6dec-d873-4271-9fb6-493285b195b0
+    tls: true
+    servername: pixoservers.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: uk-cdnws.pixoservers.com
+
+  - name: "VLESS"
+    type: vless
+    server: 66.81.247.155
+    port: 443
+    uuid: 4525c260-df3c-4f62-b8f1-f4f5f305694b
+    tls: true
+    servername: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+
+  - name: "VLESS"
+    type: vless
+    server: 66.81.247.155
+    port: 443
+    uuid: 4525c260-df3c-4f62-b8f1-f4f5f305694b
+    tls: true
+    servername: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+
+  - name: "VLESS"
+    type: vless
+    server: 95.163.208.119
+    port: 3443
+    uuid: 419ccc44-0a46-4461-a73f-2d6f44fecede
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 149.248.77.32
+    port: 443
+    uuid: 85d553d9-f726-4698-a94d-b6af6da817eb
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 130.193.59.133
+    port: 8443
+    uuid: 6b5ba45c-3b88-466f-9ca5-3214ce1b1c16
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 185.40.153.243
+    port: 3443
+    uuid: 302d137d-8bb7-4db2-83ab-02ea0ac38b7b
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 212.111.85.1
+    port: 443
+    uuid: 09e71b35-edaf-483a-bbc8-de5829e7180c
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 84.23.52.70
+    port: 443
+    uuid: a8165b7a-3e4f-44d0-ac9b-f648ec1cea95
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 158.160.105.121
+    port: 8443
+    uuid: 09e71b35-edaf-483a-bbc8-de5829e7180c
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 178.154.253.80
+    port: 8443
+    uuid: a8165b7a-3e4f-44d0-ac9b-f648ec1cea95
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 178.250.243.188
+    port: 443
+    uuid: 419ccc44-0a46-4461-a73f-2d6f44fecede
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 83.166.238.183
+    port: 443
+    uuid: 09e71b35-edaf-483a-bbc8-de5829e7180c
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 212.233.73.212
+    port: 443
+    uuid: a8165b7a-3e4f-44d0-ac9b-f648ec1cea95
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 178.154.253.80
+    port: 443
+    uuid: a8165b7a-3e4f-44d0-ac9b-f648ec1cea95
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 87.239.106.153
+    port: 8443
+    uuid: 8f146322-2c19-469c-96f2-6113105003af
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 84.23.52.70
+    port: 8443
+    uuid: a8165b7a-3e4f-44d0-ac9b-f648ec1cea95
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 89.169.128.105
+    port: 8443
+    uuid: a8165b7a-3e4f-44d0-ac9b-f648ec1cea95
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 212.111.84.82
+    port: 443
+    uuid: a8165b7a-3e4f-44d0-ac9b-f648ec1cea95
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VMess"
+    type: vmess
+    server: 162.159.152.4
+    port: 443
+    uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+    alterId: 0
+    cipher: auto
+    tls: true
+    servername: v2ray.codefyinc.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/vmessws"
+      headers:
+        Host: v2ray.codefyinc.com
+
+  - name: "VLESS"
+    type: vless
+    server: 89.169.128.105
+    port: 443
+    uuid: a8165b7a-3e4f-44d0-ac9b-f648ec1cea95
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 87.239.252.186
+    port: 443
+    uuid: 87f25004-a0d6-42df-aac0-915e21b035b5
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 83.166.238.183
+    port: 51102
+    uuid: 09e71b35-edaf-483a-bbc8-de5829e7180c
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 84.252.136.245
+    port: 443
+    uuid: 555971e7-001d-4bb5-abe5-3cf3508e74aa
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 84.252.143.25
+    port: 8443
+    uuid: 8f146322-2c19-469c-96f2-6113105003af
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 172.64.152.23
+    port: 443
+    uuid: e52f8898-768f-4ed8-b82c-88930d48b951
+    tls: true
+    servername: web.tond.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: web.tond.net
+
+  - name: "VLESS"
+    type: vless
+    server: 172.64.152.23
+    port: 443
+    uuid: e52f8898-768f-4ed8-b82c-88930d48b951
+    tls: true
+    servername: mil.tond.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: mil.tond.net
+
+  - name: "Trojan"
+    type: trojan
+    server: 172.64.152.23
+    port: 443
+    password: humanity
+    sni: www.gossipglove.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.gossipglove.com
+
+  - name: "VLESS"
+    type: vless
+    server: 66.81.247.155
+    port: 443
+    uuid: 4525c260-df3c-4f62-b8f1-f4f5f305694b
+    tls: true
+    servername: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed"
+      headers:
+        Host: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+
+  - name: "Trojan"
+    type: trojan
+    server: 172.64.152.23
+    port: 443
+    password: humanity
+    sni: www.gossipglove.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.gossipglove.com
+
+  - name: "VLESS"
+    type: vless
+    server: 172.64.152.23
+    port: 443
+    uuid: e52f8898-768f-4ed8-b82c-88930d48b951
+    tls: true
+    servername: hl.tond.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: hl.tond.net
+
+  - name: "VLESS"
+    type: vless
+    server: 172.64.152.23
+    port: 443
+    uuid: e52f8898-768f-4ed8-b82c-88930d48b951
+    tls: true
+    servername: gr.tond.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: gr.tond.net
+
+  - name: "VLESS"
+    type: vless
+    server: 172.64.152.23
+    port: 443
+    uuid: e52f8898-768f-4ed8-b82c-88930d48b951
+    tls: true
+    servername: fr.tond.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: fr.tond.net
+
+  - name: "VLESS"
+    type: vless
+    server: 192.144.19.55
+    port: 8443
+    uuid: 83f03646-fb28-44cc-9d2c-8853f6c09285
+    tls: true
+    servername: r4fnviw9jl4i4rx.zjde5.de5.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: r4fnviw9jl4i4rx.zjde5.de5.net
+
+  - name: "Trojan"
+    type: trojan
+    server: 104.18.32.47
+    port: 443
+    password: humanity
+    sni: www.gossipglove.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.gossipglove.com
+
+  - name: "VLESS"
+    type: vless
+    server: 172.64.152.23
+    port: 443
+    uuid: e52f8898-768f-4ed8-b82c-88930d48b951
+    tls: true
+    servername: mx.tond.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: mx.tond.net
+
+  - name: "VLESS"
+    type: vless
+    server: 104.17.162.123
+    port: 8443
+    uuid: 83f03646-fb28-44cc-9d2c-8853f6c09285
+    tls: true
+    servername: r4fnviw9jl4i4rx.zjde5.de5.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=#TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512"
+      headers:
+        Host: r4fnviw9jl4i4rx.zjde5.de5.net
+
+  - name: "VLESS"
+    type: vless
+    server: 66.81.247.155
+    port: 443
+    uuid: 4525c260-df3c-4f62-b8f1-f4f5f305694b
+    tls: true
+    servername: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+
+  - name: "VLESS"
+    type: vless
+    server: 216.24.57.250
+    port: 443
+    uuid: 9591b889-87d1-404e-8430-b4b26bdb85be
+    tls: true
+    servername: afrcloud1.mmv.kr
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/5.78.50.75=443"
+      headers:
+        Host: afrcloud1.mmv.kr
+
+  - name: "Trojan"
+    type: trojan
+    server: 216.24.57.250
+    port: 443
+    password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
+    sni: afrcloud1.mmv.kr
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/5.223.47.32=443"
+      headers:
+        Host: afrcloud1.mmv.kr
+
+  - name: "VLESS"
+    type: vless
+    server: 107.181.147.22
+    port: 443
+    uuid: e1df69ad-2351-4725-adc0-601bd7d8b8e7
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 107.181.151.39
+    port: 443
+    uuid: ff40696b-06d6-443b-9481-8d01eddd13e1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 70.34.222.94
+    port: 6005
+    uuid: 7213a36b-cbf9-4cfd-a4a7-b92207ac0172
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 195.238.126.169
+    port: 8080
+    uuid: 73130c36-8b0a-4f5a-865c-bf92c182c1a7
+    tls: false
+    skip-cert-verify: true
+
+  - name: "Trojan"
+    type: trojan
+    server: 172.64.152.23
+    port: 443
+    password: humanity
+    sni: www.calmlunch.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.calmlunch.com
+
+  - name: "VLESS"
+    type: vless
+    server: 104.17.74.206
+    port: 2053
+    uuid: c659ce22-0a02-4d75-8c89-58d99916b846
+    tls: true
+    servername: ir6.hnbyme.online
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ir6.hnbyme.online
+
+  - name: "VLESS"
+    type: vless
+    server: 188.166.159.141
+    port: 31212
+    uuid: 5bcc9ea0-b76c-4049-af62-ce10fe56a38b
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 94.131.101.91
+    port: 8443
+    uuid: 93a20fae-54f4-4e25-93ef-995b3e52fc04
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 69.84.182.68
+    port: 8880
+    uuid: 8e997404-cb62-4fa1-a8c9-c77a32f10153
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: rightel.IRANCEELL.mci.it.www.speedtest.net.zula.ir.focusontrade.ir
+
+  - name: "VLESS"
+    type: vless
+    server: 94.131.101.53
+    port: 8443
+    uuid: 4e93d99e-7540-4f4d-884f-63a3c4a845dd
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 94.131.101.153
+    port: 8443
+    uuid: 93a20fae-54f4-4e25-93ef-995b3e52fc04
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 172.67.249.36
+    port: 443
+    uuid: e4824193-4f54-453b-d037-88368e85ef0e
+    tls: true
+    servername: pqh30v5.carwashipdir.shop
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 8.6.112.0
+    port: 8880
+    uuid: 8e997404-cb62-4fa1-a8c9-c77a32f10153
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: rightel.IRANCEELL.mci.it.www.speedtest.net.zula.ir.focusontrade.ir
+
+  - name: "VLESS"
+    type: vless
+    server: 45.83.140.93
+    port: 8443
+    uuid: 93a20fae-54f4-4e25-93ef-995b3e52fc04
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 146.190.85.213
+    port: 45989
+    uuid: fa7ea4ac-1ed6-467a-ae18-2099ed2bb4ae
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 185.18.250.252
+    port: 2053
+    uuid: ec77b9ff-ba31-4b1d-8a81-ee9de133bcf0
+    tls: true
+    servername: ds2-mx-hel22-protection.iranlease.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: ds2-mx-hel22-protection.iranlease.com
+
+  - name: "VLESS"
+    type: vless
+    server: 94.131.101.115
+    port: 8443
+    uuid: 93a20fae-54f4-4e25-93ef-995b3e52fc04
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: 94.131.101.43
+    port: 8443
+    uuid: 93a20fae-54f4-4e25-93ef-995b3e52fc04
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: email.swiftraci.org
+    port: 443
+    uuid: f9830277-753f-481b-bb35-15e15a92acb0
+    tls: false
+    skip-cert-verify: true
+
+  - name: "VLESS"
+    type: vless
+    server: info.mattesaira.cc
+    port: 443
+    uuid: a2dd8d94-2513-429c-92b9-6834da570869
+    tls: false
+    skip-cert-verify: true
+
+  - name: "Trojan"
+    type: trojan
+    server: 95.179.184.71
+    port: 13345
+    password: Szb%3D-Zguo53QhmivcJqEAWtpdPX6Y
+    sni: infiniteinjera.semanticstrainer.click
+    skip-cert-verify: true
+
+  - name: "Trojan"
+    type: trojan
+    server: chatgpt.com
+    port: 443
+    password: humanity
+    sni: www.gossipglove.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.gossipglove.com
+
+  - name: "VLESS"
+    type: vless
+    server: de01.pugovkabooster.com
+    port: 443
+    uuid: 3cc4c358-1119-4851-9dbd-2356bf5d285c
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇷🇺@FREE2CONFIG "
+    type: vless
+    server: s32.buzzvpn.online
+    port: 8443
+    uuid: c0afdbe5-e506-4fd4-b838-6f9ee6fc3a5f
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇷🇺@FREE2CONFIG "
+    type: vless
+    server: 51.250.73.253
+    port: 8443
+    uuid: c0afdbe5-e506-4fd4-b838-6f9ee6fc3a5f
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇫🇷@FREE2CONFIG "
+    type: vless
+    server: 51.83.43.151
+    port: 8080
+    uuid: 5d0e6695-6c63-4168-b5e5-2a73ea86b1b1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 178.154.240.238
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇷🇺@FREE2CONFIG "
+    type: vless
+    server: 51.250.73.253
+    port: 8443
+    uuid: c0afdbe5-e506-4fd4-b838-6f9ee6fc3a5f
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇧🇪@FREE2CONFIG "
+    type: vless
+    server: 178.154.220.163
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇧🇪@FREE2CONFIG "
+    type: vless
+    server: 178.154.220.169
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 178.154.240.238
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇧🇪@FREE2CONFIG "
+    type: vless
+    server: 178.154.220.163
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 178.154.240.238
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 178.154.220.169
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇧🇪@FREE2CONFIG "
+    type: vless
+    server: 178.154.220.163
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 178.154.220.163
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇧🇪@FREE2CONFIG "
+    type: vless
+    server: 178.154.220.163
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 178.154.223.56
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 178.154.223.56
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 178.154.220.163
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 5.188.141.140
+    port: 1488
+    uuid: b42f7955-3741-406f-b95a-ed7b051ae5aa
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇸🇪@FREE2CONFIG "
+    type: vless
+    server: 81.230.244.242
+    port: 50
+    uuid: 31701b5d-ca95-92f9-d684-dae3706161ea
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 178.154.240.238
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 178.154.223.56
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 51.250.83.167
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 178.154.220.169
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 51.250.71.230
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 178.154.220.169
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 178.154.240.238
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇧🇪@FREE2CONFIG "
+    type: vless
+    server: 178.154.220.169
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 178.154.223.56
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 51.250.71.230
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇧🇪@FREE2CONFIG "
+    type: vless
+    server: 51.250.83.167
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇧🇪@FREE2CONFIG "
+    type: vless
+    server: 51.250.71.230
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇧🇪@FREE2CONFIG "
+    type: vless
+    server: 51.250.83.167
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 178.154.223.56
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 51.250.71.230
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 51.250.83.167
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 51.250.66.104
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 51.250.66.104
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 51.250.71.230
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 51.250.66.104
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 51.250.66.104
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 51.250.66.104
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 51.250.71.230
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇧🇪@FREE2CONFIG "
+    type: vless
+    server: 51.250.71.230
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 51.250.75.101
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 51.250.71.230
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 5.188.141.140
+    port: 1488
+    uuid: b42f7955-3741-406f-b95a-ed7b051ae5aa
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇩🇪@FREE2CONFIG "
+    type: vless
+    server: 144.31.116.150
+    port: 8443
+    uuid: e6ec1d89-17fc-4de7-af89-81cd51022526
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇩🇪@FREE2CONFIG "
+    type: vless
+    server: 144.31.116.147
+    port: 8443
+    uuid: e6ec1d89-17fc-4de7-af89-81cd51022526
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇩🇪@FREE2CONFIG "
+    type: vless
+    server: 144.31.116.149
+    port: 8443
+    uuid: e6ec1d89-17fc-4de7-af89-81cd51022526
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇷🇺@FREE2CONFIG "
+    type: vless
+    server: 178.154.230.75
+    port: 443
+    uuid: 319cf3c5-0b6a-4118-88cd-c2f814d6d26f
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 144.31.233.71
+    port: 8443
+    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇩🇪@FREE2CONFIG "
+    type: vless
+    server: 144.31.116.150
+    port: 8443
+    uuid: e6ec1d89-17fc-4de7-af89-81cd51022526
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇷🇺@FREE2CONFIG "
+    type: vless
+    server: 178.154.230.75
+    port: 443
+    uuid: 319cf3c5-0b6a-4118-88cd-c2f814d6d26f
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇷🇺@FREE2CONFIG "
+    type: vless
+    server: 95.163.210.173
+    port: 443
+    uuid: dd9c0ccd-1aeb-4f2d-9ab1-5f6996518c77
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇬🇧@FREE2CONFIG "
+    type: vless
+    server: br.solonettochka.ru
+    port: 443
+    uuid: be22c5d2-6fa7-4033-906b-89f7201ef3ff
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇦🇱@FREE2CONFIG "
+    type: vless
+    server: 78.159.131.210
+    port: 443
+    uuid: dd9c0ccd-1aeb-4f2d-9ab1-5f6996518c77
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 195.3.223.143
+    port: 443
+    uuid: dd9c0ccd-1aeb-4f2d-9ab1-5f6996518c77
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇷🇺@FREE2CONFIG "
+    type: vless
+    server: s53.buzzvpn.online
+    port: 443
+    uuid: 545f6499-bee2-454c-96db-0fc028d128f6
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇺🇸@FREE2CONFIG "
+    type: vless
+    server: 144.31.111.130
+    port: 443
+    uuid: a384c715-aeb5-45e8-859b-f687ca6c083f
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇷🇺@FREE2CONFIG "
+    type: vless
+    server: 51.250.12.100
+    port: 443
+    uuid: 319cf3c5-0b6a-4118-88cd-c2f814d6d26f
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: pl.griffon-guard.com
+    port: 443
+    uuid: e6ec1d89-17fc-4de7-af89-81cd51022526
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇦🇱@FREE2CONFIG "
+    type: vless
+    server: 78.159.131.76
+    port: 443
+    uuid: dd9c0ccd-1aeb-4f2d-9ab1-5f6996518c77
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇩🇪@FREE2CONFIG "
+    type: vless
+    server: 57.129.53.182
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 193.39.208.207
+    port: 8443
+    uuid: e6ec1d89-17fc-4de7-af89-81cd51022526
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇺🇸@FREE2CONFIG "
+    type: vless
+    server: 144.31.97.30
+    port: 443
+    uuid: a6095bd5-6361-4c15-8913-b70df8f04d00
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 144.31.233.74
+    port: 8443
+    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 144.31.233.74
+    port: 8443
+    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇦🇱@FREE2CONFIG "
+    type: vless
+    server: 78.159.131.76
+    port: 443
+    uuid: dd9c0ccd-1aeb-4f2d-9ab1-5f6996518c77
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇦🇱@FREE2CONFIG "
+    type: vless
+    server: 78.159.131.210
+    port: 443
+    uuid: dd9c0ccd-1aeb-4f2d-9ab1-5f6996518c77
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 195.3.223.143
+    port: 443
+    uuid: dd9c0ccd-1aeb-4f2d-9ab1-5f6996518c77
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 195.3.223.143
+    port: 443
+    uuid: dd9c0ccd-1aeb-4f2d-9ab1-5f6996518c77
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇷🇺@FREE2CONFIG "
+    type: vless
+    server: 178.154.230.75
+    port: 443
+    uuid: 319cf3c5-0b6a-4118-88cd-c2f814d6d26f
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇭🇺@FREE2CONFIG "
+    type: vless
+    server: 217.13.104.148
+    port: 443
+    uuid: dd9c0ccd-1aeb-4f2d-9ab1-5f6996518c77
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 5.188.141.69
+    port: 443
+    uuid: 7bc30425-1c2f-4823-b629-90f599a4cbfe
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇧🇪@FREE2CONFIG "
+    type: vless
+    server: 178.154.231.103
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇷🇺@FREE2CONFIG "
+    type: vless
+    server: 84.201.133.24
+    port: 443
+    uuid: 545f6499-bee2-454c-96db-0fc028d128f6
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇭🇺@FREE2CONFIG "
+    type: vless
+    server: 217.13.104.148
+    port: 443
+    uuid: dd9c0ccd-1aeb-4f2d-9ab1-5f6996518c77
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇭🇺@FREE2CONFIG "
+    type: vless
+    server: 217.13.104.154
+    port: 443
+    uuid: dd9c0ccd-1aeb-4f2d-9ab1-5f6996518c77
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 144.31.100.32
+    port: 443
+    uuid: f6a07f24-4059-4593-9feb-044a8760f46c
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 144.31.233.71
+    port: 8443
+    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇦🇱@FREE2CONFIG "
+    type: vless
+    server: 78.159.131.210
+    port: 443
+    uuid: dd9c0ccd-1aeb-4f2d-9ab1-5f6996518c77
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 5.188.141.69
+    port: 443
+    uuid: 7bc30425-1c2f-4823-b629-90f599a4cbfe
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇭🇺@FREE2CONFIG "
+    type: vless
+    server: 217.13.104.154
+    port: 443
+    uuid: dd9c0ccd-1aeb-4f2d-9ab1-5f6996518c77
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 195.3.223.143
+    port: 443
+    uuid: dd9c0ccd-1aeb-4f2d-9ab1-5f6996518c77
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇦🇱@FREE2CONFIG "
+    type: vless
+    server: 78.159.131.210
+    port: 443
+    uuid: dd9c0ccd-1aeb-4f2d-9ab1-5f6996518c77
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇭🇺@FREE2CONFIG "
+    type: vless
+    server: 217.13.104.154
+    port: 443
+    uuid: dd9c0ccd-1aeb-4f2d-9ab1-5f6996518c77
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇭🇺@FREE2CONFIG "
+    type: vless
+    server: 217.13.104.154
+    port: 443
+    uuid: dd9c0ccd-1aeb-4f2d-9ab1-5f6996518c77
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇭🇺@FREE2CONFIG "
+    type: vless
+    server: 217.13.104.134
+    port: 443
+    uuid: dd9c0ccd-1aeb-4f2d-9ab1-5f6996518c77
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇫🇷@FREE2CONFIG "
+    type: vless
+    server: realbook.psg2fr.pdf2book4iran1art.ir
+    port: 8880
+    uuid: 4583d428-8ff9-4000-bcbd-953fe8c8df17
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 195.3.223.143
+    port: 443
+    uuid: dd9c0ccd-1aeb-4f2d-9ab1-5f6996518c77
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇷🇺@FREE2CONFIG "
+    type: vless
+    server: 95.163.210.173
+    port: 443
+    uuid: dd9c0ccd-1aeb-4f2d-9ab1-5f6996518c77
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇷🇺@FREE2CONFIG "
+    type: vless
+    server: 212.233.76.67
+    port: 8442
+    uuid: 156b9230-fe89-4ca3-b4c6-40291ee582f0
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 212.233.96.101
+    port: 4443
+    uuid: c59f075a-b3a1-44e3-9680-375d81e6d8f7
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 195.3.223.143
+    port: 443
+    uuid: dd9c0ccd-1aeb-4f2d-9ab1-5f6996518c77
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇪🇪@FREE2CONFIG "
+    type: vless
+    server: 5.188.140.115
+    port: 1488
+    uuid: 7bc30425-1c2f-4823-b629-90f599a4cbfe
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 5.188.141.140
+    port: 1488
+    uuid: b42f7955-3741-406f-b95a-ed7b051ae5aa
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 109.120.188.227
+    port: 1488
+    uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇷🇺@FREE2CONFIG "
+    type: vless
+    server: 51.250.12.100
+    port: 443
+    uuid: 319cf3c5-0b6a-4118-88cd-c2f814d6d26f
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 79.137.175.56
+    port: 443
+    uuid: e8accc46-c511-42fb-919b-9283799a88a1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇦🇱@FREE2CONFIG "
+    type: vless
+    server: 78.159.131.210
+    port: 443
+    uuid: dd9c0ccd-1aeb-4f2d-9ab1-5f6996518c77
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 79.137.175.56
+    port: 8443
+    uuid: e8accc46-c511-42fb-919b-9283799a88a1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 5.188.140.18
+    port: 1488
+    uuid: b42f7955-3741-406f-b95a-ed7b051ae5aa
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 109.120.188.227
+    port: 1488
+    uuid: b42f7955-3741-406f-b95a-ed7b051ae5aa
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 5.188.140.18
+    port: 1488
+    uuid: 7bc30425-1c2f-4823-b629-90f599a4cbfe
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: nl.griffon-guard.com
+    port: 8443
+    uuid: e6ec1d89-17fc-4de7-af89-81cd51022526
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 158.160.105.121
+    port: 443
+    uuid: e8accc46-c511-42fb-919b-9283799a88a1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 79.137.175.56
+    port: 8443
+    uuid: 8c7961bd-2a58-4a02-8f8f-a37d2122eeaf
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇺🇸@FREE2CONFIG "
+    type: vless
+    server: 144.31.97.30
+    port: 443
+    uuid: a6095bd5-6361-4c15-8913-b70df8f04d00
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 178.154.231.103
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇮🇹@FREE2CONFIG "
+    type: vless
+    server: 90.156.217.130
+    port: 8443
+    uuid: eb4234b2-8083-4038-af1d-ae752b4ad6d4
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 144.31.3.45
+    port: 5555
+    uuid: b42f7955-3741-406f-b95a-ed7b051ae5aa
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 5.182.38.91
+    port: 17267
+    uuid: 1c7fcc38-e6be-43c5-875f-b8de2516b9f2
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 5.188.140.18
+    port: 1488
+    uuid: 7bc30425-1c2f-4823-b629-90f599a4cbfe
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 144.31.233.74
+    port: 8443
+    uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 195.3.223.143
+    port: 443
+    uuid: dd9c0ccd-1aeb-4f2d-9ab1-5f6996518c77
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇱🇹@FREE2CONFIG "
+    type: vless
+    server: 2.59.162.100
+    port: 443
+    uuid: 1004c163-26ea-5662-b5b2-40df01176f8b
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: yandex-2.ultima.foundation
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇩🇪@FREE2CONFIG "
+    type: vless
+    server: 188.114.98.0
+    port: 443
+    uuid: fef4a93d-eb4f-4657-b56b-32a0dc060045
+    tls: true
+    servername: dev.twistsparrow.xyz
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: dev.twistsparrow.xyz
+
+  - name: "🇭🇺@FREE2CONFIG "
+    type: vless
+    server: 178.154.253.80
+    port: 8443
+    uuid: 00c01f55-e31a-41cd-872b-938cda90afc3
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇮🇹@FREE2CONFIG "
+    type: vless
+    server: 90.156.217.130
+    port: 443
+    uuid: 08d6280b-90c8-41e1-a809-3132cfb706f5
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 144.31.100.32
+    port: 443
+    uuid: f6a07f24-4059-4593-9feb-044a8760f46c
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 5.188.141.140
+    port: 1488
+    uuid: b42f7955-3741-406f-b95a-ed7b051ae5aa
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇮🇹@FREE2CONFIG "
+    type: vless
+    server: 37.139.33.57
+    port: 51101
+    uuid: 5bfe8543-3e87-4238-94f3-af07f7210812
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇩🇪@FREE2CONFIG "
+    type: vless
+    server: 104.17.147.22
+    port: 2096
+    uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+    tls: true
+    servername: hetz.x-smm.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/45.76.183.217=49292"
+      headers:
+        Host: hetz.x-smm.com
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 79.137.175.56
+    port: 443
+    uuid: e8accc46-c511-42fb-919b-9283799a88a1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 87.239.107.214
+    port: 443
+    uuid: e8accc46-c511-42fb-919b-9283799a88a1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 158.160.105.121
+    port: 8443
+    uuid: 8c7961bd-2a58-4a02-8f8f-a37d2122eeaf
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 5.188.141.69
+    port: 443
+    uuid: 7bc30425-1c2f-4823-b629-90f599a4cbfe
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 87.239.107.214
+    port: 51102
+    uuid: e8accc46-c511-42fb-919b-9283799a88a1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 144.31.92.87
+    port: 8443
+    uuid: e6ec1d89-17fc-4de7-af89-81cd51022526
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇭🇺@FREE2CONFIG "
+    type: vless
+    server: 212.233.73.212
+    port: 8443
+    uuid: 3c5c4ccc-b502-42cb-8c42-cfa714db4767
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇮🇹@FREE2CONFIG "
+    type: vless
+    server: 90.156.217.130
+    port: 8443
+    uuid: 08d6280b-90c8-41e1-a809-3132cfb706f5
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇴@FREE2CONFIG "
+    type: vless
+    server: 217.170.206.157
+    port: 443
+    uuid: c310c80c-1e60-42a7-8b01-ca1123df0c16
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇭🇺@FREE2CONFIG "
+    type: vless
+    server: 89.169.128.105
+    port: 443
+    uuid: 3c5c4ccc-b502-42cb-8c42-cfa714db4767
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇭🇺@FREE2CONFIG "
+    type: vless
+    server: 178.154.253.80
+    port: 443
+    uuid: 3c5c4ccc-b502-42cb-8c42-cfa714db4767
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇱🇻@FREE2CONFIG "
+    type: vless
+    server: srv6.outlinekeys.com
+    port: 443
+    uuid: 59edf6dc-b1f7-4017-8107-aae4f61a173c
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇭🇺@FREE2CONFIG "
+    type: vless
+    server: 212.111.84.82
+    port: 8443
+    uuid: e6513d04-e554-4dc5-a2dd-4004488925b5
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇷🇺@FREE2CONFIG "
+    type: vless
+    server: 51.250.12.100
+    port: 443
+    uuid: 319cf3c5-0b6a-4118-88cd-c2f814d6d26f
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 144.31.92.241
+    port: 8443
+    uuid: e6ec1d89-17fc-4de7-af89-81cd51022526
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇺🇸@FREE2CONFIG "
+    type: vless
+    server: 144.31.99.107
+    port: 443
+    uuid: a6095bd5-6361-4c15-8913-b70df8f04d00
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇳🇱@FREE2CONFIG "
+    type: vless
+    server: 51.250.83.167
+    port: 443
+    uuid: e44c7a66-0d05-42bc-a37b-bfed2a4fbcc1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇫🇮@FREE2CONFIG "
+    type: vless
+    server: market.chepschasb.shop
+    port: 8443
+    uuid: a8b11692-4d33-40a4-9ad8-13ac4032b9eb
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇮🇹@FREE2CONFIG "
+    type: vless
+    server: 90.156.217.130
+    port: 51101
+    uuid: eb4234b2-8083-4038-af1d-ae752b4ad6d4
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇩🇪@FREE2CONFIG "
+    type: vless
+    server: 212.192.246.57
+    port: 2087
+    uuid: 3dcd6767-ec3e-4eeb-9fa6-c70b8661072f
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇵🇱@FREE2CONFIG "
+    type: vless
+    server: 87.239.107.214
+    port: 8443
+    uuid: e8accc46-c511-42fb-919b-9283799a88a1
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇭🇺@FREE2CONFIG "
+    type: vless
+    server: 212.233.73.212
+    port: 443
+    uuid: 3c5c4ccc-b502-42cb-8c42-cfa714db4767
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇹🇷@FREE2CONFIG "
+    type: vless
+    server: 79.137.175.59
+    port: 8443
+    uuid: 0a9fe7e0-e02d-42ca-bebd-ecb4292f180c
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇪🇸@FREE2CONFIG "
+    type: vless
+    server: 84.252.143.25
+    port: 443
+    uuid: 8009bc13-0c64-4ae9-9a74-24ce12cc71e8
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇪🇸@FREE2CONFIG "
+    type: vless
+    server: 79.137.175.44
+    port: 8443
+    uuid: 8009bc13-0c64-4ae9-9a74-24ce12cc71e8
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇪🇸@FREE2CONFIG "
+    type: vless
+    server: 158.160.223.36
+    port: 8443
+    uuid: 8009bc13-0c64-4ae9-9a74-24ce12cc71e8
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇪🇸@FREE2CONFIG "
+    type: vless
+    server: 87.239.106.153
+    port: 8443
+    uuid: 8009bc13-0c64-4ae9-9a74-24ce12cc71e8
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇹🇷@FREE2CONFIG "
+    type: vless
+    server: 90.156.150.134
+    port: 443
+    uuid: 7e2b2894-3b5c-4b65-acc5-e1784f4047f2
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇹🇷@FREE2CONFIG "
+    type: vless
+    server: 89.169.162.214
+    port: 443
+    uuid: 7e2b2894-3b5c-4b65-acc5-e1784f4047f2
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇪🇸@FREE2CONFIG "
+    type: vless
+    server: 87.239.106.153
+    port: 443
+    uuid: 842f1299-1a14-4ca7-8cf0-576d5ee3c833
+    tls: false
+    skip-cert-verify: true
+
+  - name: "🇹🇷@FREE2CONFIG "
+    type: vless
+    server: 90.156.150.134
+    port: 8443
+    uuid: 7e2b2894-3b5c-4b65-acc5-e1784f4047f2
+    tls: false
+    skip-cert-verify: true
+
+  - name: "SS"
+    type: ss
+    server: 4.223.106.240
+    port: 48172
+    cipher: chacha20-ietf-poly1305
+    password: 51yloQC8D9w1Wae7FHtI65
+
+  - name: "SS"
+    type: ss
+    server: 38.54.57.90
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+
+  - name: "SS"
+    type: ss
+    server: 160.16.123.124
+    port: 10087
+    cipher: aes-128-gcm
+    password: 10086
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.26
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 154.223.16.212
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.20
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.22
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 83.217.9.64
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: MgEU8qSlwf53
+
+  - name: "SS"
+    type: ss
+    server: 109.201.152.181
+    port: 443
+    cipher: aes-128-cfb
+    password: shadowsocks
+
+  - name: "SS"
+    type: ss
+    server: 4.223.106.240
+    port: 48172
+    cipher: chacha20-ietf-poly1305
+    password: 51yloQC8D9w1Wae7FHtI65
+
+  - name: "SS"
+    type: ss
+    server: 45.89.52.66
+    port: 9003
+    cipher: aes-256-cfb
+    password: JdmRK9gMEqFgs8nP
+
+  - name: "SS"
+    type: ss
+    server: 23.251.121.242
+    port: 8080
+    cipher: rc4-md5
+    password: 14fFPrbezE3HDZzsMOr6
+
+  - name: "SS"
+    type: ss
+    server: 212.34.140.184
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: 0NeN5ta7FLa5B9DLytU0um
+
+  - name: "SS"
+    type: ss
+    server: 103.149.182.191
+    port: 8388
+    cipher: chacha20-ietf
+    password: asd123456
+
+  - name: "SS"
+    type: ss
+    server: 107.151.182.253
+    port: 8080
+    cipher: rc4-md5
+    password: 14fFPrbezE3HDZzsMOr6
+
+  - name: "SS"
+    type: ss
+    server: 38.54.57.90
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+
+  - name: "SS"
+    type: ss
+    server: 38.165.233.93
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+
+  - name: "SS"
+    type: ss
+    server: 178.128.114.43
+    port: 6365
+    cipher: chacha20-ietf-poly1305
+    password: a2x9onpdTqVFmYsPWRFd31
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.219
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.240
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.28
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.25
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 154.90.63.177
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.117
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.139
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.204
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.27
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.220
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.79
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.62
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.24
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.8
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.232
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.165
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.183
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.231
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.44
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 154.223.16.212
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.213
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.68
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.244
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.110
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.56
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.240
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 83.217.9.64
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: MgEU8qSlwf53
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.43
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.233
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.154
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.223
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.233
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.245
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.24
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.153
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.53
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.247
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.102
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.20
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.17
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.225
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.230
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.206
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.29
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.113
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.83
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.224
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.103
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.221
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.49
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.189
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.209
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.30
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.4
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.57
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.129
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.20
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.246
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.207
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.235
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.54
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.198
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.32
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.75
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.221
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.128
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.70
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.82
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.34
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.135
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.19
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.58
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.69
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.155
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.127
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.12
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.147
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.210
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.51
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.144
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.253
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.30
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.145
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.140
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.18
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.45
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.56
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.147
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.214
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.46
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 109.201.152.181
+    port: 443
+    cipher: aes-128-cfb
+    password: shadowsocks
+
+  - name: "SS"
+    type: ss
+    server: 185.231.233.112
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+
+  - name: "SS"
+    type: ss
+    server: 185.153.197.5
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+
+  - name: "SS"
+    type: ss
+    server: 107.151.182.253
+    port: 8080
+    cipher: rc4-md5
+    password: 14fFPrbezE3HDZzsMOr6
+
+  - name: "SS"
+    type: ss
+    server: 91.132.94.200
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+
+  - name: "SS"
+    type: ss
+    server: 141.98.4.67
+    port: 52952
+    cipher: chacha20-ietf-poly1305
+    password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
+
+  - name: "SS"
+    type: ss
+    server: 38.54.57.90
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+
+  - name: "SS"
+    type: ss
+    server: 218.237.185.230
+    port: 4652
+    cipher: aes-256-cfb
+    password: qwerREWQ@@
+
+  - name: "SS"
+    type: ss
+    server: 154.90.63.177
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.18
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.250
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.184
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.63
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.21
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.31
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.59
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.66
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.11
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.248
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.34
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.228
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 109.201.152.181
+    port: 443
+    cipher: aes-128-cfb
+    password: shadowsocks
+
+  - name: "SS"
+    type: ss
+    server: 185.231.233.112
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+
+  - name: "SS"
+    type: ss
+    server: 4.223.106.240
+    port: 48172
+    cipher: chacha20-ietf-poly1305
+    password: 51yloQC8D9w1Wae7FHtI65
+
+  - name: "SS"
+    type: ss
+    server: 192.71.166.100
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+
+  - name: "SS"
+    type: ss
+    server: 89.46.238.35
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+
+  - name: "SS"
+    type: ss
+    server: 160.16.123.124
+    port: 10087
+    cipher: aes-128-gcm
+    password: 10086
+
+  - name: "SS"
+    type: ss
+    server: 23.251.121.242
+    port: 8080
+    cipher: rc4-md5
+    password: 14fFPrbezE3HDZzsMOr6
+
+  - name: "SS"
+    type: ss
+    server: 4.250.243.36
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: 5Roo9PK6BFZmfxmI
+
+  - name: "SS"
+    type: ss
+    server: 45.87.175.157
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: 4a2rfixophdjffa8KVA4Aa
+
+  - name: "SS"
+    type: ss
+    server: 103.104.247.47
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+
+  - name: "SS"
+    type: ss
+    server: 45.87.175.65
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+
+  - name: "SS"
+    type: ss
+    server: 45.87.175.171
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: 4a2rfixophdjffa8KVA4Aa
+
+  - name: "SS"
+    type: ss
+    server: 45.87.175.178
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: 1RWwXhwfAB5gAEozU4G2Pg
+
+  - name: "SS"
+    type: ss
+    server: 45.87.175.175
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: QCXDxuDlTTMD7jtgHUjIoj
+
+  - name: "SS"
+    type: ss
+    server: 135.225.124.80
+    port: 48172
+    cipher: chacha20-ietf-poly1305
+    password: 51yloQC8D9w1Wae7FHtI65
+
+  - name: "SS"
+    type: ss
+    server: 94.131.21.174
+    port: 54075
+    cipher: chacha20-ietf-poly1305
+    password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
+
+  - name: "SS"
+    type: ss
+    server: 45.87.175.167
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: QCXDxuDlTTMD7jtgHUjIoj
+
+  - name: "SS"
+    type: ss
+    server: 45.87.175.92
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+
+  - name: "SS"
+    type: ss
+    server: 45.87.175.170
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: QCXDxuDlTTMD7jtgHUjIoj
+
+  - name: "SS"
+    type: ss
+    server: 45.87.175.35
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+
+  - name: "SS"
+    type: ss
+    server: 104.167.197.25
+    port: 57456
+    cipher: chacha20-ietf-poly1305
+    password: 360e21d21977dc11
+
+  - name: "SS"
+    type: ss
+    server: 45.87.175.22
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+
+  - name: "SS"
+    type: ss
+    server: 45.87.175.10
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+
+  - name: "SS"
+    type: ss
+    server: 4.223.100.248
+    port: 48172
+    cipher: chacha20-ietf-poly1305
+    password: 51yloQC8D9w1Wae7FHtI65
+
+  - name: "SS"
+    type: ss
+    server: 45.87.175.28
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+
+  - name: "SS"
+    type: ss
+    server: 45.87.175.58
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+
+  - name: "SS"
+    type: ss
+    server: 45.87.175.69
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+
+  - name: "SS"
+    type: ss
+    server: 45.87.175.92
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+
+  - name: "SS"
+    type: ss
+    server: 45.87.175.175
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: QCXDxuDlTTMD7jtgHUjIoj
+
+  - name: "SS"
+    type: ss
+    server: 4.223.100.248
+    port: 48172
+    cipher: chacha20-ietf-poly1305
+    password: 51yloQC8D9w1Wae7FHtI65
+
+  - name: "SS"
+    type: ss
+    server: 135.225.124.80
+    port: 48172
+    cipher: chacha20-ietf-poly1305
+    password: 51yloQC8D9w1Wae7FHtI65
+
+  - name: "SS"
+    type: ss
+    server: 45.87.175.65
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+
+  - name: "SS"
+    type: ss
+    server: 45.87.175.167
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: QCXDxuDlTTMD7jtgHUjIoj
+
+  - name: "SS"
+    type: ss
+    server: 71.19.148.74
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: XUMTygEM1jVYIvysXKqA5T
+
+  - name: "SS"
+    type: ss
+    server: 45.87.175.10
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+
+  - name: "SS"
+    type: ss
+    server: 45.87.175.35
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+
+  - name: "SS"
+    type: ss
+    server: 45.87.175.166
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: 4a2rfixophdjffa8KVA4Aa
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.78
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 45.87.175.22
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.125
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.39
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.116
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.50
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.81
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.202
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.161
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.41
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.80
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.197
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.188
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.227
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.254
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.31
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.238
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.199
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.176
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.141
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.206
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.36
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.226
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.146
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.5
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.64
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.214
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.63
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.205
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.15
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.211
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.225
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.250
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.4
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.101
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 45.87.175.170
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: QCXDxuDlTTMD7jtgHUjIoj
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.60
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.234
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.239
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.79
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.222
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.22
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.40
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.58
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.107
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.53
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.196
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.76
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.120
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.23
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.65
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.139
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.194
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.73
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.215
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.3
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.77
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.45
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.49
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.154.212
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+  - name: "SS"
+    type: ss
+    server: 103.186.155.203
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+
+
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Falkenstein🅿️ping:29.64ms"
+      - "👉🆔@v2ray_configs_pool📡🇳🇱®️The Netherlands©️Amsterdam (Amsterdam-Zuidoost)🅿️ping:22.03ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇼®️Curacao©️Willemstad🅿️ping:22.64ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.85ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.75ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.73ms"
+      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:44.8ms"
+      - "👉🆔@v2ray_configs_pool📡🇯🇵®️Japan©️Osaka🅿️ping:270.03ms"
+      - "👉🆔@v2ray_configs_pool📡🇹🇷®️Turkey©️Bahçelievler🅿️ping:81.26ms"
+      - "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehrān🅿️ping:128.19ms"
+      - "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehrān (District 19)🅿️ping:1136.08ms"
+      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:22.1ms"
+      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:22.66ms"
+      - "👉🆔@v2ray_configs_pool📡🇰🇿®️Kazakhstan©️Ust-Kamenogorsk🅿️ping:101.76ms"
+      - "👉🆔@v2ray_configs_pool📡🇹🇷®️Turkey©️Istanbul🅿️ping:78.56ms"
+      - "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehrān🅿️ping:220.61ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:44.95ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:44.95ms"
+      - "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehran (District 7)🅿️ping:106.25ms"
+      - "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehran (District 7)🅿️ping:106.25ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.98ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.98ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:44.52ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:44.52ms"
+      - "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️New York🅿️ping:47.34ms"
+      - "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️New York🅿️ping:47.34ms"
+      - "👉🆔@v2ray_configs_pool📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:28.18ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:22.09ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:22.1ms"
+      - "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Denver🅿️ping:21.27ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:44.48ms"
+      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Limburg an der Lahn🅿️ping:101.01ms"
+      - "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehrān🅿️ping:446.69ms"
+      - "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehran🅿️ping:132.38ms"
+      - "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehran🅿️ping:132.38ms"
+      - "👉🆔@v2ray_configs_pool📡🇫🇷®️France©️Roubaix🅿️ping:34.45ms"
+      - "👉🆔@v2ray_configs_pool📡🇫🇷®️France©️Roubaix🅿️ping:32.4ms"
+      - "👉🆔@v2ray_configs_pool📡🇷🇺®️Russia©️Moscow🅿️ping:98.09ms"
+      - "👉🆔@v2ray_configs_pool📡🇷🇺®️Russia©️Moscow🅿️ping:118.12ms"
+      - "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Denver🅿️ping:21.54ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.85ms"
+      - "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Secaucus🅿️ping:131.17ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.86ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.78ms"
+      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Limburg an der Lahn🅿️ping:48.07ms"
+      - "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Secaucus🅿️ping:105.34ms"
+      - "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehran🅿️ping:224.39ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.98ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.98ms"
+      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:22.27ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:46.96ms"
+      - "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehrān🅿️ping:104.51ms"
+      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:22.42ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.85ms"
+      - "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️North Bergen🅿️ping:103.07ms"
+      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Limburg an der Lahn🅿️ping:22.69ms"
+      - "👉🆔@v2ray_configs_pool📡🇬🇧®️United Kingdom©️Erith🅿️ping:60.4ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:250.21ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Montreal🅿️ping:43.86ms"
+      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:124.15ms"
+      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:44.8ms"
+      - "👉🆔@v2ray_configs_pool📡🇱🇹®️Lithuania©️Šiauliai🅿️ping:78.64ms"
+      - "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehrān🅿️ping:128.19ms"
+      - "👉🆔@v2ray_configs_pool📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:30.74ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:44.42ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.98ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.72ms"
+      - "👉🆔@v2ray_configs_pool📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:67.36ms"
+      - "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehrān (District 19)🅿️ping:1136.08ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.75ms"
+      - "👉🆔@v2ray_configs_pool📡🇫🇮®️Finland©️Helsinki🅿️ping:52.21ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.78ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:53.85ms"
+      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:22.27ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.75ms"
+      - "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️New York🅿️ping:47.34ms"
+      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:22.66ms"
+      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:22.1ms"
+      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Düsseldorf🅿️ping:112.4ms"
+      - "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehran🅿️ping:217.97ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:46.86ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:46.86ms"
+      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:124.15ms"
+      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Frankfurt am Main🅿️ping:22.32ms"
+      - "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Secaucus🅿️ping:131.17ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.86ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.78ms"
+      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Limburg an der Lahn🅿️ping:48.07ms"
+      - "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Secaucus🅿️ping:105.34ms"
+      - "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehran🅿️ping:224.39ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.98ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.98ms"
+      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Limburg an der Lahn🅿️ping:45.43ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:21.86ms"
+      - "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehrān🅿️ping:128.19ms"
+      - "👉🆔@v2ray_configs_pool📡🇳🇱®️The Netherlands©️Amsterdam🅿️ping:52.05ms"
+      - "👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles🅿️ping:53.85ms"
+      - "👉🆔@v2ray_configs_pool📡🇮🇷®️Iran©️Tehrān🅿️ping:141.56ms"
+      - "👉🆔@v2ray_configs_pool📡🇨🇦®️Canada©️Toronto🅿️ping:44.42ms"
+      - "👉🆔@v2ray_configs_pool📡🇩🇪®️Germany©️Limburg an der Lahn🅿️ping:101.01ms"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VMess"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VMess"
+      - "VLESS"
+      - "VMess"
+      - "VLESS"
+      - "VLESS"
+      - "VMess"
+      - "VLESS"
+      - "VLESS"
+      - "VMess"
+      - "VLESS"
+      - "VLESS"
+      - "VMess"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "Trojan"
+      - "Trojan"
+      - "Trojan"
+      - "Trojan"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "Trojan"
+      - "VLESS"
+      - "VMess"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "Trojan"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VMess"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VMess"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "Trojan"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VMess"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VMess"
+      - "VMess"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VMess"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "Trojan"
+      - "VLESS"
+      - "Trojan"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "Trojan"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "Trojan"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "Trojan"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "VLESS"
+      - "Trojan"
+      - "Trojan"
+      - "VLESS"
+      - "🇷🇺@FREE2CONFIG "
+      - "🇷🇺@FREE2CONFIG "
+      - "🇫🇷@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇷🇺@FREE2CONFIG "
+      - "🇧🇪@FREE2CONFIG "
+      - "🇧🇪@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇧🇪@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇧🇪@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇧🇪@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇸🇪@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇧🇪@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇧🇪@FREE2CONFIG "
+      - "🇧🇪@FREE2CONFIG "
+      - "🇧🇪@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇧🇪@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇩🇪@FREE2CONFIG "
+      - "🇩🇪@FREE2CONFIG "
+      - "🇩🇪@FREE2CONFIG "
+      - "🇷🇺@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇩🇪@FREE2CONFIG "
+      - "🇷🇺@FREE2CONFIG "
+      - "🇷🇺@FREE2CONFIG "
+      - "🇬🇧@FREE2CONFIG "
+      - "🇦🇱@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇷🇺@FREE2CONFIG "
+      - "🇺🇸@FREE2CONFIG "
+      - "🇷🇺@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇦🇱@FREE2CONFIG "
+      - "🇩🇪@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇺🇸@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇦🇱@FREE2CONFIG "
+      - "🇦🇱@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇷🇺@FREE2CONFIG "
+      - "🇭🇺@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇧🇪@FREE2CONFIG "
+      - "🇷🇺@FREE2CONFIG "
+      - "🇭🇺@FREE2CONFIG "
+      - "🇭🇺@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇦🇱@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇭🇺@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇦🇱@FREE2CONFIG "
+      - "🇭🇺@FREE2CONFIG "
+      - "🇭🇺@FREE2CONFIG "
+      - "🇭🇺@FREE2CONFIG "
+      - "🇫🇷@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇷🇺@FREE2CONFIG "
+      - "🇷🇺@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇪🇪@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇷🇺@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇦🇱@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇺🇸@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇮🇹@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇱🇹@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇩🇪@FREE2CONFIG "
+      - "🇭🇺@FREE2CONFIG "
+      - "🇮🇹@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇮🇹@FREE2CONFIG "
+      - "🇩🇪@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇭🇺@FREE2CONFIG "
+      - "🇮🇹@FREE2CONFIG "
+      - "🇳🇴@FREE2CONFIG "
+      - "🇭🇺@FREE2CONFIG "
+      - "🇭🇺@FREE2CONFIG "
+      - "🇱🇻@FREE2CONFIG "
+      - "🇭🇺@FREE2CONFIG "
+      - "🇷🇺@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇺🇸@FREE2CONFIG "
+      - "🇳🇱@FREE2CONFIG "
+      - "🇫🇮@FREE2CONFIG "
+      - "🇮🇹@FREE2CONFIG "
+      - "🇩🇪@FREE2CONFIG "
+      - "🇵🇱@FREE2CONFIG "
+      - "🇭🇺@FREE2CONFIG "
+      - "🇹🇷@FREE2CONFIG "
+      - "🇪🇸@FREE2CONFIG "
+      - "🇪🇸@FREE2CONFIG "
+      - "🇪🇸@FREE2CONFIG "
+      - "🇪🇸@FREE2CONFIG "
+      - "🇹🇷@FREE2CONFIG "
+      - "🇹🇷@FREE2CONFIG "
+      - "🇪🇸@FREE2CONFIG "
+      - "🇹🇷@FREE2CONFIG "
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+      - "SS"
+
+rules:
+  - MATCH,PROXY
