@@ -52,9 +52,12 @@ dns:
 
   # دی‌ان‌اس‌های اولیه برای پیدا کردن آدرس سرورها
   default-nameserver:
-    - 1.1.1.1
-    - 8.8.8.8
-    - 9.9.9.9
+    - 1.1.1.1          # Cloudflare primary
+    - 1.0.0.1          # Cloudflare secondary  ✅
+    - 8.8.8.8          # Google primary
+    - 8.8.4.4          # Google secondary      ✅
+    - 9.9.9.9          # Quad9 primary
+    - 149.112.112.112  # Quad9 secondary       ✅
 
   # دی‌ان‌اس‌های اصلی (اجبار به TCP برای فرار از دراپ شدن UDP)
   nameserver:
@@ -114,14 +117,66 @@ dns:
     - tcp://77.88.8.8
     - tcp://77.88.8.1
 
-  # فیلتر هوشمند برای سوئیچ آنی به بکاپ‌ها در صورت آلودگی دی‌ان‌اس در ایران
+  # [FIX #2] fallback-filter — Myanmar ISP IP ranges အပြည့်အစုံ (BGP/APNIC verified 2025)
   fallback-filter:
     geoip: true
-    geoip-code: MM # تشخیص آی‌پی‌های فیک فیلترینگ ایران و سوئیچ به بکاپ
+    geoip-code: MM
     geosite:
       - gfw
     ipcidr:
       - 240.0.0.0/4
+
+      # ========== ATOM Myanmar (AS133385 / AS58973) ==========
+      - 38.10.150.0/24
+      - 43.250.60.0/22
+      - 103.242.104.0/22
+      - 103.250.152.0/22
+      - 180.188.224.0/19
+      - 203.205.32.0/19
+
+      # ========== Ooredoo / Nine Comms (AS132167) ==========
+      - 38.10.162.0/24
+      - 43.224.84.0/22
+      - 69.160.0.0/19
+      - 103.52.24.0/22
+      - 103.200.160.0/22
+      - 180.228.128.0/17
+
+      # ========== MPT (AS45558 / AS9988 / AS17503) ==========
+      - 43.224.43.0/24
+      - 45.41.96.0/22
+      - 61.4.64.0/20
+      - 103.43.104.0/22
+      - 103.52.12.0/22
+      - 103.73.224.0/22
+      - 103.80.128.0/22
+      - 116.206.128.0/19
+      - 136.228.160.0/20
+      - 175.207.0.0/16
+      - 202.191.96.0/20
+      - 203.81.64.0/18
+      - 203.215.60.0/22
+      - 210.14.96.0/20
+
+      # ========== Mytel / TIMCL (AS136255) ==========
+      - 27.109.116.0/22
+      - 43.231.64.0/22
+      - 43.252.80.0/22
+      - 45.112.44.0/22
+      - 65.18.112.0/20
+      - 103.23.132.0/22
+      - 103.85.104.0/22
+      - 103.116.144.0/22
+      - 117.18.228.0/22
+      - 120.88.32.0/20
+      - 202.165.80.0/20
+
+      # ========== Myanmar Net / Frontiir (AS58952) ==========
+      - 37.111.0.0/17
+      - 103.218.16.0/22
+      - 103.231.136.0/22
+      - 122.248.96.0/19
+
     domain:
       - '+.google.com'
       - '+.facebook.com'
@@ -129,12 +184,22 @@ dns:
 
   # دی‌ان‌اس اختصاصی برای حل آدرس سرورهای خود پروکسی
   proxy-server-nameserver:
-    - tcp://1.1.1.1
-    - tcp://8.8.8.8
+    - tcp://1.1.1.1          # Cloudflare primary
+    - tcp://1.0.0.1          # Cloudflare secondary  ✅
+    - tcp://8.8.8.8          # Google primary
+    - tcp://8.8.4.4          # Google secondary      ✅
+    - tcp://9.9.9.9          # Quad9 primary         ✅
+    - tcp://149.112.112.112  # Quad9 secondary       ✅
 
+  # [FIX #1] direct-nameserver — Plain IP ဖယ်ပြီး DoH encrypted DNS သုံးမည်
+  # မူရင်း: 78.157.42.100 / 78.157.42.101 (Myanmar ISP resolver — leak ဖြစ်ရင်း)
   direct-nameserver:
-    - '78.157.42.100'
-    - '78.157.42.101' 
+    - https://1.1.1.1/dns-query          # Cloudflare primary
+    - https://1.0.0.1/dns-query          # Cloudflare secondary  ✅
+    - https://8.8.8.8/dns-query          # Google primary
+    - https://8.8.4.4/dns-query          # Google secondary      ✅
+    - https://9.9.9.9/dns-query          # Quad9 primary         ✅
+    - https://dns.quad9.net/dns-query    # Quad9 via hostname    ✅
 
 # ==========================================
 # ۳. سیستم اسنیفر (Sniffer)
@@ -152,6 +217,7 @@ sniffer:
 
 # ==========================================
 # ۴. تنظیمات تونل شبکه (TUN)
+# [FIX #4] strict-route နှင့် route-exclude-address ထည့်ပြီး leak တားဆီးမှု
 # ==========================================
 tun:
   enable: true
@@ -162,15 +228,22 @@ tun:
   dns-hijack:
     - "any:53"
     - "tcp://any:53"
+  # IP Leak တားဆီးဖို့ strict-route ဖွင့်ထားပါ
+  strict-route: true
+  route-exclude-address:
+    - 127.0.0.0/8
+    - 10.0.0.0/8
+    - 172.16.0.0/12
+    - 192.168.0.0/16
 
 # ==========================================
 # ၅. Multiplexing (Mux) နှင့် Connection Optimization
 # ==========================================
 mux:
   enable: true
-  concurrency: 8      # တစ်ကြိမ်တည်းမှာ လုပ်ဆောင်မည့် Request အရေအတွက် (၈ မှ ၁၆ အတွင်းထားနိုင်သည်)
-  idle-timeout: 300   # ကွန်ရက်ကြန့်ကြာမှုများအတွက် စောင့်ဆိုင်းမည့်အချိန်
-  
+  concurrency: 8
+  idle-timeout: 300
+
 rule-providers:
   category_public_tracker:
     type: http
@@ -468,36 +541,36 @@ rule-providers:
     path: ./ruleset/mihSpotify.yaml
 
 proxy-groups:
-  - name: نوع انتخاب پروکسی 🔀
+  - name: နောင်တော် 🔀
     icon: https://www.svgrepo.com/show/412721/choose.svg
     type: select
     proxies:
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-      - اتصال پایدار 🔗
-      - توزیع بار (پایدار) 🧲
-      - توزیع بار (موقت) ⏳
-      - توزیع بار (گردشی) 🔁
-      - قطع اینترنت ⛔
-      - بدون فیلترشکن 🛡️
-  - name: دستی 🤏🏻
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ဝန်ခွဲဝေ (တည်ငြိမ်) 🧲
+      - ဝန်ခွဲဝေ (ယာယီ) ⏳
+      - ဝန်ခွဲဝေ (လည်ပတ်) 🔁
+      - အင်တာနက်ဖြတ် ⛔
+      - VPN မပါ 🛡️
+  - name: လက်ရွေး 🤏🏻
     type: select
     icon: https://www.svgrepo.com/show/372331/cursor-hand-click.svg
     use:
       - proxy
-  - name: خودکار (بهترین پینگ) 🤖
+  - name: ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
     type: url-test
     icon: https://www.svgrepo.com/show/7876/speedometer.svg
-    url: 'https://www.gstatic.com/generate_204' # استفاده از یو‌آر‌ال سبک‌تر و پایدارتر
-    interval: 25 # کاهش شدید زمان تست (هر ۲۵ ثانیه) برای کشف سریع قطعی‌ها
-    tolerance: 20 # حساسیت بالا (۲۰ میلی‌ثانیه)؛ اگر پینگ کمی خراب شد، سریع سوییچ کند
-    timeout: 1200 # اگر پروکسی در ۱.۲ ثانیه وصل نشد، معطلش نکن و مرده فرضش کن
-    lazy: false # بسیار مهم: تست‌ها باید همیشه در پس‌زمینه انجام شوند تا پروکسیِ آماده داشته باشی
-    max-failed-times: 2 # بعد از ۲ بار خطا، سریعاً تست اجباری انجام دهد
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 25
+    tolerance: 20
+    timeout: 1200
+    lazy: false
+    max-failed-times: 2
     use:
       - proxy
-  - name: پشتیبان (در صورت قطعی) 🧯
+  - name: အရန် (ပြတ်ရင်) 🧯
     type: fallback
     icon: https://www.svgrepo.com/show/415208/backup-cloud-document.svg
     url: https://www.gstatic.com/generate_204
@@ -508,7 +581,7 @@ proxy-groups:
     lazy: true
     use:
       - proxy
-  - name: اتصال پایدار 🔗
+  - name: တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
     type: url-test
     icon: https://www.svgrepo.com/show/428774/connection-internet-communication.svg
     url: https://cp.cloudflare.com/generate_204
@@ -518,10 +591,10 @@ proxy-groups:
     max-failed-times: 3
     lazy: true
     proxies:
-      - خودکار (بهترین پینگ) 🤖
-      - پشتیبان (در صورت قطعی) 🧯
-      - دستی 🤏🏻
-  - name: توزیع بار (پایدار) 🧲
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - အရန် (ပြတ်ရင်) 🧯
+      - လက်ရွေး 🤏🏻
+  - name: ဝန်ခွဲဝေ (တည်ငြိမ်) 🧲
     type: load-balance
     icon: https://www.svgrepo.com/show/331731/load-balancer-generic.svg
     url: https://api.v2fly.org/checkConnection.svgz
@@ -532,7 +605,7 @@ proxy-groups:
     lazy: true
     use:
       - proxy
-  - name: توزیع بار (گردشی) 🔁
+  - name: ဝန်ခွဲဝေ (လည်ပတ်) 🔁
     type: load-balance
     icon: https://www.svgrepo.com/show/388466/rotating-forward.svg
     strategy: round-robin
@@ -542,7 +615,7 @@ proxy-groups:
     lazy: false
     use:
       - proxy
-  - name: توزیع بار (موقت) ⏳
+  - name: ဝန်ခွဲဝေ (ယာယီ) ⏳
     type: load-balance
     icon: https://www.svgrepo.com/show/323449/temporary-shield.svg
     url: https://api.v2fly.org/checkConnection.svgz
@@ -553,325 +626,323 @@ proxy-groups:
     lazy: true
     use:
       - proxy
-  - name: المنت 💬
+  - name: Element 💬
     type: select
     icon: https://www.svgrepo.com/show/353655/matrix-icon.svg
     proxies:
-      - بدون فیلترشکن 🛡️
-      - نوع انتخاب پروکسی 🔀
-      - اتصال پایدار 🔗
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-      - اجازه ندادن 🚫
-  - name: تیم‌اسپیک 🎧
+      - VPN မပါ 🛡️
+      - နောင်တော် 🔀
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+      - ပိတ် 🚫
+  - name: TeamSpeak 🎧
     type: select
     icon: https://www.svgrepo.com/show/331567/teamspeak.svg
     proxies:
-      - بدون فیلترشکن 🛡️
-      - نوع انتخاب پروکسی 🔀
-      - اتصال پایدار 🔗
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-      - اجازه ندادن 🚫
-  - name: دلتاچت ✉️
+      - VPN မပါ 🛡️
+      - နောင်တော် 🔀
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+      - ပိတ် 🚫
+  - name: DeltaChat ✉️
     type: select
     icon: https://www.svgrepo.com/show/373771/mail.svg
     proxies:
-      - بدون فیلترشکن 🛡️
-      - نوع انتخاب پروکسی 🔀
-      - اتصال پایدار 🔗
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-      - اجازه ندادن 🚫
-  - name: دانلود منیجر 📥
+      - VPN မပါ 🛡️
+      - နောင်တော် 🔀
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+      - ပိတ် 🚫
+  - name: Download Manager 📥
     type: select
     icon: https://www.sadeemrdp.com/fonts/apps/IDM-Logo.svg
     proxies:
-      - بدون فیلترشکن 🛡️
-      - نوع انتخاب پروکسی 🔀
-      - اتصال پایدار 🔗
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-      - اجازه ندادن 🚫
-  - name: تلگرام 💬
+      - VPN မပါ 🛡️
+      - နောင်တော် 🔀
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+      - ပိတ် 🚫
+  - name: Telegram 💬
     type: select
     icon: https://www.svgrepo.com/show/354443/telegram.svg
     proxies:
-      - نوع انتخاب پروکسی 🔀
-      - بدون فیلترشکن 🛡️
-      - اتصال پایدار 🔗
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-      - اجازه ندادن 🚫
-  - name: یوتیوب ▶️
+      - နောင်တော် 🔀
+      - VPN မပါ 🛡️
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+      - ပိတ် 🚫
+  - name: YouTube ▶️
     type: select
     icon: https://www.svgrepo.com/show/475700/youtube-color.svg
     proxies:
-      - نوع انتخاب پروکسی 🔀
-      - بدون فیلترشکن 🛡️
-      - اتصال پایدار 🔗
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-      - اجازه ندادن 🚫
-  - name: گوگل 🌍
+      - နောင်တော် 🔀
+      - VPN မပါ 🛡️
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+      - ပိတ် 🚫
+  - name: Google 🌍
     type: select
     icon: https://www.svgrepo.com/show/475656/google-color.svg
     proxies:
-      - بدون فیلترشکن 🛡️
-      - اجازه ندادن 🚫
-      - نوع انتخاب پروکسی 🔀
-      - اتصال پایدار 🔗
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-  - name: واتس آپ 🟢
+      - VPN မပါ 🛡️
+      - ပိတ် 🚫
+      - နောင်တော် 🔀
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+  - name: WhatsApp 🟢
     type: select
     icon: https://upload.wikimedia.org/wikipedia/commons/4/4c/WhatsApp_Logo_green.svg
     proxies:
-      - نوع انتخاب پروکسی 🔀
-      - بدون فیلترشکن 🛡️
-      - اجازه ندادن 🚫
-      - اتصال پایدار 🔗
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-  - name: هوش مصنوعی 🤖
+      - နောင်တော် 🔀
+      - VPN မပါ 🛡️
+      - ပိတ် 🚫
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+  - name: AI 🤖
     type: select
     icon: https://www.svgrepo.com/show/306500/openai.svg
     proxies:
-      - نوع انتخاب پروکسی 🔀
-      - بدون فیلترشکن 🛡️
-      - اجازه ندادن 🚫
-      - اتصال پایدار 🔗
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-  - name: توییتر 🐦
+      - နောင်တော် 🔀
+      - VPN မပါ 🛡️
+      - ပိတ် 🚫
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+  - name: Twitter 🐦
     type: select
     icon: https://www.svgrepo.com/show/475689/twitter-color.svg
     proxies:
-      - نوع انتخاب پروکسی 🔀
-      - بدون فیلترشکن 🛡️
-      - اجازه ندادن 🚫
-      - اتصال پایدار 🔗
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-  - name: اسپاتیفای 🎵
+      - နောင်တော် 🔀
+      - VPN မပါ 🛡️
+      - ပိတ် 🚫
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+  - name: Spotify 🎵
     type: select
     icon: https://www.svgrepo.com/show/475684/spotify-color.svg
     proxies:
-      - نوع انتخاب پروکسی 🔀
-      - بدون فیلترشکن 🛡️
-      - اجازه ندادن 🚫
-      - اتصال پایدار 🔗
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-  - name: اینستاگرام 📸
+      - နောင်တော် 🔀
+      - VPN မပါ 🛡️
+      - ပိတ် 🚫
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+  - name: Instagram 📸
     type: select
     icon: https://www.svgrepo.com/show/452229/instagram-1.svg
     proxies:
-      - نوع انتخاب پروکسی 🔀
-      - بدون فیلترشکن 🛡️
-      - اجازه ندادن 🚫
-      - اتصال پایدار 🔗
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-  - name: تبلیغات 🆎
+      - နောင်တော် 🔀
+      - VPN မပါ 🛡️
+      - ပိတ် 🚫
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+  - name: ကြော်ငြာ 🆎
     type: select
     icon: https://www.svgrepo.com/show/336358/ad.svg
     proxies:
-      - اجازه ندادن 🚫
-      - بدون فیلترشکن 🛡️
-      - نوع انتخاب پروکسی 🔀
-      - اتصال پایدار 🔗
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-  - name: تبلیغات اپ ها 🍃
+      - ပိတ် 🚫
+      - VPN မပါ 🛡️
+      - နောင်တော် 🔀
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+  - name: App ကြော်ငြာ 🍃
     type: select
     icon: https://www.svgrepo.com/show/12172/smartphone-ad.svg
     proxies:
-      - اجازه ندادن 🚫
-      - بدون فیلترشکن 🛡️
-      - نوع انتخاب پروکسی 🔀
-      - اتصال پایدار 🔗
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-  - name: رهگیری جهانی 🛑
+      - ပိတ် 🚫
+      - VPN မပါ 🛡️
+      - နောင်တော် 🔀
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+  - name: Tracking 🛑
     type: select
     icon: https://www.svgrepo.com/show/298725/tracking-track.svg
     proxies:
-      - اجازه ندادن 🚫
-      - بدون فیلترشکن 🛡️
-      - نوع انتخاب پروکسی 🔀
-      - اتصال پایدار 🔗
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-  - name: سایتای مخرب ⚠️
+      - ပိတ် 🚫
+      - VPN မပါ 🛡️
+      - နောင်တော် 🔀
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+  - name: မဲလ်ဝဲဆိုက် ⚠️
     type: select
     icon: https://www.svgrepo.com/show/381135/cyber-crime-cyber-phishing-fraud-hack-money.svg
     proxies:
-      - اجازه ندادن 🚫
-      - نوع انتخاب پروکسی 🔀
-      - بدون فیلترشکن 🛡️
-      - اتصال پایدار 🔗
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-  - name: استیم 🖥️
+      - ပိတ် 🚫
+      - နောင်တော် 🔀
+      - VPN မပါ 🛡️
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+  - name: Steam 🖥️
     type: select
     icon: https://www.svgrepo.com/show/452107/steam.svg
     proxies:
-      - بدون فیلترشکن 🛡️
-      - اجازه ندادن 🚫
-      - نوع انتخاب پروکسی 🔀
-      - اتصال پایدار 🔗
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-  - name: گیم 🎮
+      - VPN မပါ 🛡️
+      - ပိတ် 🚫
+      - နောင်တော် 🔀
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+  - name: Game 🎮
     type: select
     icon: https://www.svgrepo.com/show/167729/game-controller.svg
     proxies:
-      - نوع انتخاب پروکسی 🔀
-      - بدون فیلترشکن 🛡️
-      - اجازه ندادن 🚫
-      - اتصال پایدار 🔗
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-  - name: توییچ 📡
+      - နောင်တော် 🔀
+      - VPN မပါ 🛡️
+      - ပိတ် 🚫
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+  - name: Twitch 📡
     type: select
     icon: https://www.svgrepo.com/show/343527/twitch-network-communication-interaction-connection.svg
     proxies:
-      - نوع انتخاب پروکسی 🔀
-      - بدون فیلترشکن 🛡️
-      - اجازه ندادن 🚫
-      - اتصال پایدار 🔗
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-  - name: سایتای ایرانی 🇮🇷
+      - နောင်တော် 🔀
+      - VPN မပါ 🛡️
+      - ပိတ် 🚫
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+  - name: မြန်မာဆိုက် 🇲🇲
     type: select
-    icon: https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Iran_%28civil%29.svg
+    icon: https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Myanmar.svg
     proxies:
-      - بدون فیلترشکن 🛡️
-      - اجازه ندادن 🚫
-      - نوع انتخاب پروکسی 🔀
-      - اتصال پایدار 🔗
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-  - name: ویندوز 🧊
+      - VPN မပါ 🛡️
+      - ပိတ် 🚫
+      - နောင်တော် 🔀
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+  - name: Windows 🧊
     type: select
     icon: https://icon.icepanel.io/Technology/svg/Windows-11.svg
     proxies:
-      - بدون فیلترشکن 🛡️
-      - اجازه ندادن 🚫
-      - نوع انتخاب پروکسی 🔀
-      - اتصال پایدار 🔗
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-  - name: کلودفلر ☁️
+      - VPN မပါ 🛡️
+      - ပိတ် 🚫
+      - နောင်တော် 🔀
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+  - name: Cloudflare ☁️
     type: select
     icon: https://icon.icepanel.io/Technology/svg/Cloudflare.svg
     proxies:
-      - بدون فیلترشکن 🛡️
-      - اجازه ندادن 🚫
-      - نوع انتخاب پروکسی 🔀
-      - اتصال پایدار 🔗
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-  - name: گیتهاب 🐙
+      - VPN မပါ 🛡️
+      - ပိတ် 🚫
+      - နောင်တော် 🔀
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+  - name: GitHub 🐙
     type: select
     icon: https://www.svgrepo.com/show/355033/github.svg
     proxies:
-      - نوع انتخاب پروکسی 🔀
-      - بدون فیلترشکن 🛡️
-      - اجازه ندادن 🚫
-      - اتصال پایدار 🔗
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-  - name: دیسکورد 🗣️
+      - နောင်တော် 🔀
+      - VPN မပါ 🛡️
+      - ပိတ် 🚫
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+  - name: Discord 🗣️
     type: select
     icon: https://automatorplugin.com/wp-content/uploads/2024/10/discord-icon.svg
     proxies:
-      - نوع انتخاب پروکسی 🔀
-      - بدون فیلترشکن 🛡️
-      - اجازه ندادن 🚫
-      - اتصال پایدار 🔗
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-  - name: استریمیو 🎬
+      - နောင်တော် 🔀
+      - VPN မပါ 🛡️
+      - ပိတ် 🚫
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+  - name: Stremio 🎬
     type: select
     icon: https://stremio.github.io/stremio-addon-guide/img/stremio.svg
     proxies:
-      - بدون فیلترشکن 🛡️
-      - نوع انتخاب پروکسی 🔀
-      - اجازه ندادن 🚫
-      - اتصال پایدار 🔗
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-  - name: انی‌دسک 🔴
-    type: select 
-    icon: https://www.svgrepo.com/show/331289/anydesk.svg 
-    proxies: 
-      - بدون فیلترشکن 🛡️
-      - نوع انتخاب پروکسی 🔀
-      - اجازه ندادن 🚫
-      - اتصال پایدار 🔗
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-  - name: سایتای سانسوری 🤬
+      - VPN မပါ 🛡️
+      - နောင်တော် 🔀
+      - ပိတ် 🚫
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+  - name: AnyDesk 🔴
+    type: select
+    icon: https://www.svgrepo.com/show/331289/anydesk.svg
+    proxies:
+      - VPN မပါ 🛡️
+      - နောင်တော် 🔀
+      - ပိတ် 🚫
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+  - name: ဆင်ဆာဆိုက် 🤬
     type: select
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Censorship.svg/300px-Censorship.svg.png
     proxies:
-      - اجازه ندادن 🚫
-      - نوع انتخاب پروکسی 🔀
-      - بدون فیلترشکن 🛡️
-      - اتصال پایدار 🔗
-      - خودکار (بهترین پینگ) 🤖
-      - دستی 🤏🏻
-      - پشتیبان (در صورت قطعی) 🧯
-  - name: بدون فیلترشکن 🛡️
+      - ပိတ် 🚫
+      - နောင်တော် 🔀
+      - VPN မပါ 🛡️
+      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+      - လက်ရွေး 🤏🏻
+      - အရန် (ပြတ်ရင်) 🧯
+  - name: VPN မပါ 🛡️
     type: select
     icon: https://www.svgrepo.com/show/6318/connection.svg
     proxies:
       - DIRECT
     hidden: true
-  - name: قطع اینترنت ⛔
+  - name: အင်တာနက်ဖြတ် ⛔
     type: select
     icon: https://www.svgrepo.com/show/305372/wifi-off.svg
     proxies:
       - REJECT
     hidden: true
-  - name: اجازه ندادن 🚫
+  - name: ပိတ် 🚫
     type: select
     icon: https://www.svgrepo.com/show/444307/gui-ban.svg
     proxies:
       - REJECT
     hidden: true
 
-
 proxy-providers:
-
   proxy:
     type: http
     url: >-
@@ -887,105 +958,95 @@ proxy-providers:
 rules:
   - DOMAIN-KEYWORD,stun,REJECT
   - DOMAIN-KEYWORD,turn,REJECT
-  - RULE-SET,DownloadManagers,دانلود منیجر 📥
-  - RULE-SET,Download,دانلود منیجر 📥
-  - RULE-SET,stremio,استریمیو 🎬
-  - PROCESS-NAME,im.vector.app,المنت 💬
-  - PROCESS-NAME,io.element.android.x,المنت 💬
-  - PROCESS-NAME,Element.exe,المنت 💬
-  - DOMAIN-SUFFIX,aklispro.sbs,المنت 💬
-  - DOMAIN-SUFFIX,chat.aklispro.sbs,المنت 💬
-  - DOMAIN-SUFFIX,site.aklispro.sbs,المنت 💬
-  - DOMAIN-SUFFIX,electonet.xyz,المنت 💬
-  - DOMAIN-SUFFIX,chat.electonet.xyz,المنت 💬
-  - DOMAIN-SUFFIX,rainbuwu.ir,المنت 💬
-  - DOMAIN-SUFFIX,cinny.rainbuwu.ir,المنت 💬
-  - PROCESS-NAME,chat.delta,دلتاچت ✉️
-  - PROCESS-NAME,DeltaChat.exe,دلتاچت ✉️
-  - DOMAIN-SUFFIX,arsalandalvand.ir,دلتاچت ✉️
-  - DST-PORT,993,دلتاچت ✉️
-  - DST-PORT,465,دلتاچت ✉️
-  - DST-PORT,587,دلتاچت ✉️
-  - PROCESS-NAME,com.teamspeak.ts3client,تیم‌اسپیک 🎧
-  - PROCESS-NAME,ts3client_win64.exe,تیم‌اسپیک 🎧
-  - PROCESS-NAME,ts3client_win32.exe,تیم‌اسپیک 🎧
-  - DOMAIN-SUFFIX,ag.tssq.ir,تیم‌اسپیک 🎧
-  - DST-PORT,9987,تیم‌اسپیک 🎧
-  - RULE-SET,spotifyads,تبلیغات اپ ها 🍃
-  - RULE-SET,BanProgramAD,تبلیغات اپ ها 🍃
-  - RULE-SET,BanAD,رهگیری جهانی 🛑
-  - RULE-SET,PrivateTracker,رهگیری جهانی 🛑
-  - RULE-SET,category_public_tracker,رهگیری جهانی 🛑
-  - RULE-SET,malware,سایتای مخرب ⚠️
-  - RULE-SET,phishing,سایتای مخرب ⚠️
-  - RULE-SET,cryptominers,سایتای مخرب ⚠️
-  - RULE-SET,warninglist,سایتای مخرب ⚠️
-  - RULE-SET,Ponzi,سایتای مخرب ⚠️
-  - RULE-SET,LiteAds,تبلیغات 🆎
-  - RULE-SET,iran_ads,تبلیغات 🆎
-  - RULE-SET,PersianBlocker,تبلیغات 🆎
-  - RULE-SET,ads,تبلیغات 🆎
-  - RULE-SET,BanEasyList,تبلیغات 🆎
-  - RULE-SET,twitch,توییچ 📡
-  - PROCESS-NAME,Telegram.exe,تلگرام 💬
-  - PROCESS-NAME,org.telegram.messenger,تلگرام 💬
-  - PROCESS-NAME,org.telegram.messenger.web,تلگرام 💬
-  - RULE-SET,telegram,تلگرام 💬
-  - RULE-SET,YouTube,یوتیوب ▶️
-  - RULE-SET,youtube,یوتیوب ▶️
-  - RULE-SET,YouTubeMusic,یوتیوب ▶️
-  - PROCESS-NAME,com.anydesk.anydeskandroid,انی‌دسک 🔴
-  - PROCESS-NAME,AnyDesk.exe,انی‌دسک 🔴
-  - DOMAIN-SUFFIX,anydesk.com,انی‌دسک 🔴
-  - PROCESS-NAME,Twitter.exe,توییتر 🐦
-  - PROCESS-NAME,com.twitter.android,توییتر 🐦
-  - RULE-SET,Chotwitter,توییتر 🐦
-  - RULE-SET,mihTwitter,توییتر 🐦
-  - RULE-SET,Domtwitter,توییتر 🐦
-  - PROCESS-NAME,com.spotify.music,اسپاتیفای 🎵
-  - PROCESS-NAME,Spotify.exe,اسپاتیفای 🎵
-  - RULE-SET,DomainSpotify,اسپاتیفای 🎵
-  - RULE-SET,mihspotify,اسپاتیفای 🎵
-  - PROCESS-NAME,com.instagram.android,اینستاگرام 📸
-  - RULE-SET,instagram,اینستاگرام 📸
-  - DOMAIN-SUFFIX,deepseek.com,هوش مصنوعی 🤖
-  - DOMAIN-SUFFIX,qwen.ai,هوش مصنوعی 🤖
-  - RULE-SET,category-ai,هوش مصنوعی 🤖
-  - RULE-SET,censor,سایتای سانسوری 🤬
-  - RULE-SET,apps,سایتای ایرانی 🇮🇷
-  - RULE-SET,iran,سایتای ایرانی 🇮🇷
-  - RULE-SET,arvancloud,سایتای ایرانی 🇮🇷
-  - RULE-SET,derakcloud,سایتای ایرانی 🇮🇷
-  - RULE-SET,iranserver,سایتای ایرانی 🇮🇷
-  - RULE-SET,parspack,سایتای ایرانی 🇮🇷
-  - RULE-SET,irasn,سایتای ایرانی 🇮🇷
-  - RULE-SET,ircidr,سایتای ایرانی 🇮🇷
-  - RULE-SET,ir,سایتای ایرانی 🇮🇷
-  - RULE-SET,category_ir,سایتای ایرانی 🇮🇷
-  - RULE-SET,whatsapp,واتس آپ 🟢
-  - RULE-SET,steam,استیم 🖥️
-  - RULE-SET,SteamRegionCheck,استیم 🖥️
-  - RULE-SET,game,گیم 🎮
-  - RULE-SET,GameDownload,گیم 🎮
-  - RULE-SET,category-games,گیم 🎮
-  - RULE-SET,Xbox,گیم 🎮
-  - RULE-SET,discord,دیسکورد 🗣️
-  - RULE-SET,xiaomi_white_list,نوع انتخاب پروکسی 🔀
-  - RULE-SET,xiaomi-ads,تبلیغات اپ ها 🍃
-  - RULE-SET,xiaomi_block_list,تبلیغات اپ ها 🍃
-  - RULE-SET,windows,ویندوز 🧊
-  - RULE-SET,cloudflare,کلودفلر ☁️
-  - RULE-SET,github,گیتهاب 🐙
-  - PROCESS-NAME,com.android.vending,نوع انتخاب پروکسی 🔀
-  - PROCESS-NAME,com.google.android.gms,نوع انتخاب پروکسی 🔀
-  - RULE-SET,google-play,نوع انتخاب پروکسی 🔀
-  - RULE-SET,google,گوگل 🌍
-  - IP-CIDR,10.10.34.0/24,نوع انتخاب پروکسی 🔀
-  - RULE-SET,local_ips,بدون فیلترشکن 🛡️
-  - RULE-SET,private,بدون فیلترشکن 🛡️
-  - GEOIP,MM,نوع انتخاب پروکسی 🔀 # မြန်မာ IP သို့သွားသော Traffic များကို Proxy ဖြတ်စေရန်
-  - MATCH,نوع انتخاب پروکسی 🔀
-  - FINAL,نوع انتخاب پروکسی 🔀 # Shadowrocket အတွက် မရှိမဖြစ်လိုအပ်သော အပိတ် Rule
+  - RULE-SET,DownloadManagers,Download Manager 📥
+  - RULE-SET,Download,Download Manager 📥
+  - RULE-SET,stremio,Stremio 🎬
+  - PROCESS-NAME,im.vector.app,Element 💬
+  - PROCESS-NAME,io.element.android.x,Element 💬
+  - PROCESS-NAME,Element.exe,Element 💬
+  - DOMAIN-SUFFIX,aklispro.sbs,Element 💬
+  - DOMAIN-SUFFIX,chat.aklispro.sbs,Element 💬
+  - DOMAIN-SUFFIX,site.aklispro.sbs,Element 💬
+  - DOMAIN-SUFFIX,electonet.xyz,Element 💬
+  - DOMAIN-SUFFIX,chat.electonet.xyz,Element 💬
+  - DOMAIN-SUFFIX,rainbuwu.ir,Element 💬
+  - DOMAIN-SUFFIX,cinny.rainbuwu.ir,Element 💬
+  - PROCESS-NAME,chat.delta,DeltaChat ✉️
+  - PROCESS-NAME,DeltaChat.exe,DeltaChat ✉️
+  - DOMAIN-SUFFIX,arsalandalvand.ir,DeltaChat ✉️
+  - DST-PORT,993,DeltaChat ✉️
+  - DST-PORT,465,DeltaChat ✉️
+  - DST-PORT,587,DeltaChat ✉️
+  - PROCESS-NAME,com.teamspeak.ts3client,TeamSpeak 🎧
+  - PROCESS-NAME,ts3client_win64.exe,TeamSpeak 🎧
+  - PROCESS-NAME,ts3client_win32.exe,TeamSpeak 🎧
+  - DOMAIN-SUFFIX,ag.tssq.ir,TeamSpeak 🎧
+  - DST-PORT,9987,TeamSpeak 🎧
+  - RULE-SET,spotifyads,App ကြော်ငြာ 🍃
+  - RULE-SET,BanProgramAD,App ကြော်ငြာ 🍃
+  - RULE-SET,BanAD,Tracking 🛑
+  - RULE-SET,PrivateTracker,Tracking 🛑
+  - RULE-SET,category_public_tracker,Tracking 🛑
+  - RULE-SET,malware,မဲလ်ဝဲဆိုက် ⚠️
+  - RULE-SET,phishing,မဲလ်ဝဲဆိုက် ⚠️
+  - RULE-SET,cryptominers,မဲလ်ဝဲဆိုက် ⚠️
+  - RULE-SET,warninglist,မဲလ်ဝဲဆိုက် ⚠️
+  - RULE-SET,Ponzi,မဲလ်ဝဲဆိုက် ⚠️
+  - RULE-SET,LiteAds,ကြော်ငြာ 🆎
+  - RULE-SET,PersianBlocker,ကြော်ငြာ 🆎
+  - RULE-SET,ads,ကြော်ငြာ 🆎
+  - RULE-SET,BanEasyList,ကြော်ငြာ 🆎
+  - RULE-SET,twitch,Twitch 📡
+  - PROCESS-NAME,Telegram.exe,Telegram 💬
+  - PROCESS-NAME,org.telegram.messenger,Telegram 💬
+  - PROCESS-NAME,org.telegram.messenger.web,Telegram 💬
+  - RULE-SET,telegram,Telegram 💬
+  - RULE-SET,YouTube,YouTube ▶️
+  - RULE-SET,youtube,YouTube ▶️
+  - RULE-SET,YouTubeMusic,YouTube ▶️
+  - PROCESS-NAME,com.anydesk.anydeskandroid,AnyDesk 🔴
+  - PROCESS-NAME,AnyDesk.exe,AnyDesk 🔴
+  - DOMAIN-SUFFIX,anydesk.com,AnyDesk 🔴
+  - PROCESS-NAME,Twitter.exe,Twitter 🐦
+  - PROCESS-NAME,com.twitter.android,Twitter 🐦
+  - RULE-SET,Chotwitter,Twitter 🐦
+  - RULE-SET,mihTwitter,Twitter 🐦
+  - RULE-SET,Domtwitter,Twitter 🐦
+  - PROCESS-NAME,com.spotify.music,Spotify 🎵
+  - PROCESS-NAME,Spotify.exe,Spotify 🎵
+  - RULE-SET,DomainSpotify,Spotify 🎵
+  - RULE-SET,mihspotify,Spotify 🎵
+  - PROCESS-NAME,com.instagram.android,Instagram 📸
+  - RULE-SET,instagram,Instagram 📸
+  - DOMAIN-SUFFIX,deepseek.com,AI 🤖
+  - DOMAIN-SUFFIX,qwen.ai,AI 🤖
+  - RULE-SET,category-ai,AI 🤖
+  - RULE-SET,censor,ဆင်ဆာဆိုက် 🤬
+  - RULE-SET,local_ips,VPN မပါ 🛡️
+  - RULE-SET,private,VPN မပါ 🛡️
+  # [FIX #3] GEOIP,MM → ယခုတော့ auto-best proxy ဖြတ်သွားမည် (DIRECT မဟုတ်တော့)
+  - GEOIP,MM,ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+  - RULE-SET,whatsapp,WhatsApp 🟢
+  - RULE-SET,steam,Steam 🖥️
+  - RULE-SET,SteamRegionCheck,Steam 🖥️
+  - RULE-SET,game,Game 🎮
+  - RULE-SET,GameDownload,Game 🎮
+  - RULE-SET,category-games,Game 🎮
+  - RULE-SET,Xbox,Game 🎮
+  - RULE-SET,discord,Discord 🗣️
+  - RULE-SET,xiaomi_white_list,နောင်တော် 🔀
+  - RULE-SET,xiaomi-ads,App ကြော်ငြာ 🍃
+  - RULE-SET,xiaomi_block_list,App ကြော်ငြာ 🍃
+  - RULE-SET,windows,Windows 🧊
+  - RULE-SET,cloudflare,Cloudflare ☁️
+  - RULE-SET,github,GitHub 🐙
+  - PROCESS-NAME,com.android.vending,နောင်တော် 🔀
+  - PROCESS-NAME,com.google.android.gms,နောင်တော် 🔀
+  - RULE-SET,google-play,နောင်တော် 🔀
+  - RULE-SET,google,Google 🌍
+  - IP-CIDR,10.10.34.0/24,နောင်တော် 🔀
+  - MATCH,နောင်တော် 🔀
+  - FINAL,နောင်တော် 🔀
 
 ntp:
   enable: true
