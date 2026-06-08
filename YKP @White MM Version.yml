@@ -1,0 +1,1141 @@
+keep-alive-interval: 5 # تست کانکشن هر ۵ ثانیه برای کشف سریع قطعی‌ها 
+keep-alive-idle: 10 # شروع بررسی بعد از ۱۰ ثانیه بی‌تحرکی کانکشن 
+disable-keep-alive: false # حتماً روشن باشد تا کانکشن‌ها در ایران فریز نشوند 
+port: 7890 
+socks-port: 7891 
+redir-port: 7892 
+mixed-port: 7893 
+tproxy-port: 7894 
+allow-lan: true 
+tcp-concurrent: true # تست هم‌زمان چند مسیر برای اتصال سریع‌تر 
+enable-process: true 
+find-process-mode: always 
+ipv6: false # خاموش به دلیل اختلال شدید در ایران 
+log-level: info # بهینه برای کاهش مصرف باتری و پردازنده 
+geo-auto-update: true 
+geo-update-interval: 168 
+secret: '' 
+bind-address: '*' 
+udp: true 
+profile: 
+  store-selected: true 
+  store-fake-ip: true
+
+# ==========================================
+# ၂. تنظیمات پیشرفته و ضد فیلترینگ DNS
+# ==========================================
+dns: 
+  enable: true 
+  ipv6: false # غیرفعال‌سازی برای جلوگیری از تایم‌اوت 
+  prefer-h3: false # غیرفعال‌سازی HTTP/3 به دلیل فیلترینگ شدید روی پروتکل کوئیک 
+  cache-algorithm: arc 
+  use-system-hosts: true 
+  use-host: true 
+  listen: 0.0.0.0:53 
+  enhanced-mode: fake-ip 
+  fake-ip-filter-mode: blacklist 
+  fake-ip-range: 198.18.0.1/16 
+  fake-ip-filter: 
+    - '*.lan' 
+    - '*.localdomain' 
+    - '*.invalid' 
+    - '*.localhost' 
+    - '*.test' 
+    - '*.local' 
+    - '*.home.arpa' 
+    - 'time.*.com' 
+    - 'ntp.*.com' 
+    - '*.sg' 
+  # دی‌ان‌اس‌های اولیه برای پیدا کردن آدرس سرورها 
+  default-nameserver: 
+    - 1.1.1.1 # Cloudflare primary 
+    - 1.0.0.1 # Cloudflare secondary ✅ 
+    - 8.8.8.8 # Google primary 
+    - 8.8.4.4 # Google secondary ✅ 
+    - 9.9.9.9 # Quad9 primary 
+    - 149.112.112.112 # Quad9 secondary ✅ 
+  # دی‌ان‌اس‌های اصلی (اجبار به TCP برای فرار از دراپ شدن UDP) 
+  nameserver: 
+    - https://1.1.1.1/dns-query 
+    - https://1.0.0.1/dns-query 
+    - https://cloudflare-dns.com/dns-query 
+    - https://8.8.8.8/dns-query 
+    - https://8.8.4.4/dns-query 
+    - https://dns.google/dns-query 
+    - https://9.9.9.9/dns-query 
+    - https://dns.quad9.net/dns-query 
+    - tcp://149.112.112.112 
+    - tcp://208.67.222.222 
+    - tcp://208.67.220.222 
+  # شبکه عظیم دی‌ان‌اس بکاپ شما (تغییر یافته به TCP جهت پایداری ۱۰۰٪ در ایران) 
+  fallback: 
+    - https://1.1.1.1/dns-query 
+    - https://dns.google/dns-query 
+    - https://9.9.9.9/dns-query 
+    - tcp://76.76.19.19 
+    - tcp://76.223.122.150 
+    - tcp://185.228.168.9 
+    - tcp://185.228.169.9 
+    - tcp://8.26.56.26 
+    - tcp://8.20.247.20 
+    - tcp://76.76.2.11 
+    - tcp://76.76.10.11 
+    - tcp://84.200.69.80 
+    - tcp://84.200.70.40 
+    - tcp://45.33.97.5 
+    - tcp://37.235.1.177 
+    - tcp://209.244.0.3 
+    - tcp://209.244.0.4 
+    - tcp://156.154.70.5 
+    - tcp://156.154.71.5 
+    - tcp://103.86.96.100 
+    - tcp://103.86.99.100 
+    - tcp://199.85.126.10 
+    - tcp://199.85.127.10 
+    - tcp://129.250.35.250 
+    - tcp://129.250.35.251 
+    - tcp://94.16.114.254 
+    - tcp://94.247.43.254 
+    - tcp://208.67.222.20 
+    - tcp://195.46.39.39 
+    - tcp://195.46.39.40 
+    - tcp://204.117.214.10 
+    - tcp://199.2.252.10 
+    - tcp://194.169.169.169 
+    - tcp://156.154.70.1 
+    - tcp://156.154.71.1 
+    - tcp://91.239.100.100 
+    - tcp://89.233.43.71 
+    - tcp://64.6.64.6 
+    - tcp://64.6.65.6 
+    - tcp://77.88.8.8 
+    - tcp://77.88.8.1 
+  # [FIX #2] fallback-filter — Myanmar ISP IP ranges အပြည့်အစုံ (BGP/APNIC verified 2025) 
+  fallback-filter: 
+    geoip: true 
+    geoip-code: MM 
+    geosite: 
+      - gfw 
+    ipcidr: 
+      - 240.0.0.0/4 
+	  # ========== ATOM Myanmar (AS133385 / AS58973) ========== 
+      - 38.10.150.0/24 
+      - 43.250.60.0/22 
+      - 103.242.104.0/22 
+      - 103.250.152.0/22 
+      - 180.188.224.0/19 
+      - 203.205.32.0/19 
+	  # ========== Ooredoo / Nine Comms (AS132167) ========== 
+      - 38.10.162.0/24 
+      - 43.224.84.0/22 
+      - 69.160.0.0/19 
+      - 103.52.24.0/22 
+      - 103.200.160.0/22 
+      - 180.228.128.0/17 
+	  # ========== MPT (AS45558 / AS9988 / AS17503) ========== 
+      - 43.224.43.0/24 
+      - 45.41.96.0/22 
+      - 61.4.64.0/20 
+      - 103.43.104.0/22 
+      - 103.52.12.0/22 
+      - 103.73.224.0/22 
+      - 103.80.128.0/22 
+      - 116.206.128.0/19 
+      - 136.228.160.0/20 
+      - 175.207.0.0/16 
+      - 202.191.96.0/20 
+      - 203.81.64.0/18 
+      - 203.215.60.0/22 
+      - 210.14.96.0/20 
+	  # ========== Mytel / TIMCL (AS136255) ========== 
+      - 27.109.116.0/22 
+      - 43.231.64.0/22 
+      - 43.252.80.0/22 
+      - 45.112.44.0/22 
+      - 65.18.112.0/20 
+      - 103.23.132.0/22 
+      - 103.85.104.0/22 
+      - 103.116.144.0/22 
+      - 117.18.228.0/22 
+      - 120.88.32.0/20 
+      - 202.165.80.0/20 
+	  # ========== Myanmar Net / Frontiir (AS58952) ========== 
+      - 37.111.0.0/17 
+      - 103.218.16.0/22 
+      - 103.231.136.0/22 
+      - 122.248.96.0/19 
+    domain: 
+      - '+.google.com' 
+      - '+.facebook.com' 
+      - '+.youtube.com' 
+  # دی‌آناس اختصاصی برای حل آدرس سرورهای خود پروکسی 
+  proxy-server-nameserver: 
+    - tcp://1.1.1.1 # Cloudflare primary 
+    - tcp://1.0.0.1 # Cloudflare secondary ✅ 
+    - tcp://8.8.8.8 # Google primary 
+    - tcp://8.8.4.4 # Google secondary ✅ 
+    - tcp://9.9.9.9 # Quad9 primary ✅ 
+    - tcp://149.112.112.112 # Quad9 secondary ✅ 
+  # [FIX #1] direct-nameserver — Plain IP ဖယ်ပြီး DoH encrypted DNS သုံးမည် 
+  # မူရင်း: 78.157.42.100 / 78.157.42.101 (Myanmar ISP resolver — leak ဖြစ်ရင်း) 
+  direct-nameserver: 
+    - https://1.1.1.1/dns-query # Cloudflare primary 
+    - https://1.0.0.1/dns-query # Cloudflare secondary ✅ 
+    - https://8.8.8.8/dns-query # Google primary 
+    - https://8.8.4.4/dns-query # Google secondary ✅ 
+    - https://9.9.9.9/dns-query # Quad9 primary ✅ 
+    - https://dns.quad9.net/dns-query # Quad9 via hostname ✅ 
+
+# ==========================================
+# ۳. سیستم اسنیفر (Sniffer)
+# ==========================================
+sniffer: 
+  enable: true 
+  force-dns-mapping: true 
+  parse-pure-ip: true 
+  override-destination: false 
+  sniff: 
+    HTTP: 
+      ports: [80, 8080, 8880, 2052, 2082, 2086, 2095] 
+    TLS: 
+      ports: [443, 8443, 2053, 2083, 2087, 2096] 
+
+# ==========================================
+# ۴. تنظیمات تونل شبکه (TUN)
+# [FIX #4] strict-route နှင့် route-exclude-address ထည့်ပြီး leak တားဆီးမှု
+# ==========================================
+tun: 
+  enable: true 
+  stack: mixed 
+  auto-route: true 
+  auto-detect-interface: true 
+  auto-redir: true 
+  dns-hijack: 
+    - "any:53" 
+    - "tcp://any:53" 
+  # IP Leak တားဆီးဖို့ strict-route ဖွင့်ထားပါ 
+  strict-route: true 
+  route-exclude-address: 
+    - 127.0.0.0/8 
+    - 10.0.0.0/8 
+    - 172.16.0.0/12 
+    - 192.168.0.0/16 
+
+# ==========================================
+# ۵. Multiplexing (Mux) နှင့် Connection Optimization
+# ==========================================
+mux: 
+  enable: true 
+  concurrency: 8 
+  idle-timeout: 300
+  
+# ==================== Rule Providers ====================
+rule-providers:
+  ChinaDomain:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaDomain.list"
+    interval: 86400
+    path: ./ruleset/ChinaDomain.yaml
+  ChinaCompanyIp:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaCompanyIp.list"
+    interval: 86400
+    path: ./ruleset/ChinaCompanyIp.yaml
+  ChinaDNS:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/ChinaDNS.list"
+    interval: 86400
+    path: ./ruleset/ChinaDNS.yaml
+  ProxyMedia:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ProxyMedia.list"
+    interval: 86400
+    path: ./ruleset/ProxyMedia.yaml
+  ProxyLite:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ProxyLite.list"
+    interval: 86400
+    path: ./ruleset/ProxyLite.yaml
+  TelegramACL:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Telegram.list"
+    interval: 86400
+    path: ./ruleset/TelegramACL.yaml
+  Adobe:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Adobe.list"
+    interval: 86400
+    path: ./ruleset/Adobe.yaml
+  DownloadACL:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Download.list"
+    interval: 86400
+    path: ./ruleset/DownloadACL.yaml
+  TikTok:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/TikTok.list"
+    interval: 86400
+    path: ./ruleset/TikTok.yaml
+  gfwlist:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ProxyGFWlist.list"
+    interval: 86400
+    path: ./ruleset/gfwlist.yaml
+  category_public_tracker:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/10ium/V2rayDomains2Clash/generated/category-public-tracker.yaml
+    interval: 86400
+    path: ./ruleset/category_public_tracker.yaml
+  PersianBlocker:
+    type: http
+    behavior: domain
+    url: "https://github.com/MasterKia/iran-hosted-domains/releases/latest/download/clash_rules_ads.yaml"
+    path: ./ruleset/PersianBlocker.yaml
+    interval: 86400
+  youtube:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/10ium/V2rayDomains2Clash/generated/youtube.yaml
+    interval: 86400
+    path: ./ruleset/youtube.yaml
+  telegram:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/10ium/V2rayDomains2Clash/generated/telegram.yaml
+    interval: 86400
+    path: ./ruleset/telegram.yaml
+  twitch:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/10ium/V2rayDomains2Clash/generated/twitch.yaml
+    interval: 86400
+    path: ./ruleset/twitch.yaml
+  censor:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/10ium/clash_rules/main/censor.yaml
+    interval: 86400
+    path: ./ruleset/censor.yaml
+  local_ips:
+    type: http
+    behavior: ipcidr
+    url: https://raw.githubusercontent.com/10ium/V2rayDomains2Clash/generated/local-ips.yaml
+    interval: 86400
+    path: ./ruleset/local_ips.yaml
+  private:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/10ium/V2rayDomains2Clash/generated/private.yaml
+    interval: 86400
+    path: ./ruleset/private.yaml
+  steam:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/10ium/clash_rules/main/steam.yaml
+    interval: 86400
+    path: ./ruleset/steam.yaml
+  game:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/10ium/clash_rules/refs/heads/main/game.yaml
+    interval: 86400
+    path: ./ruleset/game.yaml
+  category-games:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/10ium/V2rayDomains2Clash/refs/heads/generated/category-games.yaml
+    interval: 86400
+    path: ./ruleset/category-games.yaml
+  malware:
+    type: http
+    format: yaml
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/malware.yaml"
+    path: ./ruleset/malware.yaml
+    interval: 86400
+  phishing:
+    type: http
+    format: yaml
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/phishing.yaml"
+    path: ./ruleset/phishing.yaml
+    interval: 86400
+  cryptominers:
+    type: http
+    format: yaml
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/cryptominers.yaml"
+    path: ./ruleset/cryptominers.yaml
+    interval: 86400
+  ads:
+    type: http
+    format: yaml
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/releases/latest/download/category-ads-all.yaml"
+    path: ./ruleset/ads.yaml
+    interval: 86400
+  DownloadManagers:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/10ium/clash_rules/refs/heads/main/DownloadManagers.yaml
+    interval: 86400
+    path: ./ruleset/DownloadManagers.yaml
+  BanProgramAD:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/10ium/mihomo_rule/refs/heads/main/list/BanProgramAD.yaml
+    interval: 86400
+    path: ./ruleset/BanProgramAD.yaml
+  BanAD:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/10ium/mihomo_rule/refs/heads/main/list/BanAD.yaml
+    interval: 86400
+    path: ./ruleset/BanAD.yaml
+  PrivateTracker:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/10ium/mihomo_rule/refs/heads/main/list/PrivateTracker.yaml
+    interval: 86400
+    path: ./ruleset/PrivateTracker.yaml
+  BanEasyList:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/10ium/mihomo_rule/refs/heads/main/list/BanEasyList.yaml
+    interval: 86400
+    path: ./ruleset/BanEasyList.yaml
+  Download:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/10ium/mihomo_rule/refs/heads/main/list/Download.yaml
+    interval: 86400
+    path: ./ruleset/Download.yaml
+  GameDownload:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/10ium/mihomo_rule/refs/heads/main/list/GameDownload.yaml
+    interval: 86400
+    path: ./ruleset/GameDownload.yaml
+  SteamRegionCheck:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/10ium/mihomo_rule/refs/heads/main/list/SteamRegionCheck.yaml
+    interval: 86400
+    path: ./ruleset/SteamRegionCheck.yaml
+  Xbox:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/10ium/mihomo_rule/refs/heads/main/list/Xbox.yaml
+    interval: 86400
+    path: ./ruleset/Xbox.yaml
+  YouTubeMusic:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/10ium/mihomo_rule/refs/heads/main/list/YouTubeMusic.yaml
+    interval: 86400
+    path: ./ruleset/YouTubeMusic.yaml
+  YouTube:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/10ium/mihomo_rule/refs/heads/main/list/YouTube.yaml
+    interval: 86400
+    path: ./ruleset/YouTube.yaml
+  Ponzi:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/10ium/mihomo_rule/refs/heads/main/Ponzi.yaml
+    interval: 86400
+    path: ./ruleset/Ponzi.yaml
+  warninglist:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/10ium/mihomo_rule/refs/heads/main/warning-list.yaml
+    interval: 86400
+    path: ./ruleset/warninglist.yaml
+  google:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/10ium/V2rayDomains2Clash/refs/heads/generated/google.yaml
+    interval: 86400
+    path: ./ruleset/google.yaml
+  google-play:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/10ium/V2rayDomains2Clash/refs/heads/generated/google-play.yaml
+    interval: 86400
+    path: ./ruleset/google-play.yaml
+  xiaomi-ads:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/10ium/V2rayDomains2Clash/refs/heads/generated/xiaomi-ads.yaml
+    interval: 86400
+    path: ./ruleset/xiaomi-ads.yaml
+  xiaomi_block_list:
+    type: http
+    format: yaml
+    behavior: domain
+    url: "https://raw.githubusercontent.com/10ium/clash_rules/refs/heads/main/xiaomi_block_list.yaml"
+    path: ./ruleset/xiaomi_block_list.yaml
+    interval: 86400
+  xiaomi_white_list:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/10ium/clash_rules/refs/heads/main/xiaomi_white_list.yaml"
+    path: ./ruleset/xiaomi_white_list.yaml
+    interval: 86400
+  cloudflare:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/10ium/V2rayDomains2Clash/refs/heads/generated/cloudflare.yaml
+    interval: 86400
+    path: ./ruleset/cloudflare.yaml
+  github:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/10ium/V2rayDomains2Clash/refs/heads/generated/github.yaml
+    interval: 86400
+    path: ./ruleset/xgithub.yaml
+  whatsapp:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/10ium/V2rayDomains2Clash/generated/whatsapp.yaml
+    interval: 86400
+    path: ./ruleset/whatsapp.yaml
+  LiteAds:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/10ium/clash_rules/refs/heads/main/LiteAds.yaml"
+    path: ./ruleset/LiteAds.yaml
+    interval: 86400
+  discord:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/10ium/clash_rules/refs/heads/main/discord.yaml"
+    path: ./ruleset/discord.yaml
+    interval: 86400
+  instagram:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/10ium/V2rayDomains2Clash/refs/heads/generated/instagram.yaml
+    interval: 86400
+    path: ./ruleset/instagram.yaml
+  category-ai:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/10ium/V2rayDomains2Clash/refs/heads/generated/category-ai-!cn.yaml
+    interval: 86400
+    path: ./ruleset/category-ai.yaml
+  stremio:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/10ium/clash_rules/refs/heads/main/stremio.yaml"
+    path: ./ruleset/stremio.yaml
+    interval: 86400
+  windows:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/10ium/clash_rules/refs/heads/main/windows.yaml"
+    path: ./ruleset/windows.yaml
+    interval: 86400
+  Chotwitter:
+    type: http
+    format: yaml
+    behavior: ipcidr
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/twitter.yaml"
+    path: ./ruleset/Chotwitter.yaml
+    interval: 86400
+  mihTwitter:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/10ium/mihomo_rule/refs/heads/main/list/Twitter.yaml"
+    path: ./ruleset/mihTwitter.yaml
+    interval: 86400
+  Domtwitter:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/10ium/V2rayDomains2Clash/refs/heads/generated/twitter.yaml
+    interval: 86400
+    path: ./ruleset/Domtwitter.yaml
+  spotifyads:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/10ium/V2rayDomains2Clash/refs/heads/generated/spotify-ads.yaml
+    interval: 86400
+    path: ./ruleset/spotifyads.yaml
+  DomainSpotify:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/10ium/V2rayDomains2Clash/refs/heads/generated/spotify.yaml
+    interval: 86400
+    path: ./ruleset/DomainSpotify.yaml
+  mihspotify:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/10ium/mihomo_rule/refs/heads/main/list/Spotify.yaml
+    interval: 86400
+    path: ./ruleset/mihSpotify.yaml
+
+# ==========================================
+# ၇. Proxy Groups (Proxy အုပ်စုများ)
+# ==========================================
+proxy-groups:
+  - name: Main Selector 🔀
+    icon: https://www.svgrepo.com/show/412721/choose.svg
+    type: select
+    proxies:
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+      - Stable Connection 🔗
+      - Load Balance (Stable) 🧲
+      - Load Balance (Temp) ⏳
+      - Load Balance (Round-Robin) 🔁
+      - Disconnect ⛔
+      - Direct 🛡️
+  - name: Manual Select 🤏🏻
+    type: select
+    icon: https://www.svgrepo.com/show/372331/cursor-hand-click.svg
+    use:
+      - proxy
+  - name: Fastest Node 🤖
+    type: url-test
+    icon: https://www.svgrepo.com/show/7876/speedometer.svg
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 25
+    tolerance: 20
+    timeout: 1200
+    lazy: false
+    max-failed-times: 2
+    use:
+      - proxy
+  - name: Backup Node 🧯
+    type: fallback
+    icon: https://www.svgrepo.com/show/415208/backup-cloud-document.svg
+    url: https://www.gstatic.com/generate_204
+    interval: 600
+    timeout: 6000
+    tolerance: 300
+    max-failed-times: 3
+    lazy: true
+    use:
+      - proxy
+  - name: Stable Connection 🔗
+    type: url-test
+    icon: https://www.svgrepo.com/show/428774/connection-internet-communication.svg
+    url: https://cp.cloudflare.com/generate_204
+    interval: 30
+    timeout: 3000
+    tolerance: 200
+    max-failed-times: 3
+    lazy: true
+    proxies:
+      - Fastest Node 🤖
+      - Backup Node 🧯
+      - Manual Select 🤏🏻
+  - name: Load Balance (Stable) 🧲
+    type: load-balance
+    icon: https://www.svgrepo.com/show/331731/load-balancer-generic.svg
+    url: https://api.v2fly.org/checkConnection.svgz
+    strategy: consistent-hashing
+    interval: 600
+    timeout: 6000
+    max-failed-times: 5
+    lazy: true
+    use:
+      - proxy
+  - name: Load Balance (Round-Robin) 🔁
+    type: load-balance
+    icon: https://www.svgrepo.com/show/388466/rotating-forward.svg
+    strategy: round-robin
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 30
+    timeout: 1500
+    lazy: false
+    use:
+      - proxy
+  - name: Load Balance (Temp) ⏳
+    type: load-balance
+    icon: https://www.svgrepo.com/show/323449/temporary-shield.svg
+    url: https://api.v2fly.org/checkConnection.svgz
+    strategy: sticky-sessions
+    interval: 600
+    timeout: 6000
+    max-failed-times: 5
+    lazy: true
+    use:
+      - proxy
+  - name: Element 💬
+    type: select
+    icon: https://www.svgrepo.com/show/353655/matrix-icon.svg
+    proxies:
+      - Direct 🛡️
+      - Main Selector 🔀
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+      - Block 🚫
+  - name: TeamSpeak 🎧
+    type: select
+    icon: https://www.svgrepo.com/show/331567/teamspeak.svg
+    proxies:
+      - Direct 🛡️
+      - Main Selector 🔀
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+      - Block 🚫
+  - name: DeltaChat ✉️
+    type: select
+    icon: https://www.svgrepo.com/show/373771/mail.svg
+    proxies:
+      - Direct 🛡️
+      - Main Selector 🔀
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+      - Block 🚫
+  - name: Download Manager 📥
+    type: select
+    icon: https://www.sadeemrdp.com/fonts/apps/IDM-Logo.svg
+    proxies:
+      - Direct 🛡️
+      - Main Selector 🔀
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+      - Block 🚫
+  - name: Telegram 💬
+    type: select
+    icon: https://www.svgrepo.com/show/354443/telegram.svg
+    proxies:
+      - Main Selector 🔀
+      - Direct 🛡️
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+      - Block 🚫
+  - name: YouTube ▶️
+    type: select
+    icon: https://www.svgrepo.com/show/475700/youtube-color.svg
+    proxies:
+      - Main Selector 🔀
+      - Direct 🛡️
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+      - Block 🚫
+  - name: Google 🌍
+    type: select
+    icon: https://www.svgrepo.com/show/475656/google-color.svg
+    proxies:
+      - Direct 🛡️
+      - Block 🚫
+      - Main Selector 🔀
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+  - name: WhatsApp 🟢
+    type: select
+    icon: https://upload.wikimedia.org/wikipedia/commons/4/4c/WhatsApp_Logo_green.svg
+    proxies:
+      - Main Selector 🔀
+      - Direct 🛡️
+      - Block 🚫
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+  - name: AI 🤖
+    type: select
+    icon: https://www.svgrepo.com/show/306500/openai.svg
+    proxies:
+      - Main Selector 🔀
+      - Direct 🛡️
+      - Block 🚫
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+  - name: Twitter 🐦
+    type: select
+    icon: https://www.svgrepo.com/show/475689/twitter-color.svg
+    proxies:
+      - Main Selector 🔀
+      - Direct 🛡️
+      - Block 🚫
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+  - name: Spotify 🎵
+    type: select
+    icon: https://www.svgrepo.com/show/475684/spotify-color.svg
+    proxies:
+      - Main Selector 🔀
+      - Direct 🛡️
+      - Block 🚫
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+  - name: Instagram 📸
+    type: select
+    icon: https://www.svgrepo.com/show/452229/instagram-1.svg
+    proxies:
+      - Main Selector 🔀
+      - Direct 🛡️
+      - Block 🚫
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+  - name: Ads 🆎
+    type: select
+    icon: https://www.svgrepo.com/show/336358/ad.svg
+    proxies:
+      - Block 🚫
+      - Direct 🛡️
+      - Main Selector 🔀
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+  - name: App Ads 🍃
+    type: select
+    icon: https://www.svgrepo.com/show/12172/smartphone-ad.svg
+    proxies:
+      - Block 🚫
+      - Direct 🛡️
+      - Main Selector 🔀
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+  - name: Tracking 🛑
+    type: select
+    icon: https://www.svgrepo.com/show/298725/tracking-track.svg
+    proxies:
+      - Block 🚫
+      - Direct 🛡️
+      - Main Selector 🔀
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+  - name: Malware Sites ⚠️
+    type: select
+    icon: https://www.svgrepo.com/show/381135/cyber-crime-cyber-phishing-fraud-hack-money.svg
+    proxies:
+      - Block 🚫
+      - Main Selector 🔀
+      - Direct 🛡️
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+  - name: Steam 🖥️
+    type: select
+    icon: https://www.svgrepo.com/show/452107/steam.svg
+    proxies:
+      - Direct 🛡️
+      - Block 🚫
+      - Main Selector 🔀
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+  - name: Game 🎮
+    type: select
+    icon: https://www.svgrepo.com/show/167729/game-controller.svg
+    proxies:
+      - Main Selector 🔀
+      - Direct 🛡️
+      - Block 🚫
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+  - name: Twitch 📡
+    type: select
+    icon: https://www.svgrepo.com/show/343527/twitch-network-communication-interaction-connection.svg
+    proxies:
+      - Main Selector 🔀
+      - Direct 🛡️
+      - Block 🚫
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+  - name: Myanmar Sites 🇲🇲
+    type: select
+    icon: https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Myanmar.svg
+    proxies:
+      - Direct 🛡️
+      - Block 🚫
+      - Main Selector 🔀
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+  - name: Windows 🧊
+    type: select
+    icon: https://icon.icepanel.io/Technology/svg/Windows-11.svg
+    proxies:
+      - Direct 🛡️
+      - Block 🚫
+      - Main Selector 🔀
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+  - name: Cloudflare ☁️
+    type: select
+    icon: https://icon.icepanel.io/Technology/svg/Cloudflare.svg
+    proxies:
+      - Direct 🛡️
+      - Block 🚫
+      - Main Selector 🔀
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+  - name: GitHub 🐙
+    type: select
+    icon: https://www.svgrepo.com/show/355033/github.svg
+    proxies:
+      - Main Selector 🔀
+      - Direct 🛡️
+      - Block 🚫
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+  - name: Discord 🗣️
+    type: select
+    icon: https://automatorplugin.com/wp-content/uploads/2024/10/discord-icon.svg
+    proxies:
+      - Main Selector 🔀
+      - Direct 🛡️
+      - Block 🚫
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+  - name: Stremio 🎬
+    type: select
+    icon: https://stremio.github.io/stremio-addon-guide/img/stremio.svg
+    proxies:
+      - Direct 🛡️
+      - Main Selector 🔀
+      - Block 🚫
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+  - name: AnyDesk 🔴
+    type: select
+    icon: https://www.svgrepo.com/show/331289/anydesk.svg
+    proxies:
+      - Direct 🛡️
+      - Main Selector 🔀
+      - Block 🚫
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+  - name: Censored Sites 🤬
+    type: select
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Censorship.svg/300px-Censorship.svg.png
+    proxies:
+      - Block 🚫
+      - Main Selector 🔀
+      - Direct 🛡️
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+  - name: Direct 🛡️
+    type: select
+    icon: https://www.svgrepo.com/show/6318/connection.svg
+    proxies:
+      - DIRECT
+    hidden: true
+  - name: Disconnect ⛔
+    type: select
+    icon: https://www.svgrepo.com/show/305372/wifi-off.svg
+    proxies:
+      - REJECT
+    hidden: true
+  - name: Block 🚫
+    type: select
+    icon: https://www.svgrepo.com/show/444307/gui-ban.svg
+    proxies:
+      - REJECT
+    hidden: true
+
+# ==========================================
+# ၈. Proxy Providers (Proxy ဒေတာအရင်းအမြစ်များ)
+# ==========================================
+proxy-providers:
+  proxy:
+    type: http
+    url: >-
+      https://raw.githubusercontent.com/iampedii/whitedns-sub/refs/heads/main/all.yaml
+    interval: 86400
+    include-all: true
+    path: ./MihomoSaz45.yaml
+    proxy-opts:
+      client-fingerprint: chrome
+    health-check:
+      enable: true
+      interval: 1800
+      url: "https://www.gstatic.com/generate_204"
+	  
+rules:
+  - DOMAIN-KEYWORD,stun,REJECT
+  - DOMAIN-KEYWORD,turn,REJECT
+
+  # Download & Media
+  - RULE-SET,DownloadManagers,Download Manager
+  - RULE-SET,Download,Download Manager
+  - RULE-SET,stremio,Stremio
+  - RULE-SET,ProxyMedia,Auto
+  - RULE-SET,ProxyLite,Auto
+
+  # Communication Apps
+  - PROCESS-NAME,im.vector.app,Element
+  - PROCESS-NAME,io.element.android.x,Element
+  - PROCESS-NAME,Element.exe,Element
+  - DOMAIN-SUFFIX,aklispro.sbs,Element
+  - DOMAIN-SUFFIX,chat.aklispro.sbs,Element
+  - DOMAIN-SUFFIX,site.aklispro.sbs,Element
+  - DOMAIN-SUFFIX,electonet.xyz,Element
+  - DOMAIN-SUFFIX,chat.electonet.xyz,Element
+  - DOMAIN-SUFFIX,rainbuwu.ir,Element
+  - DOMAIN-SUFFIX,cinny.rainbuwu.ir,Element
+
+  - PROCESS-NAME,chat.delta,DeltaChat
+  - PROCESS-NAME,DeltaChat.exe,DeltaChat
+  - DOMAIN-SUFFIX,arsalandalvand.ir,DeltaChat
+  - DST-PORT,993,DeltaChat
+  - DST-PORT,465,DeltaChat
+  - DST-PORT,587,DeltaChat
+
+  - PROCESS-NAME,com.teamspeak.ts3client,TeamSpeak
+  - PROCESS-NAME,ts3client_win64.exe,TeamSpeak
+  - PROCESS-NAME,ts3client_win32.exe,TeamSpeak
+  - DOMAIN-SUFFIX,ag.tssq.ir,TeamSpeak
+  - DST-PORT,9987,TeamSpeak
+
+  - RULE-SET,TelegramACL,Telegram
+  - PROCESS-NAME,Telegram.exe,Telegram
+  - PROCESS-NAME,org.telegram.messenger,Telegram
+  - PROCESS-NAME,org.telegram.messenger.web,Telegram
+  - RULE-SET,telegram,Telegram
+
+  - RULE-SET,whatsapp,WhatsApp
+
+  # Entertainment & Streaming
+  - RULE-SET,TikTok,Auto
+  - RULE-SET,YouTube,YouTube
+  - RULE-SET,youtube,YouTube
+  - RULE-SET,YouTubeMusic,YouTube
+  - RULE-SET,twitch,Twitch
+  - RULE-SET,spotifyads,Ads
+  - RULE-SET,DomainSpotify,Spotify
+  - RULE-SET,mihspotify,Spotify
+  - RULE-SET,instagram,Instagram
+
+  # AI & Others
+  - DOMAIN-SUFFIX,deepseek.com,AI
+  - DOMAIN-SUFFIX,qwen.ai,AI
+  - RULE-SET,category-ai,AI
+
+  # Security & Blocking
+  - RULE-SET,Adobe,Stable
+  - RULE-SET,malware,Malware
+  - RULE-SET,phishing,Malware
+  - RULE-SET,cryptominers,Malware
+  - RULE-SET,warninglist,Malware
+  - RULE-SET,Ponzi,Malware
+  - RULE-SET,LiteAds,Ads
+  - RULE-SET,gfwlist,Censored
+  - RULE-SET,PersianBlocker,Ads
+  - RULE-SET,ads,Ads
+  - RULE-SET,BanEasyList,Ads
+  - RULE-SET,BanProgramAD,Ads
+  - RULE-SET,BanAD,Tracking
+  - RULE-SET,PrivateTracker,Tracking
+  - RULE-SET,category_public_tracker,Tracking
+  - RULE-SET,censor,Censored
+
+  # Gaming & Apps
+  - RULE-SET,steam,Steam
+  - RULE-SET,SteamRegionCheck,Steam
+  - RULE-SET,game,Game
+  - RULE-SET,GameDownload,Game
+  - RULE-SET,category-games,Game
+  - RULE-SET,Xbox,Game
+  - RULE-SET,discord,Discord
+
+  - PROCESS-NAME,com.anydesk.anydeskandroid,AnyDesk
+  - PROCESS-NAME,AnyDesk.exe,AnyDesk
+  - DOMAIN-SUFFIX,anydesk.com,AnyDesk
+
+  - PROCESS-NAME,Twitter.exe,Twitter
+  - PROCESS-NAME,com.twitter.android,Twitter
+  - RULE-SET,Chotwitter,Twitter
+  - RULE-SET,mihTwitter,Twitter
+  - RULE-SET,Domtwitter,Twitter
+
+  # System & Direct
+  - RULE-SET,ChinaDomain,Direct
+  - RULE-SET,ChinaCompanyIp,Direct
+  - RULE-SET,ChinaDNS,Direct
+  - RULE-SET,local_ips,Direct
+  - RULE-SET,private,Direct
+  - RULE-SET,windows,Windows
+  - RULE-SET,cloudflare,Cloudflare
+  - RULE-SET,github,GitHub
+
+  - PROCESS-NAME,com.android.vending,Auto
+  - PROCESS-NAME,com.google.android.gms,Auto
+  - RULE-SET,google-play,Auto
+  - RULE-SET,google,Google
+
+  - RULE-SET,xiaomi_white_list,Auto
+  - RULE-SET,xiaomi-ads,Ads
+  - RULE-SET,xiaomi_block_list,Ads
+
+  - IP-CIDR,10.10.34.0/24,Auto
+
+  # GeoIP Myanmar → Fastest Proxy
+  - GEOIP,MM,Fastest
+
+  # Final Rules
+  - MATCH,Direct
+  - FINAL,Auto
+
+ntp:
+  enable: true
+  server: "time.apple.com"
+  port: 123
+  interval: 30
