@@ -601,26 +601,29 @@ mux:
     interval: 86400
     path: ./ruleset/mihSpotify.yaml
 
+# ==========================================
+# 7. Proxy Groups
+# ==========================================
 proxy-groups:
-  - name: နောင်တော် 🔀
+  - name: Main Selector 🔀
     icon: https://www.svgrepo.com/show/412721/choose.svg
     type: select
     proxies:
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ဝန်ခွဲဝေ (တည်ငြိမ်) 🧲
-      - ဝန်ခွဲဝေ (ယာယီ) ⏳
-      - ဝန်ခွဲဝေ (လည်ပတ်) 🔁
-      - အင်တာနက်ဖြတ် ⛔
-      - VPN မပါ 🛡️
-  - name: လက်ရွေး 🤏🏻
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+      - Stable Connection 🔗
+      - Load Balance (Stable) 🧲
+      - Load Balance (Temp) ⏳
+      - Load Balance (Round-Robin) 🔁
+      - Disconnect ⛔
+      - Direct 🛡️
+  - name: Manual Select 🤏🏻
     type: select
     icon: https://www.svgrepo.com/show/372331/cursor-hand-click.svg
     use:
       - proxy
-  - name: ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
+  - name: Fastest Node 🤖
     type: url-test
     icon: https://www.svgrepo.com/show/7876/speedometer.svg
     url: 'https://www.gstatic.com/generate_204'
@@ -631,7 +634,7 @@ proxy-groups:
     max-failed-times: 2
     use:
       - proxy
-  - name: အရန် (ပြတ်ရင်) 🧯
+  - name: Backup Node 🧯
     type: fallback
     icon: https://www.svgrepo.com/show/415208/backup-cloud-document.svg
     url: https://www.gstatic.com/generate_204
@@ -642,7 +645,7 @@ proxy-groups:
     lazy: true
     use:
       - proxy
-  - name: တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+  - name: Stable Connection 🔗
     type: url-test
     icon: https://www.svgrepo.com/show/428774/connection-internet-communication.svg
     url: https://cp.cloudflare.com/generate_204
@@ -652,10 +655,10 @@ proxy-groups:
     max-failed-times: 3
     lazy: true
     proxies:
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - အရန် (ပြတ်ရင်) 🧯
-      - လက်ရွေး 🤏🏻
-  - name: ဝန်ခွဲဝေ (တည်ငြိမ်) 🧲
+      - Fastest Node 🤖
+      - Backup Node 🧯
+      - Manual Select 🤏🏻
+  - name: Load Balance (Stable) 🧲
     type: load-balance
     icon: https://www.svgrepo.com/show/331731/load-balancer-generic.svg
     url: https://api.v2fly.org/checkConnection.svgz
@@ -666,7 +669,7 @@ proxy-groups:
     lazy: true
     use:
       - proxy
-  - name: ဝန်ခွဲဝေ (လည်ပတ်) 🔁
+  - name: Load Balance (Round-Robin) 🔁
     type: load-balance
     icon: https://www.svgrepo.com/show/388466/rotating-forward.svg
     strategy: round-robin
@@ -676,7 +679,7 @@ proxy-groups:
     lazy: false
     use:
       - proxy
-  - name: ဝန်ခွဲဝေ (ယာယီ) ⏳
+  - name: Load Balance (Temp) ⏳
     type: load-balance
     icon: https://www.svgrepo.com/show/323449/temporary-shield.svg
     url: https://api.v2fly.org/checkConnection.svgz
@@ -691,312 +694,312 @@ proxy-groups:
     type: select
     icon: https://www.svgrepo.com/show/353655/matrix-icon.svg
     proxies:
-      - VPN မပါ 🛡️
-      - နောင်တော် 🔀
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
-      - ပိတ် 🚫
+      - Direct 🛡️
+      - Main Selector 🔀
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+      - Block 🚫
   - name: TeamSpeak 🎧
     type: select
     icon: https://www.svgrepo.com/show/331567/teamspeak.svg
     proxies:
-      - VPN မပါ 🛡️
-      - နောင်တော် 🔀
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
-      - ပိတ် 🚫
+      - Direct 🛡️
+      - Main Selector 🔀
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+      - Block 🚫
   - name: DeltaChat ✉️
     type: select
     icon: https://www.svgrepo.com/show/373771/mail.svg
     proxies:
-      - VPN မပါ 🛡️
-      - နောင်တော် 🔀
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
-      - ပိတ် 🚫
+      - Direct 🛡️
+      - Main Selector 🔀
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+      - Block 🚫
   - name: Download Manager 📥
     type: select
     icon: https://www.sadeemrdp.com/fonts/apps/IDM-Logo.svg
     proxies:
-      - VPN မပါ 🛡️
-      - နောင်တော် 🔀
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
-      - ပိတ် 🚫
+      - Direct 🛡️
+      - Main Selector 🔀
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+      - Block 🚫
   - name: Telegram 💬
     type: select
     icon: https://www.svgrepo.com/show/354443/telegram.svg
     proxies:
-      - နောင်တော် 🔀
-      - VPN မပါ 🛡️
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
-      - ပိတ် 🚫
+      - Main Selector 🔀
+      - Direct 🛡️
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+      - Block 🚫
   - name: YouTube ▶️
     type: select
     icon: https://www.svgrepo.com/show/475700/youtube-color.svg
     proxies:
-      - နောင်တော် 🔀
-      - VPN မပါ 🛡️
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
-      - ပိတ် 🚫
+      - Main Selector 🔀
+      - Direct 🛡️
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+      - Block 🚫
   - name: Google 🌍
     type: select
     icon: https://www.svgrepo.com/show/475656/google-color.svg
     proxies:
-      - VPN မပါ 🛡️
-      - ပိတ် 🚫
-      - နောင်တော် 🔀
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
+      - Direct 🛡️
+      - Block 🚫
+      - Main Selector 🔀
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
   - name: WhatsApp 🟢
     type: select
     icon: https://upload.wikimedia.org/wikipedia/commons/4/4c/WhatsApp_Logo_green.svg
     proxies:
-      - နောင်တော် 🔀
-      - VPN မပါ 🛡️
-      - ပိတ် 🚫
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
+      - Main Selector 🔀
+      - Direct 🛡️
+      - Block 🚫
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
   - name: AI 🤖
     type: select
     icon: https://www.svgrepo.com/show/306500/openai.svg
     proxies:
-      - နောင်တော် 🔀
-      - VPN မပါ 🛡️
-      - ပိတ် 🚫
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
+      - Main Selector 🔀
+      - Direct 🛡️
+      - Block 🚫
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
   - name: Twitter 🐦
     type: select
     icon: https://www.svgrepo.com/show/475689/twitter-color.svg
     proxies:
-      - နောင်တော် 🔀
-      - VPN မပါ 🛡️
-      - ပိတ် 🚫
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
+      - Main Selector 🔀
+      - Direct 🛡️
+      - Block 🚫
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
   - name: Spotify 🎵
     type: select
     icon: https://www.svgrepo.com/show/475684/spotify-color.svg
     proxies:
-      - နောင်တော် 🔀
-      - VPN မပါ 🛡️
-      - ပိတ် 🚫
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
+      - Main Selector 🔀
+      - Direct 🛡️
+      - Block 🚫
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
   - name: Instagram 📸
     type: select
     icon: https://www.svgrepo.com/show/452229/instagram-1.svg
     proxies:
-      - နောင်တော် 🔀
-      - VPN မပါ 🛡️
-      - ပိတ် 🚫
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
-  - name: ကြော်ငြာ 🆎
+      - Main Selector 🔀
+      - Direct 🛡️
+      - Block 🚫
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+  - name: Ads 🆎
     type: select
     icon: https://www.svgrepo.com/show/336358/ad.svg
     proxies:
-      - ပိတ် 🚫
-      - VPN မပါ 🛡️
-      - နောင်တော် 🔀
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
-  - name: App ကြော်ငြာ 🍃
+      - Block 🚫
+      - Direct 🛡️
+      - Main Selector 🔀
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+  - name: App Ads 🍃
     type: select
     icon: https://www.svgrepo.com/show/12172/smartphone-ad.svg
     proxies:
-      - ပိတ် 🚫
-      - VPN မပါ 🛡️
-      - နောင်တော် 🔀
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
+      - Block 🚫
+      - Direct 🛡️
+      - Main Selector 🔀
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
   - name: Tracking 🛑
     type: select
     icon: https://www.svgrepo.com/show/298725/tracking-track.svg
     proxies:
-      - ပိတ် 🚫
-      - VPN မပါ 🛡️
-      - နောင်တော် 🔀
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
-  - name: မဲလ်ဝဲဆိုက် ⚠️
+      - Block 🚫
+      - Direct 🛡️
+      - Main Selector 🔀
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+  - name: Malware Sites ⚠️
     type: select
     icon: https://www.svgrepo.com/show/381135/cyber-crime-cyber-phishing-fraud-hack-money.svg
     proxies:
-      - ပိတ် 🚫
-      - နောင်တော် 🔀
-      - VPN မပါ 🛡️
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
+      - Block 🚫
+      - Main Selector 🔀
+      - Direct 🛡️
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
   - name: Steam 🖥️
     type: select
     icon: https://www.svgrepo.com/show/452107/steam.svg
     proxies:
-      - VPN မပါ 🛡️
-      - ပိတ် 🚫
-      - နောင်တော် 🔀
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
+      - Direct 🛡️
+      - Block 🚫
+      - Main Selector 🔀
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
   - name: Game 🎮
     type: select
     icon: https://www.svgrepo.com/show/167729/game-controller.svg
     proxies:
-      - နောင်တော် 🔀
-      - VPN မပါ 🛡️
-      - ပိတ် 🚫
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
+      - Main Selector 🔀
+      - Direct 🛡️
+      - Block 🚫
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
   - name: Twitch 📡
     type: select
     icon: https://www.svgrepo.com/show/343527/twitch-network-communication-interaction-connection.svg
     proxies:
-      - နောင်တော် 🔀
-      - VPN မပါ 🛡️
-      - ပိတ် 🚫
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
-  - name: မြန်မာဆိုက် 🇲🇲
+      - Main Selector 🔀
+      - Direct 🛡️
+      - Block 🚫
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+  - name: Myanmar Sites 🇲🇲
     type: select
     icon: https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Myanmar.svg
     proxies:
-      - VPN မပါ 🛡️
-      - ပိတ် 🚫
-      - နောင်တော် 🔀
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
+      - Direct 🛡️
+      - Block 🚫
+      - Main Selector 🔀
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
   - name: Windows 🧊
     type: select
     icon: https://icon.icepanel.io/Technology/svg/Windows-11.svg
     proxies:
-      - VPN မပါ 🛡️
-      - ပိတ် 🚫
-      - နောင်တော် 🔀
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
+      - Direct 🛡️
+      - Block 🚫
+      - Main Selector 🔀
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
   - name: Cloudflare ☁️
     type: select
     icon: https://icon.icepanel.io/Technology/svg/Cloudflare.svg
     proxies:
-      - VPN မပါ 🛡️
-      - ပိတ် 🚫
-      - နောင်တော် 🔀
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
+      - Direct 🛡️
+      - Block 🚫
+      - Main Selector 🔀
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
   - name: GitHub 🐙
     type: select
     icon: https://www.svgrepo.com/show/355033/github.svg
     proxies:
-      - နောင်တော် 🔀
-      - VPN မပါ 🛡️
-      - ပိတ် 🚫
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
+      - Main Selector 🔀
+      - Direct 🛡️
+      - Block 🚫
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
   - name: Discord 🗣️
     type: select
     icon: https://automatorplugin.com/wp-content/uploads/2024/10/discord-icon.svg
     proxies:
-      - နောင်တော် 🔀
-      - VPN မပါ 🛡️
-      - ပိတ် 🚫
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
+      - Main Selector 🔀
+      - Direct 🛡️
+      - Block 🚫
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
   - name: Stremio 🎬
     type: select
     icon: https://stremio.github.io/stremio-addon-guide/img/stremio.svg
     proxies:
-      - VPN မပါ 🛡️
-      - နောင်တော် 🔀
-      - ပိတ် 🚫
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
+      - Direct 🛡️
+      - Main Selector 🔀
+      - Block 🚫
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
   - name: AnyDesk 🔴
     type: select
     icon: https://www.svgrepo.com/show/331289/anydesk.svg
     proxies:
-      - VPN မပါ 🛡️
-      - နောင်တော် 🔀
-      - ပိတ် 🚫
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
-  - name: ဆင်ဆာဆိုက် 🤬
+      - Direct 🛡️
+      - Main Selector 🔀
+      - Block 🚫
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+  - name: Censored Sites 🤬
     type: select
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Censorship.svg/300px-Censorship.svg.png
     proxies:
-      - ပိတ် 🚫
-      - နောင်တော် 🔀
-      - VPN မပါ 🛡️
-      - တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-      - ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-      - လက်ရွေး 🤏🏻
-      - အရန် (ပြတ်ရင်) 🧯
-  - name: VPN မပါ 🛡️
+      - Block 🚫
+      - Main Selector 🔀
+      - Direct 🛡️
+      - Stable Connection 🔗
+      - Fastest Node 🤖
+      - Manual Select 🤏🏻
+      - Backup Node 🧯
+  - name: Direct 🛡️
     type: select
     icon: https://www.svgrepo.com/show/6318/connection.svg
     proxies:
       - DIRECT
     hidden: true
-  - name: အင်တာနက်ဖြတ် ⛔
+  - name: Disconnect ⛔
     type: select
     icon: https://www.svgrepo.com/show/305372/wifi-off.svg
     proxies:
       - REJECT
     hidden: true
-  - name: ပိတ် 🚫
+  - name: Block 🚫
     type: select
     icon: https://www.svgrepo.com/show/444307/gui-ban.svg
     proxies:
@@ -1021,106 +1024,109 @@ proxy-providers:
 rules:
   - DOMAIN-KEYWORD,stun,REJECT
   - DOMAIN-KEYWORD,turn,REJECT
-  - RULE-SET,DownloadManagers,Download Manager 📥
-  - RULE-SET,Download,Download Manager 📥
-  - RULE-SET,stremio,Stremio 🎬
-  - PROCESS-NAME,im.vector.app,Element 💬
-  - PROCESS-NAME,io.element.android.x,Element 💬
-  - PROCESS-NAME,Element.exe,Element 💬
-  - DOMAIN-SUFFIX,aklispro.sbs,Element 💬
-  - DOMAIN-SUFFIX,chat.aklispro.sbs,Element 💬
-  - DOMAIN-SUFFIX,site.aklispro.sbs,Element 💬
-  - DOMAIN-SUFFIX,electonet.xyz,Element 💬
-  - DOMAIN-SUFFIX,chat.electonet.xyz,Element 💬
-  - DOMAIN-SUFFIX,rainbuwu.ir,Element 💬
-  - DOMAIN-SUFFIX,cinny.rainbuwu.ir,Element 💬
-  - PROCESS-NAME,chat.delta,DeltaChat ✉️
-  - PROCESS-NAME,DeltaChat.exe,DeltaChat ✉️
-  - DOMAIN-SUFFIX,arsalandalvand.ir,DeltaChat ✉️
-  - DST-PORT,993,DeltaChat ✉️
-  - DST-PORT,465,DeltaChat ✉️
-  - DST-PORT,587,DeltaChat ✉️
-  - PROCESS-NAME,com.teamspeak.ts3client,TeamSpeak 🎧
-  - PROCESS-NAME,ts3client_win64.exe,TeamSpeak 🎧
-  - PROCESS-NAME,ts3client_win32.exe,TeamSpeak 🎧
-  - DOMAIN-SUFFIX,ag.tssq.ir,TeamSpeak 🎧
-  - DST-PORT,9987,TeamSpeak 🎧
-  - RULE-SET,Adobe,တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
-  - RULE-SET,TikTok,နောင်တော် 🔀
-  - RULE-SET,TelegramACL,Telegram 💬
-  - RULE-SET,DownloadACL,Download Manager 📥
-  - RULE-SET,ProxyMedia,နောင်တော် 🔀
-  - RULE-SET,ProxyLite,နောင်တော် 🔀
-  - RULE-SET,ChinaDomain,VPN မပါ 🛡️
-  - RULE-SET,ChinaCompanyIp,VPN မပါ 🛡️
-  - RULE-SET,ChinaDNS,VPN မပါ 🛡️
-  - RULE-SET,spotifyads,App ကြော်ငြာ 🍃
-  - RULE-SET,BanProgramAD,App ကြော်ငြာ 🍃
-  - RULE-SET,BanAD,Tracking 🛑
-  - RULE-SET,PrivateTracker,Tracking 🛑
-  - RULE-SET,category_public_tracker,Tracking 🛑
-  - RULE-SET,malware,မဲလ်ဝဲဆိုက် ⚠️
-  - RULE-SET,phishing,မဲလ်ဝဲဆိုက် ⚠️
-  - RULE-SET,cryptominers,မဲလ်ဝဲဆိုက် ⚠️
-  - RULE-SET,warninglist,မဲလ်ဝဲဆိုက် ⚠️
-  - RULE-SET,Ponzi,မဲလ်ဝဲဆိုက် ⚠️
-  - RULE-SET,LiteAds,ကြော်ငြာ 🆎
-  - RULE-SET,gfwlist,ဆင်ဆာဆိုက် 🤬
-  - RULE-SET,PersianBlocker,ကြော်ငြာ 🆎
-  - RULE-SET,ads,ကြော်ငြာ 🆎
-  - RULE-SET,BanEasyList,ကြော်ငြာ 🆎
-  - RULE-SET,twitch,Twitch 📡
-  - PROCESS-NAME,Telegram.exe,Telegram 💬
-  - PROCESS-NAME,org.telegram.messenger,Telegram 💬
-  - PROCESS-NAME,org.telegram.messenger.web,Telegram 💬
-  - RULE-SET,telegram,Telegram 💬
-  - RULE-SET,YouTube,YouTube ▶️
-  - RULE-SET,youtube,YouTube ▶️
-  - RULE-SET,YouTubeMusic,YouTube ▶️
-  - PROCESS-NAME,com.anydesk.anydeskandroid,AnyDesk 🔴
-  - PROCESS-NAME,AnyDesk.exe,AnyDesk 🔴
-  - DOMAIN-SUFFIX,anydesk.com,AnyDesk 🔴
-  - PROCESS-NAME,Twitter.exe,Twitter 🐦
-  - PROCESS-NAME,com.twitter.android,Twitter 🐦
-  - RULE-SET,Chotwitter,Twitter 🐦
-  - RULE-SET,mihTwitter,Twitter 🐦
-  - RULE-SET,Domtwitter,Twitter 🐦
-  - PROCESS-NAME,com.spotify.music,Spotify 🎵
-  - PROCESS-NAME,Spotify.exe,Spotify 🎵
-  - RULE-SET,DomainSpotify,Spotify 🎵
-  - RULE-SET,mihspotify,Spotify 🎵
-  - PROCESS-NAME,com.instagram.android,Instagram 📸
-  - RULE-SET,instagram,Instagram 📸
-  - DOMAIN-SUFFIX,deepseek.com,AI 🤖
-  - DOMAIN-SUFFIX,qwen.ai,AI 🤖
-  - RULE-SET,category-ai,AI 🤖
-  - RULE-SET,censor,ဆင်ဆာဆိုက် 🤬
-  - RULE-SET,local_ips,VPN မပါ 🛡️
-  - RULE-SET,private,VPN မပါ 🛡️
-  # [FIX #3] GEOIP,MM → ယခုတော့ auto-best proxy ဖြတ်သွားမည် (DIRECT မဟုတ်တော့)
-  - GEOIP,MM,ပြေးမိုး (ပင်ပင်ပမ်းပမ်း) 🤖
-  - RULE-SET,whatsapp,WhatsApp 🟢
-  - RULE-SET,steam,Steam 🖥️
-  - RULE-SET,SteamRegionCheck,Steam 🖥️
-  - RULE-SET,game,Game 🎮
-  - RULE-SET,GameDownload,Game 🎮
-  - RULE-SET,category-games,Game 🎮
-  - RULE-SET,Xbox,Game 🎮
-  - RULE-SET,discord,Discord 🗣️
-  - RULE-SET,xiaomi_white_list,နောင်တော် 🔀
-  - RULE-SET,xiaomi-ads,App ကြော်ငြာ 🍃
-  - RULE-SET,xiaomi_block_list,App ကြော်ငြာ 🍃
-  - RULE-SET,windows,Windows 🧊
-  - RULE-SET,cloudflare,Cloudflare ☁️
-  - RULE-SET,github,GitHub 🐙
-  - PROCESS-NAME,com.android.vending,နောင်တော် 🔀
-  - PROCESS-NAME,com.google.android.gms,နောင်တော် 🔀
-  - RULE-SET,google-play,နောင်တော် 🔀
-  - RULE-SET,google,Google 🌍
-  - IP-CIDR,10.10.34.0/24,နောင်တော် 🔀
-  - MATCH,DIRECT
-  - FINAL,နောင်တော် 🔀
-
+  # Download & Media
+  - RULE-SET,DownloadManagers,Download Manager
+  - RULE-SET,Download,Download Manager
+  - RULE-SET,stremio,Stremio
+  - RULE-SET,ProxyMedia,Auto
+  - RULE-SET,ProxyLite,Auto
+  # Communication Apps
+  - PROCESS-NAME,im.vector.app,Element
+  - PROCESS-NAME,io.element.android.x,Element
+  - PROCESS-NAME,Element.exe,Element
+  - DOMAIN-SUFFIX,aklispro.sbs,Element
+  - DOMAIN-SUFFIX,chat.aklispro.sbs,Element
+  - DOMAIN-SUFFIX,site.aklispro.sbs,Element
+  - DOMAIN-SUFFIX,electonet.xyz,Element
+  - DOMAIN-SUFFIX,chat.electonet.xyz,Element
+  - DOMAIN-SUFFIX,rainbuwu.ir,Element
+  - DOMAIN-SUFFIX,cinny.rainbuwu.ir,Element
+  - PROCESS-NAME,chat.delta,DeltaChat
+  - PROCESS-NAME,DeltaChat.exe,DeltaChat
+  - DOMAIN-SUFFIX,arsalandalvand.ir,DeltaChat
+  - DST-PORT,993,DeltaChat
+  - DST-PORT,465,DeltaChat
+  - DST-PORT,587,DeltaChat
+  - PROCESS-NAME,com.teamspeak.ts3client,TeamSpeak
+  - PROCESS-NAME,ts3client_win64.exe,TeamSpeak
+  - PROCESS-NAME,ts3client_win32.exe,TeamSpeak
+  - DOMAIN-SUFFIX,ag.tssq.ir,TeamSpeak
+  - DST-PORT,9987,TeamSpeak
+  - RULE-SET,TelegramACL,Telegram
+  - PROCESS-NAME,Telegram.exe,Telegram
+  - PROCESS-NAME,org.telegram.messenger,Telegram
+  - PROCESS-NAME,org.telegram.messenger.web,Telegram
+  - RULE-SET,telegram,Telegram
+  - RULE-SET,whatsapp,WhatsApp
+  # Entertainment & Streaming
+  - RULE-SET,TikTok,Auto
+  - RULE-SET,YouTube,YouTube
+  - RULE-SET,youtube,YouTube
+  - RULE-SET,YouTubeMusic,YouTube
+  - RULE-SET,twitch,Twitch
+  - RULE-SET,spotifyads,Ads
+  - RULE-SET,DomainSpotify,Spotify
+  - RULE-SET,mihspotify,Spotify
+  - RULE-SET,instagram,Instagram
+  # AI & Others
+  - DOMAIN-SUFFIX,deepseek.com,AI
+  - DOMAIN-SUFFIX,qwen.ai,AI
+  - RULE-SET,category-ai,AI
+  # Security & Blocking
+  - RULE-SET,Adobe,Stable
+  - RULE-SET,malware,Malware
+  - RULE-SET,phishing,Malware
+  - RULE-SET,cryptominers,Malware
+  - RULE-SET,warninglist,Malware
+  - RULE-SET,Ponzi,Malware
+  - RULE-SET,LiteAds,Ads
+  - RULE-SET,gfwlist,Censored
+  - RULE-SET,PersianBlocker,Ads
+  - RULE-SET,ads,Ads
+  - RULE-SET,BanEasyList,Ads
+  - RULE-SET,BanProgramAD,Ads
+  - RULE-SET,BanAD,Tracking
+  - RULE-SET,PrivateTracker,Tracking
+  - RULE-SET,category_public_tracker,Tracking
+  - RULE-SET,censor,Censored
+  # Gaming & Apps
+  - RULE-SET,steam,Steam
+  - RULE-SET,SteamRegionCheck,Steam
+  - RULE-SET,game,Game
+  - RULE-SET,GameDownload,Game
+  - RULE-SET,category-games,Game
+  - RULE-SET,Xbox,Game
+  - RULE-SET,discord,Discord
+  - PROCESS-NAME,com.anydesk.anydeskandroid,AnyDesk
+  - PROCESS-NAME,AnyDesk.exe,AnyDesk
+  - DOMAIN-SUFFIX,anydesk.com,AnyDesk
+  - PROCESS-NAME,Twitter.exe,Twitter
+  - PROCESS-NAME,com.twitter.android,Twitter
+  - RULE-SET,Chotwitter,Twitter
+  - RULE-SET,mihTwitter,Twitter
+  - RULE-SET,Domtwitter,Twitter
+  # System & Direct
+  - RULE-SET,ChinaDomain,Direct
+  - RULE-SET,ChinaCompanyIp,Direct
+  - RULE-SET,ChinaDNS,Direct
+  - RULE-SET,local_ips,Direct
+  - RULE-SET,private,Direct
+  - RULE-SET,windows,Windows
+  - RULE-SET,cloudflare,Cloudflare
+  - RULE-SET,github,GitHub
+  - PROCESS-NAME,com.android.vending,Auto
+  - PROCESS-NAME,com.google.android.gms,Auto
+  - RULE-SET,google-play,Auto
+  - RULE-SET,google,Google
+  - RULE-SET,xiaomi_white_list,Auto
+  - RULE-SET,xiaomi-ads,Ads
+  - RULE-SET,xiaomi_block_list,Ads
+  - IP-CIDR,10.10.34.0/24,Auto
+  # GeoIP Myanmar → Fastest Proxy
+  - GEOIP,MM,Fastest
+  # Final Rules
+  - MATCH,Direct
+  - FINAL,Auto
 ntp:
   enable: true
   server: "time.apple.com"
