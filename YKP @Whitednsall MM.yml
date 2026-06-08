@@ -243,8 +243,6 @@ mux:
   concurrency: 8
   idle-timeout: 300
 
-*   **အမှန်:**
-    ```yaml
     rule-providers:
       ChinaDomain:
     type: http
@@ -1025,8 +1023,8 @@ rules:
   - DOMAIN-KEYWORD,stun,REJECT
   - DOMAIN-KEYWORD,turn,REJECT
   # Download & Media
-  - RULE-SET,DownloadManagers,Download Manager
-  - RULE-SET,Download,Download Manager
+  - RULE-SET,DownloadManagers,Download Manager 📥
+  - RULE-SET,Download,Download Manager 📥
   - RULE-SET,stremio,Stremio
   - RULE-SET,ProxyMedia,Auto
   - RULE-SET,ProxyLite,Auto
@@ -1073,14 +1071,14 @@ rules:
   - DOMAIN-SUFFIX,qwen.ai,AI
   - RULE-SET,category-ai,AI
   # Security & Blocking
-  - RULE-SET,Adobe,Stable
-  - RULE-SET,malware,Malware
-  - RULE-SET,phishing,Malware
-  - RULE-SET,cryptominers,Malware
-  - RULE-SET,warninglist,Malware
-  - RULE-SET,Ponzi,Malware
+  - RULE-SET,Adobe,Stable Connection 🔗
+  - RULE-SET,malware,Malware Sites ⚠️
+  - RULE-SET,phishing,Malware Sites ⚠️
+  - RULE-SET,cryptominers,Malware Sites ⚠️
+  - RULE-SET,warninglist,Malware Sites ⚠️
+  - RULE-SET,Ponzi,Malware Sites ⚠️
   - RULE-SET,LiteAds,Ads
-  - RULE-SET,gfwlist,Censored
+  - RULE-SET,gfwlist,Censored Sites 🤬
   - RULE-SET,PersianBlocker,Ads
   - RULE-SET,ads,Ads
   - RULE-SET,BanEasyList,Ads
@@ -1088,7 +1086,7 @@ rules:
   - RULE-SET,BanAD,Tracking
   - RULE-SET,PrivateTracker,Tracking
   - RULE-SET,category_public_tracker,Tracking
-  - RULE-SET,censor,Censored
+  - RULE-SET,censor,Censored Sites 🤬
   # Gaming & Apps
   - RULE-SET,steam,Steam
   - RULE-SET,SteamRegionCheck,Steam
@@ -1106,11 +1104,11 @@ rules:
   - RULE-SET,mihTwitter,Twitter
   - RULE-SET,Domtwitter,Twitter
   # System & Direct
-  - RULE-SET,ChinaDomain,Direct
-  - RULE-SET,ChinaCompanyIp,Direct
-  - RULE-SET,ChinaDNS,Direct
-  - RULE-SET,local_ips,Direct
-  - RULE-SET,private,Direct
+  - RULE-SET,ChinaDomain,Direct 🛡️
+  - RULE-SET,ChinaCompanyIp,Direct 🛡️
+  - RULE-SET,ChinaDNS,Direct 🛡️
+  - RULE-SET,local_ips,Direct 🛡️
+  - RULE-SET,private,Direct 🛡️
   - RULE-SET,windows,Windows
   - RULE-SET,cloudflare,Cloudflare
   - RULE-SET,github,GitHub
@@ -1123,10 +1121,9 @@ rules:
   - RULE-SET,xiaomi_block_list,Ads
   - IP-CIDR,10.10.34.0/24,Auto
   # GeoIP Myanmar → Fastest Proxy
-  - GEOIP,MM,Fastest
+  - GEOIP,MM,Fastest Node 🤖
   # Final Rules
-  - MATCH,Direct
-  - FINAL,Auto
+  - MATCH,Direct 🛡️
 ntp:
   enable: true
   server: "time.apple.com"
