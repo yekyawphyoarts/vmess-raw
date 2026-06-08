@@ -245,6 +245,66 @@ mux:
   idle-timeout: 300
 
 rule-providers:
+  ChinaDomain:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaDomain.list"
+    interval: 86400
+    path: ./ruleset/ChinaDomain.yaml
+  ChinaCompanyIp:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaCompanyIp.list"
+    interval: 86400
+    path: ./ruleset/ChinaCompanyIp.yaml
+  ChinaDNS:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/ChinaDNS.list"
+    interval: 86400
+    path: ./ruleset/ChinaDNS.yaml
+  ProxyMedia:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ProxyMedia.list"
+    interval: 86400
+    path: ./ruleset/ProxyMedia.yaml
+  ProxyLite:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ProxyLite.list"
+    interval: 86400
+    path: ./ruleset/ProxyLite.yaml
+  TelegramACL:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Telegram.list"
+    interval: 86400
+    path: ./ruleset/TelegramACL.yaml
+  Adobe:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Adobe.list"
+    interval: 86400
+    path: ./ruleset/Adobe.yaml
+  DownloadACL:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Download.list"
+    interval: 86400
+    path: ./ruleset/DownloadACL.yaml
+  TikTok:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/TikTok.list"
+    interval: 86400
+    path: ./ruleset/TikTok.yaml
+  gfwlist:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ProxyGFWlist.list"
+    interval: 86400
+    path: ./ruleset/gfwlist.yaml
   category_public_tracker:
     type: http
     behavior: domain
@@ -982,6 +1042,15 @@ rules:
   - PROCESS-NAME,ts3client_win32.exe,TeamSpeak 🎧
   - DOMAIN-SUFFIX,ag.tssq.ir,TeamSpeak 🎧
   - DST-PORT,9987,TeamSpeak 🎧
+  - RULE-SET,Adobe,တည်ငြိမ်သောချိတ်ဆက်မှု 🔗
+  - RULE-SET,TikTok,နောင်တော် 🔀
+  - RULE-SET,TelegramACL,Telegram 💬
+  - RULE-SET,DownloadACL,Download Manager 📥
+  - RULE-SET,ProxyMedia,နောင်တော် 🔀
+  - RULE-SET,ProxyLite,နောင်တော် 🔀
+  - RULE-SET,ChinaDomain,VPN မပါ 🛡️
+  - RULE-SET,ChinaCompanyIp,VPN မပါ 🛡️
+  - RULE-SET,ChinaDNS,VPN မပါ 🛡️
   - RULE-SET,spotifyads,App ကြော်ငြာ 🍃
   - RULE-SET,BanProgramAD,App ကြော်ငြာ 🍃
   - RULE-SET,BanAD,Tracking 🛑
@@ -993,6 +1062,7 @@ rules:
   - RULE-SET,warninglist,မဲလ်ဝဲဆိုက် ⚠️
   - RULE-SET,Ponzi,မဲလ်ဝဲဆိုက် ⚠️
   - RULE-SET,LiteAds,ကြော်ငြာ 🆎
+  - RULE-SET,gfwlist,ဆင်ဆာဆိုက် 🤬
   - RULE-SET,PersianBlocker,ကြော်ငြာ 🆎
   - RULE-SET,ads,ကြော်ငြာ 🆎
   - RULE-SET,BanEasyList,ကြော်ငြာ 🆎
