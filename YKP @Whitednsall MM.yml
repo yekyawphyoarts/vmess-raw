@@ -1012,6 +1012,8 @@ proxy-providers:
     interval: 86400
     include-all: true
     path: ./MihomoSaz45.yaml
+    proxy-opts:
+      client-fingerprint: chrome
     health-check:
       enable: true
       interval: 1800
@@ -1117,7 +1119,7 @@ rules:
   - RULE-SET,google-play,နောင်တော် 🔀
   - RULE-SET,google,Google 🌍
   - IP-CIDR,10.10.34.0/24,နောင်တော် 🔀
-  - MATCH,နောင်တော် 🔀
+  - MATCH,DIRECT
   - FINAL,နောင်တော် 🔀
 
 ntp:
