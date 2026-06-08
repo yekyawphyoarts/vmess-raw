@@ -1,4 +1,3 @@
-global-client-fingerprint: chrome
 keep-alive-interval: 5    # تست کانکشن هر ۵ ثانیه برای کشف سریع قطعی‌ها
 keep-alive-idle: 10       # شروع بررسی بعد از ۱۰ ثانیه بی‌تحرکی کانکشن
 disable-keep-alive: false # حتماً روشن باشد تا کانکشن‌ها در ایران فریز نشوند
