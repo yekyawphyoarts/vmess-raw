@@ -244,8 +244,10 @@ mux:
   concurrency: 8
   idle-timeout: 300
 
-rule-providers:
-  ChinaDomain:
+*   **အမှန်:**
+    ```yaml
+    rule-providers:
+      ChinaDomain:
     type: http
     behavior: classical
     url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaDomain.list"
